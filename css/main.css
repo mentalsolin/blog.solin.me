@@ -494,14 +494,14 @@ font-weight: 500;
 }
 
 .social_bar {
-    width: 304px;
-    height: 84px;
-    background-color: #000;
-    margin-top: 15px;
-    border-radius: 25px;
-
     display: flex;
     justify-content: space-between;
+    
+    width: 304px;
+    height: 84px;
+    margin-top: 15px;
+    border-radius: 25px;
+    background-color: #000;
 }
 
 .social_bar_links {
@@ -509,11 +509,10 @@ font-weight: 500;
 }
 
 .social_bar_nickname {
+    font-size: 35px;
     color: #fff;
 
-    font-size: 35px;
-
-    padding: 18px 10px 0 0;
+    padding: 18px 12px 0 0;
 }
 
 .social_label {
