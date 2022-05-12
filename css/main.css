@@ -543,7 +543,7 @@ font-weight: 500;
 }
 
 .portfolio_card_label {
-    margin-top: 30px;
+    padding-top: 30px;
 
     text-decoration: none;
     color: #000;
