@@ -147,6 +147,107 @@ a {
     color: #000;
 }
 
+/* Contact */
+
+.contact_form {
+    position: relative;
+
+    width: 650px;
+    height: 468px;
+
+    max-width: 100%;
+    max-height: 100%;
+
+    box-shadow: #C5C5C5 0 3px 6px;
+    border-radius: 50px;
+}
+
+.contact_form_title_container {
+    display: flex;
+    justify-content: center;
+}
+
+.contact_form_title {
+    position: absolute;
+    top: 45px;
+}
+
+.contact_form_inputs_container {
+    display: flex;
+    justify-content: center;
+}
+
+.contact_form_inputs {
+    position: absolute;
+    bottom: 35px;
+
+    padding: 0 35px;
+    display: flex;
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    width: 100%;
+    height: 310px;
+}
+
+.contact_form_input {
+    font-family: 'Montserrat', arial, sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #6d6d6d;
+
+    padding-left: 20px;
+    border-style: none;
+
+    border-radius: 15px;
+    background-color: #ECECEC;
+
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.contact_form_input_container {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact_form_input_small {
+    margin-bottom: 15px;
+    width: 100%;
+    height: 48px;
+}
+
+.contact_form_input_message {
+    width: 100%;
+    height: 184px;
+    padding: 20px;
+    margin-right: 15px;
+    resize: none;
+    border-radius: 15px 15px 15px 30px;
+}
+
+.contact_form_input_submit {
+    width: 100px;
+    height: 184px;
+    transition: .2s;
+    border-radius: 15px 15px 30px 15px;
+    
+    background-color: #000;
+    background-image: url(../src/static/icons/send_icon.svg);
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: 50%;
+}
+
+.contact_form_input_submit:hover {
+
+    background-color:#0B84FF;
+    color: #fff;
+}
+
 /* Projects page Container */
 
 .projects_page_container {
@@ -164,6 +265,7 @@ a {
 
 
 .projects_page_label {
+    margin-top: 30px;
     text-align: center;
 }
 
@@ -171,7 +273,7 @@ a {
     width: 1370px;
     max-width: 100%;
     max-height: 100%;
-    padding: 80px 35px 0 35px;
+    padding: 35px 0 35px;
 
     display: flex;
     justify-content: center;
@@ -298,8 +400,8 @@ font-weight: 500;
     width: 1370px;
     max-width: 100%;
 
-    margin: 0 auto;
-    padding: 232px 35px 0 35px;
+    margin: 232px auto;
+    padding: 35px 0 35px;
 }
 
 
@@ -365,15 +467,14 @@ font-weight: 500;
 .projects_preview_label {
     text-align: left;
 
-    padding-top: 20px;
+    margin-top: 20px;
 }
 
 .projects_preview_description {
     text-align: left;
 
     max-width: 420px;
-
-    padding-top: 10px;
+    margin-top: 10px;
 }
 
 .projects_preview_link {
@@ -409,8 +510,7 @@ font-weight: 500;
     width: 1050px;
     max-width: 100%;
 
-    margin: 0 auto;
-    padding-top: 420px;
+    margin: 420px auto;
 }
 
 .portfolio_label {
@@ -424,10 +524,8 @@ font-weight: 500;
     justify-content: space-around;
 
     flex-wrap: wrap;
-
     text-align: center;
-
-    padding-top: 120px;
+    margin-top: 120px;
 }
 
 .portfolio_cards_link {
@@ -445,7 +543,7 @@ font-weight: 500;
 }
 
 .portfolio_card_label {
-    padding-top: 30px;
+    margin-top: 30px;
 
     text-decoration: none;
     color: #000;
@@ -455,7 +553,7 @@ font-weight: 500;
     display: flex;
     justify-content: center;
 
-    padding-top: 62px;
+    margin-top: 62px;
 
     border-radius: 50px;
 }
@@ -467,7 +565,7 @@ font-weight: 500;
 }
 
 .portfolio_card_description_up {
-    padding-top: 53px;
+    margin-top: 50px;
 
     font-weight: 500;
 
@@ -489,8 +587,8 @@ font-weight: 500;
     max-width: 1050px;
 
     margin: 0 auto;
-    padding-bottom: 300px;
-    padding-top: 350px;
+    margin-bottom: 300px;
+    margin-top: 350px;
 }
 
 .social_bar {
@@ -499,7 +597,7 @@ font-weight: 500;
     
     width: 304px;
     height: 84px;
-    margin-top: 15px;
+    margin: 6px;
     border-radius: 25px;
     background-color: #000;
 }
@@ -522,7 +620,7 @@ font-weight: 500;
 }
 
 .social_bars {
-    padding-bottom: 35px;
+    margin-bottom: 35px;
 }
 
 .social_bar_container {
@@ -533,42 +631,12 @@ font-weight: 500;
     flex-wrap: wrap;
 }
 
-/* Social icons */
-
-.social_twitter {
-    width: 60px;
-
-    padding: 17px 0 0 12px;
+.social_icon_style {
+    padding: 12px;
 }
 
-.social_vkontakte {
-    width: 60px;
-
-    padding: 12px 0 0 12px;
-}
-
-.social_youtube {
-    width: 60px;
-
-    padding: 21px 0 0 12px;
-}
-
-.social_twitch {
-    width: 60px;
-
-    padding: 12px 0 0 16px;
-}
-
-.social_github {
-    width: 60px;
-
-    padding: 12px 0 0 12px;
-}
-
-.social_curseforge {
-    width: 60px;
-
-    padding: 26px 0 0 12px;
+.social_icon {
+    height: 60px;
 }
 
 /* Footer */
@@ -675,11 +743,12 @@ font-weight: 500;
 
     font-weight: 500;
     font-size: 20px;
+    line-height: 1.8;
 }
 
 .footer_dt_links {
     color: #C5C5C5;
-
+    
     text-decoration: none;
     font-size: 15px;
 }
@@ -706,4 +775,9 @@ font-weight: 500;
 
     display: flex;
     justify-content: center;
+}
+
+.footer_logo {
+    height: 19px;
+    border-radius: 4px;
 }

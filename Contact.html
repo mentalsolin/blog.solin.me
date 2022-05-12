@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Solin. Contact</title>
+
+    <!-- Links -->
+    <link rel="icon" href="src/static/logos/site_icon/site_icon.ico">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/mobile-friendly.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap" rel="stylesheet"> 
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet"> 
+
+    <script type="text/javascript" src="libs/email_js/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init('bYyOj5RqNS4yaPVHM');
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                this.contact_number.value = Math.random() * 100000 | 0;
+                emailjs.sendForm('service_1c07u77','template_6vk83rs', this)
+                    .then(function() {
+                        alert('Send!');
+
+                        document.getElementById("name").value = "";
+                        document.getElementById("email").value = "";
+                        document.getElementById("message").value = "";
+                    }, function(error) {
+                        alert('Error...', error);
+                    });
+            });
+        }
+    </script>
+
+</head>
+<body>
+    <div class="main_container">
+        <header class="header_container">
+            <div class="header_inner">
+                <div class="header_logo">
+                    <a href="Home.html">
+                        <img height="100%" width="100%" src="src/static/logos/site_icon/site_logo.svg" alt="site_logo">
+                    </a>
+                </div>
+        
+                <div class="header_nav">
+                    <a href="Projects.html" class="header_nav_links">Projects</a>
+                    <a href="https://twitter.com/Solin4035" class="header_nav_links">Twitter</a>
+                    <a href="Contact.html" class="header_nav_links">Contact</a>
+                    <a href="Donate.html" class="header_nav_links">Donate</a>              
+                </div>
+            </div>
+        </header>
+
+        <div class="donate_container">
+            <form id="contact-form" class="contact_form">
+                <div class="contact_form_title_container">
+                    <h2 class="contact_form_title">Contact Me</h2>
+                </div>
+                <div class="contact_form_inputs_container">
+                    <div class="contact_form_inputs">
+                        <div class="contact_form_input_container">
+                            <input type="hidden" name="contact_number">
+                            <input class="contact_form_input contact_form_input_small cursor_pointer" placeholder="Name" type="text" name="user_name" id="name" required="required">
+                        </div>
+                        <div class="contact_form_input_container">
+                            <input class="contact_form_input contact_form_input_small cursor_pointer" placeholder="Email" type="email" name="user_email" id="email" required="required">
+                        </div>
+                        <div class="contact_form_input_container">
+                            <textarea class="contact_form_input contact_form_input_message cursor_pointer" placeholder="Message" name="message" id="message" required="required"></textarea>
+                            <input class="contact_form_input contact_form_input_submit cursor_pointer" type="submit" value="">
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="footer_copyright footer_copyright_max800">
+        <a class="cursor_default">Copyright © Solin4035</a>
+    </div>
+</body>
+</html>
