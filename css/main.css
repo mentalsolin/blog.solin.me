@@ -443,6 +443,7 @@ font-weight: 500;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    margin-bottom: 80px;
 }
 
 .projects_image_container {
