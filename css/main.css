@@ -439,11 +439,14 @@ font-weight: 500;
 
 /* Projects preview */
 
+.mb80 {
+    margin-bottom: 80px;
+}
+
 .projects_preview_container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin-bottom: 80px;
 }
 
 .projects_image_container {
