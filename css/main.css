@@ -282,7 +282,9 @@ a {
 }
 
 .projects_page_preview_container {
-    margin-bottom: 80px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 /* Header */
