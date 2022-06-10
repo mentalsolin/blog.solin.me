@@ -24,20 +24,6 @@
         font-size: 20px;
     }
 
-    /* Others */
-
-    .page_404_upper_text {
-        font-size: 80px;
-    }
-
-    .page_404_down_text {
-        font-size: 20px;
-    }
-
-    .page_404_container {
-        width: 80%;
-    }
-
     /* Donate */
     
     .donate_bar {
@@ -57,11 +43,6 @@
     .header_nav {
         display: flex;
         justify-content: flex-end;
-    }
-
-    .main_arrow_down_animation {
-        height: 80px;
-        width: 80px;
     }
 
     /* Projects */
@@ -199,8 +180,10 @@
     }
 
     .main_arrow_down_animation {
-        height: 75px;
-        width: 75px;
+        height: 35px;
+        width: 35px;
+        border-bottom: 5px solid var(--second-color);
+        border-right: 5px solid var(--second-color);
     }
 
     /* Projects */
@@ -333,14 +316,6 @@
         font-size: 20px;
     }
 
-    .page_404_upper_text {
-        font-size: 70px;
-    }
-
-    .page_404_down_text {
-        font-size: 18px;
-    }
-
     /* Main */
 
     .header_logo_size {
@@ -362,8 +337,10 @@
     }
 
     .main_arrow_down_animation {
-        height: 65px;
-        width: 65px;
+        height: 30px;
+        width: 30px;
+        border-bottom: 5px solid var(--second-color);
+        border-right: 5px solid var(--second-color);
     }
 
     /* Projects */
@@ -495,8 +472,10 @@
     }
 
     .main_arrow_down_animation {
-        height: 60px;
-        width: 60px;
+        height: 25px;
+        width: 25px;
+        border-bottom: 4px solid var(--second-color);
+        border-right: 4px solid var(--second-color);
     }
 
     /* Projects */
