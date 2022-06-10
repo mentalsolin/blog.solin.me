@@ -604,3 +604,13 @@
     }
 }
 
+/* @media (prefers-color-scheme: dark) {
+    .day.dark-scheme   { background:  #333; color: white; }
+    .night.dark-scheme { background: black; color:  #ddd; }
+}
+
+@media (prefers-color-scheme: light) {
+    .day.dark-scheme   { background:  #333; color: white; }
+    .night.dark-scheme { background: black; color:  #ddd; }
+} */
+
