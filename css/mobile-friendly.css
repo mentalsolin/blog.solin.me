@@ -229,7 +229,7 @@
         margin: 0 35px 35px 35px;
     
         border-radius: 50px;
-        box-shadow: #C5C5C5 0 3px 6px;
+        box-shadow: var(--shadow-color) 0 3px 6px;
     }
 
 
@@ -421,7 +421,7 @@
 
 @media (max-width: 533px) {
     .social_bar_container {
-        width: 350px;
+        width: 335px;
     }
 }
 

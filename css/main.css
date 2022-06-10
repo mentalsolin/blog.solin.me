@@ -95,7 +95,7 @@ a {
     position: fixed;
     bottom: 35px;
     right: 35px;
-    z-index: 999;
+    z-index: 10;
 }
 
 .btn_switch_theme {
@@ -701,6 +701,7 @@ font-weight: 500;
     max-width: 100%;
     max-height: 250px;
     position: relative;
+    z-index: 15;
 }
 
 .footer_body {
