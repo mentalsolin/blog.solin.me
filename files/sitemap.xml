@@ -1,38 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
 
 <url>
-  <loc>https://www.thesolin.ru/Home</loc>
-  <lastmod>2022-06-10T09:07:48+00:00</lastmod>
+  <loc>https://www.solin.website/Home</loc>
+  <lastmod>2022-06-10T21:37:39+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://www.thesolin.ru/Projects</loc>
-  <lastmod>2022-06-10T09:07:48+00:00</lastmod>
+  <loc>https://www.solin.website/Projects</loc>
+  <lastmod>2022-06-10T21:37:39+00:00</lastmod>
+  <priority>0.97</priority>
+</url>
+<url>
+  <loc>https://www.solin.website/Portfolio-Websites</loc>
+  <lastmod>2022-06-10T21:37:39+00:00</lastmod>
   <priority>0.95</priority>
 </url>
 <url>
-  <loc>https://www.thesolin.ru/Portfolio-Websites</loc>
-  <lastmod>2022-06-10T09:07:48+00:00</lastmod>
-  <priority>0.93</priority>
-</url>
-<url>
-  <loc>https://www.thesolin.ru/Portfolio-CPP</loc>
-  <lastmod>2022-06-10T09:07:48+00:00</lastmod>
+  <loc>https://www.solin.website/Portfolio-CPP</loc>
+  <lastmod>2022-06-10T21:37:39+00:00</lastmod>
   <priority>0.90</priority>
 </url>
 <url>
-  <loc>https://www.thesolin.ru/Contact</loc>
-  <lastmod>2022-06-10T09:07:48+00:00</lastmod>
-  <priority>0.85</priority>
+  <loc>https://www.solin.website/Contact</loc>
+  <lastmod>2022-06-10T21:37:39+00:00</lastmod>
+  <priority>0.83</priority>
 </url>
 <url>
-  <loc>https://www.thesolin.ru/Donate</loc>
-  <lastmod>2022-06-10T09:07:48+00:00</lastmod>
+  <loc>https://www.solin.website/Donate</loc>
+  <lastmod>2022-06-10T21:37:39+00:00</lastmod>
   <priority>0.80</priority>
 </url>
+
+
 </urlset>
