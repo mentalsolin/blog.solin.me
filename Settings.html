@@ -6,15 +6,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    
     <meta name="yandex-verification" content="e6ce2297cf05dae4" />
     <meta name="google-site-verification" content="2ELZ0-Af6o7cpANQRBsh_JdWhrIpD8ajIRyWZOiihIA" />
     <meta name="msvalidate.01" content="0721B58D8494900E306B2760896A6853" />
 
-    <meta name="description" content="On this page you can contact me">
+    <meta name="description" content="Settings site">
     <meta name="keywords" content="html, css, js, javascript, c++, cpp, thesolin, the solin, the solin website, thesolin website, the solin portfolio, thesolin portfolio,the solin contact, thesolin contact, the solin projects, thesolin projects">
 
-    <title>The Solin. Contact</title>
+    <title>The Solin. Settings</title>
 
     <!-- Links -->
     <link rel="icon" href="src/static/logos/site_icon/site_icon.ico">
@@ -25,38 +25,21 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap" rel="stylesheet"> 
     
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet"> 
-
-    <script type="text/javascript" src="libs/email_js/email.min.js"></script>
-    <script type="text/javascript">
-        (function() {
-            emailjs.init('bYyOj5RqNS4yaPVHM');
-        })();
-    </script>
-    <script type="text/javascript">
-        window.onload = function() {
-            document.getElementById('contact-form').addEventListener('submit', function(event) {
-                event.preventDefault();
-                this.contact_number.value = Math.random() * 100000 | 0;
-                emailjs.sendForm('service_1c07u77','template_6vk83rs', this)
-                    .then(function() {
-                        alert('Send!');
-
-                        document.getElementById("name").value = "";
-                        document.getElementById("email").value = "";
-                        document.getElementById("message").value = "";
-                    }, function(error) {
-                        alert('Error...', error);
-                    });
-            });
-        }
-    </script>
-
 </head>
+
+<style>
+    .ddde {
+        font-size: 20px;
+        border: none;
+        border-radius: 10px;
+        margin-right: 20px;
+        padding: 10px;
+        background-color: #ececec;
+    }
+</style>
+
 <body>
-    <div class="main_container">
+    <div class="projects_page_container">
         <header class="header_container">
             <div class="header_inner">
                 <div class="header_logo">
@@ -107,33 +90,75 @@
                 </nav>
             </div>
         </header>
-        <script src="js/switchTheme.js"></script>
+        <div class="projects_page_label">
+            <h1>Settings</h1>
+        </div>
+        <h2>Theme</h2>
+        <form>
+            <select class="ddde cursor_pointer" id="themeSelector">
+                <option class="ddde cursor_pointer" value="deviceTheme">Device theme</option>
+                <option class="ddde cursor_pointer" value="darkTheme">Dark</option>
+                <option class="ddde cursor_pointer" value="lightTheme">Light</option>
+            </select>
+            <button class="ddde cursor_pointer" type="button" onclick="themeSelectorFunc()">Change</button>
+        </form>
+    </div>
+    <footer class="footer_container">
+        <div class="footer_body">
+            <div class="footer_content_container">
+                <div class="footer_links">
+                    <div class="footer_dl_container">
+                        <dl class="footer_dl">
+                            <dt><a class="footer_dt_label cursor_default">Site map</a></dt>
+                            <dt><a href="404.html" class="footer_dt_links">404 page</a></dt>
+                            <dt><a href="Projects.html" class="footer_dt_links">Projects</a></dt>
+                            <dt><a href="Contact.html" class="footer_dt_links">Contact</a></dt>
+                            <dt><a href="Donate.html" class="footer_dt_links">Donate</a></dt>
+                        </dl>
 
-        <div class="donate_container">
-            <form id="contact-form" class="contact_form">
-                <div class="contact_form_title_container">
-                    <h2 class="contact_form_title">Contact Me</h2>
-                </div>
-                <div class="contact_form_inputs_container">
-                    <div class="contact_form_inputs">
-                        <div class="contact_form_input_container">
-                            <input type="hidden" name="contact_number">
-                            <input class="contact_form_input contact_form_input_small cursor_pointer" placeholder="Name" type="text" name="user_name" id="name" required="required">
+                        <dl class="footer_dl">
+                            <dt><a class="footer_dt_label cursor_default">Links</a></dt>
+                            <dt><a href="https://beta.thesolin.ru/" class="footer_dt_links">Beta branch</a></dt>
+                            <dt><a href="https://github.com/SolinCode/Solin-Website" class="footer_dt_links">Github page</a></dt>
+                        </dl>
+
+                        <dl class="footer_dl">
+                            <dt><a class="footer_dt_label cursor_default">Libraries</a></dt>
+                            <dt><a href="https://swiperjs.com/" class="footer_dt_links">Swiper</a></dt>
+                            <dt><a href="https://www.emailjs.com/" class="footer_dt_links">EmailJS</a></dt>
+                        </dl>
+                    </div>
+
+                    <div class="footer_credits">
+                        <div>
+                            <a class="footer_credits_links cursor_default">Designed by</a>
+                            <a class="footer_credits_links" href="https://twitter.com/Solin4035">Solin4035</a>
+                            <a class="footer_credits_links cursor_default">and</a>
+                            <a class="footer_credits_links" href="https://vk.com/nik_the_vaga">Telephonkin</a>
                         </div>
-                        <div class="contact_form_input_container">
-                            <input class="contact_form_input contact_form_input_small cursor_pointer" placeholder="Email" type="email" name="user_email" id="email" required="required">
-                        </div>
-                        <div class="contact_form_input_container">
-                            <textarea class="contact_form_input contact_form_input_message cursor_pointer" placeholder="Message" name="message" id="message" required="required"></textarea>
-                            <input class="contact_form_input contact_form_input_submit cursor_pointer" type="submit" value="">
+                        <div>
+                            <a class="footer_credits_links cursor_default">Coded by</a>
+                            <a class="footer_credits_links" href="https://twitter.com/Solin4035">Solin4035</a>
                         </div>
                     </div>
                 </div>
-            </form>
+            </div>
+            <div class="footer_copyright">
+                <a class="cursor_default">Copyright © Solin4035</a>
+            </div>
         </div>
-    </div>
-    <div class="footer_copyright footer_copyright_max800">
-        <a class="cursor_default">Copyright © Solin4035</a>
-    </div>
+
+        <div class="footer_block">
+            <div class="footer_block_circle_left">
+
+            </div>
+        </div>
+
+        <div class="footer_block footer_right">
+            <div class="footer_block_circle_right">
+            </div>
+        </div>
+    </footer>
+    <script src="js/switchTheme.js"></script>
 </body>
 </html>

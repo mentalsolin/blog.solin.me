@@ -10,7 +10,7 @@
     --white-color: #fff;
 }
 
-.dark_theme {
+.dark {
     --main-color: rgb(32, 32, 32);
     --second-color: #c5c5c5;
     --shadow-color: #161616;
