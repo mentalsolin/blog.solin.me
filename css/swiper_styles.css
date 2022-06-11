@@ -45,3 +45,7 @@
 .swiper-slide {
 	background: none;
 }
+
+.projects_arrows_height {
+	cursor: url('../src/static/cursors/cursor_link.cur'), pointer;
+}

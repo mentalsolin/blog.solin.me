@@ -26,18 +26,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap" rel="stylesheet"> 
     
 </head>
-
-<style>
-    .ddde {
-        font-size: 20px;
-        border: none;
-        border-radius: 10px;
-        margin-right: 20px;
-        padding: 10px;
-        background-color: #ececec;
-    }
-</style>
-
 <body>
     <div class="projects_page_container">
         <header class="header_container">
@@ -90,18 +78,21 @@
                 </nav>
             </div>
         </header>
-        <div class="projects_page_label">
-            <h1>Settings</h1>
+        <div class="settings_container">
+            <div class="settings_page_label">
+                <h1>Settings</h1>
+            </div>
+            <h2 class="mb15">Change theme</h2>
+            <form class="settings_form mb40">
+                <select class="settings_select_list cursor_pointer" id="themeSelector">
+                    <option disabled selected class="cursor_pointer" value="deviceTheme">Choose theme</option>
+                    <option class="cursor_pointer" value="deviceTheme">Device theme</option>
+                    <option class="cursor_pointer" value="darkTheme">Dark</option>
+                    <option class="cursor_pointer" value="lightTheme">Light</option>
+                </select>
+                <button class="settings_select_list cursor_pointer" type="button" onclick="themeSelectorFunc()">Change</button>
+            </form>
         </div>
-        <h2>Theme</h2>
-        <form>
-            <select class="ddde cursor_pointer" id="themeSelector">
-                <option class="ddde cursor_pointer" value="deviceTheme">Device theme</option>
-                <option class="ddde cursor_pointer" value="darkTheme">Dark</option>
-                <option class="ddde cursor_pointer" value="lightTheme">Light</option>
-            </select>
-            <button class="ddde cursor_pointer" type="button" onclick="themeSelectorFunc()">Change</button>
-        </form>
     </div>
     <footer class="footer_container">
         <div class="footer_body">
@@ -110,16 +101,15 @@
                     <div class="footer_dl_container">
                         <dl class="footer_dl">
                             <dt><a class="footer_dt_label cursor_default">Site map</a></dt>
-                            <dt><a href="404.html" class="footer_dt_links">404 page</a></dt>
-                            <dt><a href="Projects.html" class="footer_dt_links">Projects</a></dt>
-                            <dt><a href="Contact.html" class="footer_dt_links">Contact</a></dt>
                             <dt><a href="Donate.html" class="footer_dt_links">Donate</a></dt>
+                            <dt><a href="Contact.html" class="footer_dt_links">Contact</a></dt>
+                            <dt><a href="Projects.html" class="footer_dt_links">Projects</a></dt>
+                            <dt><a href="Settings.html" class="footer_dt_links">Settings</a></dt>
                         </dl>
 
                         <dl class="footer_dl">
                             <dt><a class="footer_dt_label cursor_default">Links</a></dt>
-                            <dt><a href="Settings.html" class="footer_dt_links">Settings</a></dt>
-                            <dt><a href="https://cdn.solin.website/" class="footer_dt_links">Solin CDN</a></dt>
+                            <dt><a href="https://cdn.solin.website/" class="footer_dt_links">SolinCDN</a></dt>
                             <dt><a href="https://beta.thesolin.ru/" class="footer_dt_links">Beta branch</a></dt>
                             <dt><a href="https://github.com/SolinCode/Solin-Website" class="footer_dt_links">Github page</a></dt>
                         </dl>
