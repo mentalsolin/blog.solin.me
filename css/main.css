@@ -121,6 +121,10 @@ a {
     background-color: #ececec;
 }
 
+.settings_select_list:last-child {
+    margin: 0;
+}
+
 /* Donate */
 
 .donate_container {
