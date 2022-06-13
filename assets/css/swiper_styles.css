@@ -53,3 +53,11 @@
 	pointer-events: none;
 	transition: .2s;
 }
+
+.swiper-button-next {
+	transition: .2s;
+}
+
+.swiper-button-prev {
+	transition: .2s;
+}
