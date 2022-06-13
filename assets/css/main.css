@@ -21,7 +21,7 @@
 }
 
 html {
-    cursor: url('../src/static/cursors/cursor_normal.cur'), default;
+    cursor: url('../../src/cursor/cursor_normal.cur'), default;
 }
 
 body {
@@ -74,19 +74,19 @@ h5 {
 
 
 a {
-    cursor: url('../src/static/cursors/cursor_link.cur'), pointer;
+    cursor: url('../../src/cursor/cursor_link.cur'), pointer;
 }
 
 .cursor_default {
-    cursor: url('../src/static/cursors/cursor_normal.cur'), default;
+    cursor: url('../../src/cursor/cursor_normal.cur'), default;
 }
 
 .cursor_pointer {
-    cursor: url('../src/static/cursors/cursor_link.cur'), pointer;
+    cursor: url('../../src/cursor/cursor_link.cur'), pointer;
 }
 
 .cursor_grab {
-    cursor: url('../src/static/cursors/cursor_grab.cur'), grab;
+    cursor: url('../../src/cursor/cursor_grab.cur'), grab;
 }
 
 
@@ -166,7 +166,7 @@ a {
 }
 
 .donate_bar_address {
-    padding: 17px 17px 0 0;
+    padding: 18px 18px 0 0;
 
     font-family: 'Inconsolata', monospace;
     color: var(--second-text-color);
@@ -367,7 +367,7 @@ a {
 
     padding: 15px;
 
-    transition: 0.2s;
+    transition: 0.18s;
 }
 
 .header_nav_links:hover {
@@ -468,7 +468,7 @@ font-weight: 500;
     width: 1370px;
     max-width: 100%;
 
-    margin: 232px auto;
+    margin: 200px auto;
     padding: 35px 0 35px;
 }
 
@@ -659,8 +659,7 @@ font-weight: 500;
     max-width: 1050px;
 
     margin: 0 auto;
-    margin-bottom: 300px;
-    margin-top: 350px;
+    margin-top: 460px;
 }
 
 .social_bar {

@@ -7,19 +7,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <meta name="description" content="Hello, i'm Solin. I am a beginner C++ programmer, sometimes i write websites and work in Photoshop.">
+    <meta name="keywords" content="html, css, js, javascript, c++, cpp, thesolin, the solin, the solin website, thesolin website,the solin contact, thesolin contact, the solin projects, thesolin projects, the solin donate, thesolin donate, solin website">
+
     <meta name="yandex-verification" content="e6ce2297cf05dae4" />
     <meta name="google-site-verification" content="2ELZ0-Af6o7cpANQRBsh_JdWhrIpD8ajIRyWZOiihIA" />
     <meta name="msvalidate.01" content="0721B58D8494900E306B2760896A6853" />
 
-    <meta name="description" content="Hello, i'm Solin. I am a beginner C++ programmer, sometimes i write websites and work in Photoshop.">
-    <meta name="keywords" content="html, css, js, javascript, c++, cpp, thesolin, the solin, the solin website, thesolin website, the solin portfolio, thesolin portfolio,the solin contact, thesolin contact, the solin projects, thesolin projects">
-
     <title>The Solin. Home</title>
 
     <!-- Links -->
-    <link rel="icon" href="src/static/logos/site_icon/site_icon.ico">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/mobile-friendly.css">
+    <link rel="icon" href="src/logo/icon/icon.ico">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/mobile-friendly.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,7 +27,7 @@
     
     <!-- Swiper-js -->
     <link rel="stylesheet" href="libs/swiper_js/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="css/swiper_styles.css">
+    <link rel="stylesheet" href="assets/css/swiper_styles.css">
 
     <script src="libs/swiper_js/swiper-bundle.min.js"></script>
 
@@ -37,7 +37,7 @@
         <header class="header_container">
             <div class="header_inner">
                 <div class="header_logo">
-                    <svg class="logo" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    <svg class="logo" version="1.1" id="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                         viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
                     <g>
                         <polygon points="12.6,41.8 6.4,44.5 5.3,42 3.5,42.8 6.6,50 8.4,49.2 7.4,46.7 13.6,44.1 	"/>
@@ -75,15 +75,13 @@
                 </div>
         
                 <nav class="header_nav">
-                    <a href="Projects.html" class="header_nav_links">Projects</a>
+                    <a href="projects.html" class="header_nav_links">Projects</a>
                     <a href="https://twitter.com/Solin4035" class="header_nav_links">Twitter</a>
-                    <a href="Contact.html" class="header_nav_links">Contact</a>
-                    <a href="Donate.html" class="header_nav_links">Donate</a>              
+                    <a href="mailto:thesolincontact@gmail.com" class="header_nav_links">Contact</a>
+                    <a href="donate.html" class="header_nav_links">Donate</a>              
                 </nav>
             </div>
         </header>
-        <script src="js/switchTheme.js"></script>
-
         <div class="main_hello_container">
             <div class="main_hello_text">        
                 <div>
@@ -104,8 +102,8 @@
     <div class="body_container">
         <div class="projects_container">
             <div class="projects_label">
-                <h3 class="projects_upper_padding">Last projects</h3>
-                <a class="projects_label_link" href="Projects.html">Projects list</a>
+                <h3 class="projects_upper_padding">Recent projects</h3>
+                <a class="projects_label_link" href="projects.html">Projects list</a>
             </div>
 
             <div class="projects_container cursor_grab">
@@ -114,7 +112,7 @@
                         <div class="swiper-slide">
                             <article id="article-Solin-Battleship" class="projects_preview_container">
                                 <div class="projects_image_container">
-                                    <a href="https://github.com/SolinCode/Solin-Battleship"><img class="projects_preview_image" src="src/static/portfolio/preview/cplusplus/solin_battleship_game.jpg"></a>
+                                    <a href="https://github.com/SolinCode/Solin-Battleship"><img class="projects_preview_image" src="src/projects/cpp/solin_battleship_game.jpg" alt="Solin Battleship Game"></a>
                                 </div>
     
                                 <div class="projects_description_container">
@@ -125,9 +123,22 @@
                             </article>
                         </div>
                         <div class="swiper-slide">
+                            <article id="article-Solin-Dice-Game" class="projects_preview_container">
+                                <div class="projects_image_container">
+                                    <a href="https://github.com/SolinCode/Solin-Dice-game"><img class="projects_preview_image" src="src/projects/cpp/solin_dice_game_preview.jpg" alt="Solin Dice Game"></a>
+                                </div>
+                                
+                                <div class="projects_description_container">
+                                    <h4 class="projects_preview_label">Solin Dice Game</h4>
+                                    <h5 class="projects_preview_description">Simple Dice game on C++</h5>
+                                    <a class="projects_preview_link" href="https://github.com/SolinCode/Solin-Dice-game">Learn more...</a>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="swiper-slide">
                             <article id="article-Katana-Pack" class="projects_preview_container">
                                 <div class="projects_image_container">
-                                    <a href="https://www.curseforge.com/minecraft/customization/katana-models"><img class="projects_preview_image" src="src/static/projects/preview/katana_pack_preview.jpg" alt="Katana-Pack-image"></a>
+                                    <a href="https://www.curseforge.com/minecraft/customization/katana-models"><img class="projects_preview_image" src="src/projects/others/katana_pack_preview.jpg" alt="Katana Pack"></a>
                                 </div>
 
                                 <div class="projects_description_container">
@@ -137,20 +148,6 @@
                                 </div>
                             </article>
                         </div>
-                        <div class="swiper-slide">
-                            <article id="article-Dice-Game" class="projects_preview_container">
-                                <div class="projects_image_container">
-                                    <a id="" href="https://github.com/SolinCode/Solin-Dice-game"><img class="projects_preview_image" src="src/static/projects/preview/solin_dice_game_preview.jpg" alt="Solin-Dice-Game-image"></a>
-                                </div>
-
-                                <div class="projects_description_container">
-                                    <h4 class="projects_preview_label">Solin Dice Game</h4>
-                                    <h5 class="projects_preview_description">Simple Dice game on C++</h5>
-                                    <a class="projects_preview_link" href="https://github.com/SolinCode/Solin-Dice-game">Learn more...</a>
-                                </div>
-                            </article>
-                        </div>
-
                     </div>
 
                     <div class="swiper-button-next">
@@ -181,37 +178,6 @@
 
             <h5 class="projects_just_swipe_it">Just swipe it!</h5>
         </div>
-
-        <div class="portfolio_container">
-            <div class="portfolio_label">
-                <h3>My portfolio</h3>
-            </div>
-
-            <div class="portfolio_cards">
-                <a class="portfolio_cards_link" href="Portfolio-Websites.html">
-                    <div class="portfolio_card">
-                        <h4 class="portfolio_card_label">Websites</h4>
-                        <div class="portfolio_card_image_container">
-                            <img class="portfolio_card_image" src="src/static/portfolio/preview/websites/solin_website_preview.jpg" alt="">
-                        </div>
-                        <h5 class="portfolio_card_description_up">Front end</h5>
-                        <h5 class="portfolio_card_description_down">HTML CSS JS++</h5>
-                    </div>
-                </a>
-
-                <a class="portfolio_cards_link" href="Portfolio-CPP.html">
-                    <div class="portfolio_card">
-                        <h4 class="portfolio_card_label">C++</h4>
-                        <div class="portfolio_card_image_container">
-                            <img class="portfolio_card_image" src="src/static/portfolio/preview/cplusplus/solin_dice_game_preview.jpg" alt="">
-                        </div>
-                        <h5 class="portfolio_card_description_up">Simple console app</h5>
-                        <h5 class="portfolio_card_description_down">C++</h5>
-                    </div>
-                </a>
-            </div>
-        </div>
-
         <div class="social_container">
             <div class="social_bars">
                 <div class="social_label">
@@ -222,7 +188,7 @@
                     <a class="social_bar_links" href="https://twitter.com/Solin4035">
                         <div class="social_bar">
                             <div class="social_icon_style">
-                                <img class="social_icon" height="100%" width="100%" src="src/static/logos/social_media/social-media-twitter.svg" alt="twitter_logo">
+                                <img class="social_icon" height="100%" width="100%" src="src/logo/social_media/social-media-twitter.svg" alt="twitter_logo">
                             </div>
                             <div>
                                 <h4 class="social_bar_nickname">Solin4035</h4>
@@ -232,7 +198,7 @@
                     <a class="social_bar_links" href="https://vk.com/solingrad">
                         <div class="social_bar">
                             <div class="social_icon_style">
-                                <img class="social_icon" height="100%" width="100%" src="src/static/logos/social_media/social-media-vkontakte.svg" alt="vkontakte_logo">
+                                <img class="social_icon" height="100%" width="100%" src="src/logo/social_media/social-media-vkontakte.svg" alt="vkontakte_logo">
                             </div>
                             <div>
                                 <h4 class="social_bar_nickname">Solingrad</h4>
@@ -242,7 +208,7 @@
                     <a class="social_bar_links" href="https://www.youtube.com/channel/UCHrVxQmCu0PtLTyPRwBOBYA">
                         <div class="social_bar">
                             <div class="social_icon_style">
-                                <img class="social_icon" height="100%" width="100%" src="src/static/logos/social_media/social-media-youtube.svg" alt="youtube_logo">
+                                <img class="social_icon" height="100%" width="100%" src="src/logo/social_media/social-media-youtube.svg" alt="youtube_logo">
                             </div>
                             <div>
                                 <h4 class="social_bar_nickname">Solin4035</h4>
@@ -252,7 +218,7 @@
                     <a class="social_bar_links" href="https://www.twitch.tv/solin4035">
                         <div class="social_bar">
                             <div class="social_icon_style">
-                                <img class="social_icon" height="100%" width="100%" src="src/static/logos/social_media/social-media-twitch.svg" alt="twitch_logo">
+                                <img class="social_icon" height="100%" width="100%" src="src/logo/social_media/social-media-twitch.svg" alt="twitch_logo">
                             </div>
                             <div>
                                 <h4 class="social_bar_nickname">Solin4035</h4>
@@ -270,7 +236,7 @@
                     <a class="social_bar_links" href="https://github.com/SolinCode">
                         <div class="social_bar">
                             <div class="social_icon_style">
-                                <img class="social_icon" height="100%" width="100%" src="src/static/logos/social_media/social-media-github.svg" alt="github_logo">
+                                <img class="social_icon" height="100%" width="100%" src="src/logo/social_media/social-media-github.svg" alt="github_logo">
                             </div>    
                             <h4 class="social_bar_nickname">SolinCode</h4> 
                         </div>
@@ -279,7 +245,7 @@
                     <a class="social_bar_links" href="https://www.curseforge.com/members/solin4035/projects">
                         <div class="social_bar">
                             <div class="social_icon_style">
-                                <img class="social_icon" height="100%" width="100%" src="src/static/logos/social_media/social-media-curseforge.svg" alt="curseforge_logo">
+                                <img class="social_icon" height="100%" width="100%" src="src/logo/social_media/social-media-curseforge.svg" alt="curseforge_logo">
                             </div>
                             <h4 class="social_bar_nickname">Solin4035</h4> 
                         </div>
@@ -296,23 +262,21 @@
                     <div class="footer_dl_container">
                         <dl class="footer_dl">
                             <dt><a class="footer_dt_label cursor_default">Site map</a></dt>
-                            <dt><a href="Donate.html" class="footer_dt_links">Donate</a></dt>
-                            <dt><a href="Contact.html" class="footer_dt_links">Contact</a></dt>
-                            <dt><a href="Projects.html" class="footer_dt_links">Projects</a></dt>
-                            <dt><a href="Settings.html" class="footer_dt_links">Settings</a></dt>
+                            <dt><a href="home.html" class="footer_dt_links">Home</a></dt>
+                            <dt><a href="donate.html" class="footer_dt_links">Donate</a></dt>
+                            <dt><a href="projects.html" class="footer_dt_links">Projects</a></dt>
+                            <dt><a href="settings.html" class="footer_dt_links">Settings</a></dt>
                         </dl>
 
                         <dl class="footer_dl">
                             <dt><a class="footer_dt_label cursor_default">Links</a></dt>
                             <dt><a href="https://cdn.solin.website/" class="footer_dt_links">SolinCDN</a></dt>
-                            <dt><a href="https://beta.thesolin.ru/" class="footer_dt_links">Beta branch</a></dt>
                             <dt><a href="https://github.com/SolinCode/Solin-Website" class="footer_dt_links">Github page</a></dt>
                         </dl>
 
                         <dl class="footer_dl">
                             <dt><a class="footer_dt_label cursor_default">Libraries</a></dt>
                             <dt><a href="https://swiperjs.com/" class="footer_dt_links">Swiper</a></dt>
-                            <dt><a href="https://www.emailjs.com/" class="footer_dt_links">EmailJS</a></dt>
                         </dl>
                     </div>
 
@@ -346,5 +310,6 @@
             </div>
         </div>
     </footer>
+    <script src="assets/js/switchTheme.js"></script>
 </body>
 </html>
