@@ -45,3 +45,11 @@
 .swiper-slide {
 	background: none;
 }
+
+.swiper-button-next.swiper-button-disabled,
+.swiper-button-prev.swiper-button-disabled {
+	opacity: 0;
+	cursor: auto;
+	pointer-events: none;
+	transition: .2s;
+}

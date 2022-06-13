@@ -109,6 +109,20 @@
             <div class="projects_container cursor_grab">
                 <div class="swiper mySwiper">
                     <div class="swiper-wrapper">
+
+                        <div class="swiper-slide">
+                            <article id="article-Katana-Pack" class="projects_preview_container">
+                                <div class="projects_image_container">
+                                    <a href="https://www.curseforge.com/minecraft/customization/katana-models"><img class="projects_preview_image" src="src/projects/others/katana_pack_preview.jpg" alt="Katana Pack"></a>
+                                </div>
+
+                                <div class="projects_description_container">
+                                    <h4 class="projects_preview_label">Katana's Pack</h4>
+                                    <h5 class="projects_preview_description">Resource pack that adds 5 models of different katana.</h5>
+                                    <a class="projects_preview_link" href="https://www.curseforge.com/minecraft/customization/katana-models">Learn more...</a>
+                                </div>
+                            </article>
+                        </div>
                         <div class="swiper-slide">
                             <article id="article-Solin-Battleship" class="projects_preview_container">
                                 <div class="projects_image_container">
@@ -135,19 +149,6 @@
                                 </div>
                             </article>
                         </div>
-                        <div class="swiper-slide">
-                            <article id="article-Katana-Pack" class="projects_preview_container">
-                                <div class="projects_image_container">
-                                    <a href="https://www.curseforge.com/minecraft/customization/katana-models"><img class="projects_preview_image" src="src/projects/others/katana_pack_preview.jpg" alt="Katana Pack"></a>
-                                </div>
-
-                                <div class="projects_description_container">
-                                    <h4 class="projects_preview_label">Katana's Pack</h4>
-                                    <h5 class="projects_preview_description">Resource pack that adds 5 models of different katana.</h5>
-                                    <a class="projects_preview_link" href="https://www.curseforge.com/minecraft/customization/katana-models">Learn more...</a>
-                                </div>
-                            </article>
-                        </div>
                     </div>
 
                     <div class="swiper-button-next">
@@ -168,6 +169,7 @@
 
                 <script>
                     var swiper = new Swiper(".mySwiper", {
+                        initialSlide: 1,
                         navigation: {
                             nextEl: ".swiper-button-next",
                             prevEl: ".swiper-button-prev",
