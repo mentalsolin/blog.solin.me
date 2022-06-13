@@ -21,7 +21,7 @@
 }
 
 html {
-    cursor: url('../../src/cursor/cursor_normal.cur'), default;
+    cursor: url('https://cdn.solin.website/src/cursor/cursor_normal.cur'), default;
 }
 
 body {
@@ -74,19 +74,19 @@ h5 {
 
 
 a {
-    cursor: url('../../src/cursor/cursor_link.cur'), pointer;
+    cursor: url('https://cdn.solin.website/src/cursor/cursor_link.cur'), pointer;
 }
 
 .cursor_default {
-    cursor: url('../../src/cursor/cursor_normal.cur'), default;
+    cursor: url('https://cdn.solin.website/src/cursor/cursor_normal.cur'), default;
 }
 
 .cursor_pointer {
-    cursor: url('../../src/cursor/cursor_link.cur'), pointer;
+    cursor: url('https://cdn.solin.website/src/cursor/cursor_link.cur'), pointer;
 }
 
 .cursor_grab {
-    cursor: url('../../src/cursor/cursor_grab.cur'), grab;
+    cursor: url('https://cdn.solin.website/src/cursor/cursor_grab.cur'), grab;
 }
 
 

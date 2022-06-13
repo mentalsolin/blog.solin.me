@@ -56,10 +56,10 @@
 
 .swiper-button-next {
 	transition: .2s;
-	cursor: url('../../src/cursor/cursor_link.cur'), pointer;
+	cursor: url('https://cdn.solin.website/src/cursor/cursor_link.cur'), pointer;
 }
 
 .swiper-button-prev {
 	transition: .2s;
-	cursor: url('../../src/cursor/cursor_link.cur'), pointer;
+	cursor: url('https://cdn.solin.website/src/cursor/cursor_link.cur'), pointer;
 }
