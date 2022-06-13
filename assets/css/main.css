@@ -8,6 +8,10 @@
     --blue-color: #0B84FF;
     --black-color: #000;
     --white-color: #fff;
+
+    --default-cursor: url('https://cdn.solin.website/src/cursor/cursor_default.cur'), default;
+    --pointer-cursor: url('https://cdn.solin.website/src/cursor/cursor_pointer.cur'), pointer;
+    --grab-cursor: url('https://cdn.solin.website/src/cursor/cursor_grab.cur'), grab;
 }
 
 .dark {
@@ -21,7 +25,7 @@
 }
 
 html {
-    cursor: url('https://cdn.solin.website/src/cursor/cursor_normal.cur'), default;
+    cursor: var(--default-cursor);
 }
 
 body {
@@ -74,19 +78,19 @@ h5 {
 
 
 a {
-    cursor: url('https://cdn.solin.website/src/cursor/cursor_link.cur'), pointer;
+    cursor: var(--pointer-cursor);
 }
 
 .cursor_default {
-    cursor: url('https://cdn.solin.website/src/cursor/cursor_normal.cur'), default;
+    cursor: var(--default-cursor);
 }
 
 .cursor_pointer {
-    cursor: url('https://cdn.solin.website/src/cursor/cursor_link.cur'), pointer;
+    cursor: var(--pointer-cursor);
 }
 
 .cursor_grab {
-    cursor: url('https://cdn.solin.website/src/cursor/cursor_grab.cur'), grab;
+    cursor: var(--grab-cursor);
 }
 
 
@@ -176,108 +180,6 @@ a {
 .donate_bar_label {
     text-decoration: none;
     color: var(--main-text-color);
-}
-
-/* Contact */
-
-.contact_form {
-    position: relative;
-
-    width: 650px;
-    height: 468px;
-
-    max-width: 100%;
-    max-height: 100%;
-
-    margin-top: 25px;
-    box-shadow: var(--shadow-color) 0 3px 6px;
-    border-radius: 50px;
-}
-
-.contact_form_title_container {
-    display: flex;
-    justify-content: center;
-}
-
-.contact_form_title {
-    position: absolute;
-    top: 45px;
-}
-
-.contact_form_inputs_container {
-    display: flex;
-    justify-content: center;
-}
-
-.contact_form_inputs {
-    position: absolute;
-    bottom: 35px;
-
-    padding: 0 35px;
-    display: flex;
-    justify-content: center;
-
-    flex-wrap: wrap;
-
-    width: 100%;
-    height: 310px;
-}
-
-.contact_form_input {
-    font-family: 'Montserrat', arial, sans-serif;
-    font-size: 20px;
-    font-weight: 500;
-    color: var(--second-text-color);
-
-    padding-left: 20px;
-    border-style: none;
-
-    border-radius: 15px;
-    background-color: var(--bar-color);
-
-    max-height: 100%;
-    max-width: 100%;
-}
-
-.contact_form_input_container {
-    width: 100%;
-
-    display: flex;
-    justify-content: space-between;
-}
-
-.contact_form_input_small {
-    margin-bottom: 15px;
-    width: 100%;
-    height: 48px;
-}
-
-.contact_form_input_message {
-    width: 100%;
-    height: 184px;
-    padding: 20px;
-    margin-right: 15px;
-    resize: none;
-    border-radius: 15px 15px 15px 30px;
-}
-
-.contact_form_input_submit {
-    width: 100px;
-    height: 184px;
-    transition: .2s;
-    border-radius: 15px 15px 30px 15px;
-    
-    background-color: var(--black-color);
-    background-image: url(../src/static/icons/send_icon.svg);
-    background-repeat: no-repeat;
-    background-size: 60%;
-    background-position: 50%;
-}
-
-.contact_form_input_submit:hover {
-
-    background-color:var(--blue-color);
-    color: var(--main-color);
 }
 
 /* Projects page Container */
