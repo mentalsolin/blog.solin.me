@@ -38,6 +38,7 @@
 
     .header_logo {
         height: 150px;
+        width: 150px;
     }
 
     .header_nav {
@@ -169,6 +170,7 @@
 
     .header_logo {
         height: 120px;
+        width: 120px;
     }
 
     .header_nav {

@@ -1,3 +1,9 @@
+:root {
+	--grab-cursor: url('https://cdn.solin.website/src/cursor/cursor_grab.cur'), grab;
+    --pointer-cursor: url('https://cdn.solin.website/src/cursor/cursor_pointer.cur'), pointer;
+    --default-cursor: url('https://cdn.solin.website/src/cursor/cursor_default.cur'), default;
+}
+
 .swiper-button-prev,
 .swiper-rtl .swiper-button-next {
 	right: auto
@@ -56,10 +62,10 @@
 
 .swiper-button-next {
 	transition: .2s;
-	cursor: url('https://cdn.solin.website/src/cursor/cursor_link.cur'), pointer;
+	cursor: var(--pointer-cursor);
 }
 
 .swiper-button-prev {
 	transition: .2s;
-	cursor: url('https://cdn.solin.website/src/cursor/cursor_link.cur'), pointer;
+	cursor: var(--pointer-cursor);
 }

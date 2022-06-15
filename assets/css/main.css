@@ -8,6 +8,10 @@
     --blue-color: #0B84FF;
     --black-color: #000;
     --white-color: #fff;
+
+    --grab-cursor: url('https://cdn.solin.website/src/cursor/cursor_grab.cur'), grab;
+    --pointer-cursor: url('https://cdn.solin.website/src/cursor/cursor_pointer.cur'), pointer;
+    --default-cursor: url('https://cdn.solin.website/src/cursor/cursor_default.cur'), default;
 }
 
 .dark {
@@ -20,11 +24,8 @@
     --blue-color: #0B84FF;
 }
 
-html {
-    cursor: url('https://cdn.solin.website/src/cursor/cursor_normal.cur'), default;
-}
-
 body {
+    cursor: var(--default-cursor);
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -74,19 +75,19 @@ h5 {
 
 
 a {
-    cursor: url('https://cdn.solin.website/src/cursor/cursor_link.cur'), pointer;
+    cursor: var(--pointer-cursor);
 }
 
 .cursor_default {
-    cursor: url('https://cdn.solin.website/src/cursor/cursor_normal.cur'), default;
+    cursor: var(--default-cursor);
 }
 
 .cursor_pointer {
-    cursor: url('https://cdn.solin.website/src/cursor/cursor_link.cur'), pointer;
+    cursor: var(--pointer-cursor);
 }
 
 .cursor_grab {
-    cursor: url('https://cdn.solin.website/src/cursor/cursor_grab.cur'), grab;
+    cursor: var(--grab-cursor);
 }
 
 
@@ -323,11 +324,13 @@ a {
 
 .header_logo {
     height: 200px;
+    width: 200px;
 }
 
 .logo {
     fill: var(--main-text-color);
     height: 100%;
+    width: 100%;
 }
 
 /* Header container */
@@ -529,7 +532,6 @@ font-weight: 500;
 
 
 .projects_preview_image {
-    box-shadow: var(--shadow-color) 0 3px 6px;
     border-radius: 50px; 
 
     height: 320px;
@@ -574,80 +576,6 @@ font-weight: 500;
 
 .projects_mobile_back_button {
     display: none;
-}
-
-/* Portfolio */
-
-.portfolio_container {
-    width: 1050px;
-    max-width: 100%;
-
-    margin: 420px auto;
-}
-
-.portfolio_label {
-    text-align: center;
-}
-
-/* Portfolio cards */
-
-.portfolio_cards {
-    display: flex;
-    justify-content: space-around;
-
-    flex-wrap: wrap;
-    text-align: center;
-    margin-top: 120px;
-}
-
-.portfolio_cards_link {
-    text-decoration: none;
-}
-
-.portfolio_card {
-    width: 300px;
-    height: 420px;
-
-    margin: 0 35px 35px 35px;
-
-    border-radius: 50px;
-    box-shadow: var(--shadow-color) 0 3px 6px;
-}
-
-.portfolio_card_label {
-    padding-top: 30px;
-
-    text-decoration: none;
-    color: var(--main-text-color);
-}
-
-.portfolio_card_image_container {
-    display: flex;
-    justify-content: center;
-
-    margin-top: 62px;
-
-    border-radius: 50px;
-}
-
-.portfolio_card_image {
-    border-radius: 25px;
-
-    height: 138px;
-}
-
-.portfolio_card_description_up {
-    margin-top: 50px;
-
-    font-weight: 500;
-
-    color: var(--second-color);
-}
-
-.portfolio_card_description_down {
-    font-weight: 500;
-
-    color: var(--second-color);
 }
 
 /* Social */
