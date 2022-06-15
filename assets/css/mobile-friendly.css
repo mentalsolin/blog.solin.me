@@ -43,6 +43,7 @@
     .header_nav {
         display: flex;
         justify-content: flex-end;
+        margin-top: -20px;
     }
 
     /* Projects */
@@ -168,6 +169,10 @@
 
     .header_logo {
         height: 120px;
+    }
+
+    .header_nav {
+        margin-top: -7px;
     }
 
     .header_nav_links {
@@ -344,6 +349,7 @@
     .header_nav {
         flex-wrap: wrap;
         width: 200px;
+        margin-top: -22px;
     }
 
     .main_arrow_down_animation {
@@ -558,6 +564,16 @@
     .donate_bar {
        margin: 0 20px;
     }
+}
+
+@media (max-width: 360px) {
+    .header_nav {
+        width: 150px;
+    }
+
+    .logo {
+        margin-top: 38px;
+      }
 }
 
 @media (max-height: 800px) {
