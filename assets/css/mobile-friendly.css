@@ -131,10 +131,18 @@
     .footer_dl {
         margin: 0;
         padding-right: 25px;
-      }
+    }
 }
 
 @media (max-width: 950px) {
+    
+    .logo_wide {
+        display: none;
+    }
+    
+    .logo_small {
+        display: block;
+    }
 
     h1 {
         font-size: 52px;
@@ -169,8 +177,8 @@
     /* Main */
 
     .header_logo {
-        height: 120px;
-        width: 120px;
+        height: 80px;
+        width: 80px;
     }
 
     .header_nav {
@@ -437,7 +445,7 @@
     }
 }
 
-@media (max-width: 533px) {
+@media (max-width: 300px) {
     .social_bar_container {
         width: 335px;
     }

@@ -90,6 +90,9 @@ a {
     cursor: var(--grab-cursor);
 }
 
+.logo_small {
+    display: none;
+}
 
 /* Settings */
 
