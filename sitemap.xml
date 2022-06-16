@@ -4,28 +4,19 @@
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-
-
 <url>
-  <loc>https://www.solin.website/home</loc>
-  <lastmod>2022-06-13T05:03:16+00:00</lastmod>
+  <loc>https://solin.website/home</loc>
+  <lastmod>2022-06-15T05:03:16+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://www.solin.website/projects</loc>
-  <lastmod>2022-06-13T05:03:03+00:00</lastmod>
+  <loc>https://solin.website/projects</loc>
+  <lastmod>2022-06-15T05:03:03+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.solin.website/donate</loc>
-  <lastmod>2022-06-13T05:02:49+00:00</lastmod>
+  <loc>https://solin.website/donate</loc>
+  <lastmod>2022-06-15T05:02:49+00:00</lastmod>
   <priority>0.80</priority>
 </url>
-<url>
-  <loc>https://www.solin.website/settings</loc>
-  <lastmod>2022-06-13T05:02:36+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-
-
 </urlset>
