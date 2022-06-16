@@ -651,11 +651,8 @@ font-weight: 500;
     flex-wrap: wrap;
 }
 
-.social_icon_style {
-    padding-left: 12px;
-}
-
 .social_icon {
+    padding-left: 12px;
     height: 60px;
 }
 

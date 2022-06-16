@@ -411,6 +411,12 @@
 
     .social_bar {
         width: 84px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .social_icon {
+        padding: 0;
     }
 
     .social_bars {
