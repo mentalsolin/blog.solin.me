@@ -576,6 +576,16 @@
     }
 }
 
+@media (max-width: 463px) {
+    .social_bar_container {
+        width: 320px;
+    }
+    
+    .settings_modal_window {
+        width: 300px;
+    }
+}
+
 @media (max-height: 800px) {
     .footer_copyright_max800 {
         display: none;

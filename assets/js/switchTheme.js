@@ -50,6 +50,10 @@ function themeSelectorFunc() {
 }
 
 
-function openSettings() {
-    console.log('Open');
+function settingsOpen() {
+    document.getElementById('settingsModal').classList.remove('settings_hide')
+}
+
+function settingsClose() {
+    document.getElementById('settingsModal').classList.add('settings_hide')
 }

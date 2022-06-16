@@ -49,11 +49,6 @@
                 </nav>
             </div>
         </header>
-        <style>
-            .beta {
-                text-decoration: none;
-            }
-        </style>
         <div class="main_hello_container">
             <div class="main_hello_text">        
                 <div>
@@ -234,10 +229,23 @@
             </div>
         </div>
     </div>
-    <!-- <div class="settings_modal">
+    <div id="settingsModal" class="settings_modal settings_hide">
         <div class="settings_modal_window">
+            <div onclick="settingsClose()" class="settings_close">
+                <svg class="settings_close_icon" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 48 48"><path d="M12.45 37.65 10.35 35.55 21.9 24 10.35 12.45 12.45 10.35 24 21.9 35.55 10.35 37.65 12.45 26.1 24 37.65 35.55 35.55 37.65 24 26.1Z"/></svg>
+            </div>
+            <span class="settings_title">Change theme</span>
+            <form class="settings_form">
+                <select class="settings_select_list settings_select cursor_pointer" id="themeSelector">
+                    <option disabled selected class="cursor_pointer" value="deviceTheme">Choose theme</option>
+                    <option class="cursor_pointer" value="deviceTheme">Device theme</option>
+                    <option class="cursor_pointer" value="darkTheme">Dark</option>
+                    <option class="cursor_pointer" value="lightTheme">Light</option>
+                </select>
+                <button class="settings_select_list cursor_pointer" type="button" onclick="themeSelectorFunc()">Change</button>
+            </form>
         </div>
-    </div> -->
+    </div>
     <footer class="footer_container">
         <div class="footer_body">
             <div class="footer_content_container">
@@ -248,7 +256,6 @@
                             <dt><a href="home.html" class="footer_dt_links">Home</a></dt>
                             <dt><a href="donate.html" class="footer_dt_links">Donate</a></dt>
                             <dt><a href="projects.html" class="footer_dt_links">Projects</a></dt>
-                            <dt><a href="settings.html" class="footer_dt_links">Settings</a></dt>
                         </dl>
 
                         <dl class="footer_dl">
@@ -277,7 +284,7 @@
                         </div>
                     </div>
                 </div>
-                <div onclick="openSettings()" class="footer_settings">
+                <div onclick="settingsOpen()" class="footer_settings">
                     <svg class="footer_settings_icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                         viewBox="0 0 48 48" style="enable-background:new 0 0 48 48;" xml:space="preserve">
                     <path d="M18.5,48l-1.2-7.6c-0.8-0.3-1.6-0.7-2.4-1.1c-0.8-0.5-1.6-1-2.2-1.5L5.6,41L0,31.2l6.5-4.7c-0.1-0.4-0.1-0.8-0.2-1.2

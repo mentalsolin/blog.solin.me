@@ -10,6 +10,7 @@
     --white-color: #fff;
     --donate-address-color: #5c5c5c;
     --donate-bar-color: #f0f0f0;
+    --settings-color: #fff;
 
     --grab-cursor: url('https://cdn.solin.website/src/cursor/cursor_grab.cur'), grab;
     --pointer-cursor: url('https://cdn.solin.website/src/cursor/cursor_pointer.cur'), pointer;
@@ -26,6 +27,7 @@
     --blue-color: #0B84FF;
     --donate-address-color: #9d9c9c;
     --donate-bar-color: #1a1a1a;
+    --settings-color: #151515;
 }
 
 body {
@@ -80,6 +82,7 @@ h5 {
 
 a {
     cursor: var(--pointer-cursor);
+    text-decoration: none;
 }
 
 .cursor_default {
@@ -822,7 +825,7 @@ font-weight: 500;
     justify-content: center;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.192);
-    position: absolute;
+    position: fixed;
     top: 0;
     z-index: 100;
 }
@@ -831,14 +834,41 @@ font-weight: 500;
     width: 380px;
     height: 250px;
     border-radius: 25px;
-    background-color: white;
+    background-color: var(--settings-color);
     z-index: 120;
-    box-shadow: var(--shadow-color) 0 8px 12px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
 
+.settings_select {
+    background-color: var(--donate-bar-color);
+    color: var(--main-text-color);
+}
 
+.settings_title {
+    font-size: 35px;
+    font-weight: 600;
+    color: var(--main-text-color);
+}
 
+.settings_close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: var(--pointer-cursor);
+}
 
+.settings_close_icon {
+    height: 28px;
+    fill: var(--main-text-color);
+}
+
+.settings_hide {
+    display: none;
+}
 
 .footer_logo {
     height: 19px;
