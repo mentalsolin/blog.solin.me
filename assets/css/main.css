@@ -12,9 +12,9 @@
     --donate-bar-color: #f0f0f0;
     --settings-color: #fff;
 
-    --grab-cursor: url('https://cdn.solin.website/src/cursor/cursor_grab.cur'), grab;
-    --pointer-cursor: url('https://cdn.solin.website/src/cursor/cursor_pointer.cur'), pointer;
-    --default-cursor: url('https://cdn.solin.website/src/cursor/cursor_default.cur'), default;
+    --grab-cursor: url('../../src/cursor/cursor_grab.cur'), grab;
+    --pointer-cursor: url('../../src/cursor/cursor_pointer.cur'), pointer;
+    --default-cursor: url('../../src/cursor/cursor_default.cur'), default;
 }
 
 .dark {
