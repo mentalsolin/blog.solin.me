@@ -37,14 +37,13 @@
     /* Main */
 
     .header_logo {
-        height: 150px;
+        height: 120px;
         width: 150px;
     }
 
     .header_nav {
         display: flex;
         justify-content: flex-end;
-        margin-top: -20px;
     }
 
     /* Projects */
@@ -179,10 +178,6 @@
     .header_logo {
         height: 80px;
         width: 80px;
-    }
-
-    .header_nav {
-        margin-top: -7px;
     }
 
     .header_nav_links {
@@ -359,7 +354,6 @@
     .header_nav {
         flex-wrap: wrap;
         width: 200px;
-        margin-top: -22px;
     }
 
     .main_arrow_down_animation {
@@ -580,10 +574,6 @@
     .header_nav {
         width: 150px;
     }
-
-    .logo {
-        margin-top: 38px;
-      }
 }
 
 @media (max-height: 800px) {

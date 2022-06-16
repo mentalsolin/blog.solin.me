@@ -48,3 +48,8 @@ function themeSelectorFunc() {
         localStorage.setItem('firstTheme', 'light')
     }
 }
+
+
+function openSettings() {
+    console.log('Open');
+}
