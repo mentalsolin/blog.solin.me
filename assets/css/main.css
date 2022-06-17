@@ -345,6 +345,9 @@ a {
     justify-content: space-between;
 }
 
+.header_nav {
+    display: flex;
+}
 
 .header_nav_links {
     font-weight: 500;
@@ -356,10 +359,14 @@ a {
 
     padding: 15px;
     transition: 0.18s;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
 }
 
 .header_nav_links:hover {
     color: var(--blue-color);
+    transform: translate(0, -4px);
 }
 
 /* Main container */
