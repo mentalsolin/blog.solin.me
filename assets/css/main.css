@@ -18,12 +18,9 @@
 
 .dark {
     --main-color: #202020;
+    --second-strong-color: #c5c5c5;
     --text-color: #fff;
-
     --bar-color: #2b2b2b;
-
-    --blue-color: #0B84FF;
-    --black-color: #000;
 }
 
 body {
@@ -358,7 +355,7 @@ a {
     color: var(--text-color);
 
     padding: 15px;
-    transition: 0.18s;
+    transition: 0.1s;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
@@ -366,6 +363,9 @@ a {
 
 .header_nav_links:hover {
     color: var(--blue-color);
+}
+
+.header_nav_links:active {
     transform: translate(0, -4px);
 }
 
@@ -641,10 +641,10 @@ font-weight: 500;
 }
 
 .social_icon {
-    padding-left: 12px;
-    height: 60px;
+    padding-left: 11px;
+    height: 62px;
     width: 76px;
-}
+  }
 
 /* Footer */
 
@@ -790,7 +790,6 @@ font-weight: 500;
     right: 15px;
     bottom: -10px;
     padding: 15px;
-    cursor: var(--pointer-cursor);
     width: 60px;
     height: 60px;
 }
@@ -800,7 +799,6 @@ font-weight: 500;
     right: 15px;
     bottom: 15px;
     padding: 15px;
-    cursor: var(--pointer-cursor);
     width: 60px;
     height: 60px;
 }
