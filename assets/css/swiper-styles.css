@@ -69,3 +69,12 @@
 	transition: .2s;
 	cursor: var(--pointer-cursor);
 }
+
+.projects_arrow {
+	transition: .2s;
+	cursor: pointer;
+}
+
+.projects_arrow:hover {
+	transform: scale(1.1);
+}

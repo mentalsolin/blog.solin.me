@@ -29,7 +29,7 @@ function themeDetect() {
 }
 
 function themeSelectorFunc() {
-    let selectIndex = themeSelector.selectedIndex
+    let selectIndex = selectTheme.selectedIndex
     
     if (selectIndex === 1) {
         localStorage.setItem('dynamicTheme', 'true')
@@ -47,13 +47,4 @@ function themeSelectorFunc() {
         localStorage.removeItem('dynamicTheme', 'true')
         localStorage.setItem('firstTheme', 'light')
     }
-}
-
-
-function settingsOpen() {
-    document.getElementById('settingsModal').classList.remove('settings_hide')
-}
-
-function settingsClose() {
-    document.getElementById('settingsModal').classList.add('settings_hide')
 }
