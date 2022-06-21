@@ -96,7 +96,7 @@ const modalQrMonero = $.modal({
     title: 'Monero',
     closable: true,
     content: `
-    <img class="modal-img" src="src/img/crypto/crypto-monero.png" alt="monero-address">
+    <img class="modal-img" src="src/img/payments/crypto/crypto-monero.png" alt="monero-address">
     `,
     with: `380px`
 })
@@ -105,7 +105,17 @@ const modalQrBitcoin = $.modal({
     title: 'Bitcoin',
     closable: true,
     content: `
-    <img class="modal-img" src="src/img/crypto/crypto-bitcoin.png" alt="btc-address">
+    <img class="modal-img" src="src/img/payments/crypto/crypto-bitcoin.png" alt="btc-address">
+    `,
+    with: `380px`,
+})
+
+
+const modalQrDA = $.modal({
+    title: 'Donation Alerts',
+    closable: true,
+    content: `
+    <img class="modal-img" src="src/img/payments/others/others-donation-alerts.png" alt="dl-qr">
     `,
     with: `380px`,
 })

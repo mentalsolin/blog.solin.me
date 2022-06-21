@@ -140,7 +140,7 @@ span, a, p {
     font-weight: 500;
     font-style: italic;
     padding: 15px;
-    transition: color .1s;
+    transition: .1s;
 }
 
 .nav-link:hover {
@@ -500,6 +500,10 @@ span, a, p {
     border-radius: 20px;
 }
 
+.donate-page-bar-small {
+    width: 320px;
+}
+
 .donate-page-bar-center {
     display: flex;
     align-items: center;
@@ -518,8 +522,9 @@ span, a, p {
 
 .donate-bars-container {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     flex-wrap: wrap;
+    margin-top: 20px;
 }
 
 .donate-page-address {
@@ -538,6 +543,16 @@ span, a, p {
     font-variation-settings:
     'FILL' 1
 }
+
+.danate-page-payments-title {
+    font-size: 25px;
+    margin-bottom: 10px;
+    user-select: none;
+    text-align: left;
+    width: 100%;
+    margin-left: 30px;
+}
+
 
 
     /* Modal Window */
@@ -625,6 +640,7 @@ span, a, p {
     margin: 20px 0;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .modal-img {

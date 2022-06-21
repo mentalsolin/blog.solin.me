@@ -379,6 +379,25 @@
     .donate-page-coin {
         font-size: 25px;
     }
+
+    .donate-bars-container {
+        justify-content: center;
+    }
+
+    .danate-page-payments-title {
+        text-align: center;
+        margin-left: 0;
+        font-size: 22px;
+    }
+
+    .donate-page-coin {
+        font-size: 20px;
+    }
+
+    .donate-page-bar {
+        width: 220px;
+    }
+
 }
 
     /* Pixel 2 - 731 ( Horizontal ) */
