@@ -129,7 +129,7 @@
 
     .projects-swiper {
         width: 100%;
-        height: 550px;
+        height: 560px;
         cursor: grab;
         padding: 0;
     }
@@ -145,6 +145,9 @@
     .article-content {
         margin: 0;
         width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
     }
 
     .article-img {
@@ -154,10 +157,13 @@
 
     .article-title {
         text-align: center;
+        width: 100%;
     }
 
     .article-desc {
         text-align: center;
+        width: 450px;
+        height: 52px;
     }
 
         /* projects-swiper */

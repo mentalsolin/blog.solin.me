@@ -1,8 +1,4 @@
 :root {
-    --grab-cursor: url('../../src/cursor/cursor_grab.cur'), grab;
-    --pointer-cursor: url('../../src/cursor/cursor_pointer.cur'), pointer;
-    --default-cursor: url('../../src/cursor/cursor_default.cur'), default;
-
     --main-color: #fff;
     --second-color: #c5c5c5;
     --second-strong-color: #808080;
@@ -11,7 +7,7 @@
 
     --bar-color: #f0f0f0;
 
-    --blue-color: #0B84FF;
+    --accent-color: #0B84FF;
     --black-color: #000;
     --white-color: #fff;
 }
@@ -144,7 +140,7 @@ span, a, p {
 }
 
 .nav-link:hover {
-    color: var(--blue-color);
+    color: var(--accent-color);
 }
 
 .nav-link:active {
@@ -255,12 +251,16 @@ span, a, p {
     font-size: 25px;
     font-weight: 400;
     margin-top: 10px;
+    font-size: 20px;
+    max-height: 196px;
+    overflow: hidden;
+    text-overflow: unset;
 }
 
 .article-more {
     font-size: 20px;
     font-weight: 500;
-    color: var(--blue-color);
+    color: var(--accent-color);
     position: absolute;
     bottom: 0;
     right: 0;
