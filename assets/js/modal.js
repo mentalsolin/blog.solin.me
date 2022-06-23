@@ -1,5 +1,3 @@
-const $ = {}
-
 function _createModal(options) {
     const DEFAULT_WIDTH = '380px'
     const modal = document.createElement('div')
@@ -9,13 +7,10 @@ function _createModal(options) {
             <div class="modal-window" style="width: ${options.width || DEFAULT_WIDTH}">
                 <div class="modal-title-container">
                     <span class="modal-title">${options.title || 'Modal'}</span>
-                    ${options.closable ? `<span class="modal-close material-symbols-outlined" data-close="true"</span>` : ''}
+                    ${options.closable ? `<span class="modal-close material-symbols-outlined" data-close="true">close</span>` : ''}
                 </div>
                 <div class="modal-content" data-content>
                     ${options.content || ''}
-                </div>
-                <div class="modal-footer">
-                    ${options.footer || ''}
                 </div>
             </div>
         </div>
@@ -69,27 +64,29 @@ $.modal = function(options) {
 }
 
 const modal = $.modal({
-    title: 'Change theme',
+    title: 'Settings',
     closable: true,
     content: `
-    <form>
+    <form class="modal-settings-form">
+        <span class="modal-settings-subtitle">Select theme</span>
         <select class="modal-settings-select" name="change-theme" id="selectTheme">
             <option disabled>Select theme</option>
-            <option value="1">On device</option>
-            <option value="2">Dark theme</option>
-            <option value="3">Light theme</option>
+            <option value="1">Light</option>
+            <option value="2">Dark</option>
+            <option value="3">On device</option>
         </select>
+        <button onclick="themeSelectorFunc()" class="modal-settings-select" type="button">Save</button>
     </form>
-    `,
-    footer: `
-    <div class="modal-okay">
-        <button onclick="themeSelectorFunc()" class="modal-btn" data-close="true" type="button">Okay</button>
-    </div>
-    <div class="modal-cencel">
-        <button class="modal-btn" type="button" data-close="true">Сancel</button>
-    </div>
-    `,
-    with: `380px`,
+    `
+    // <form class="modal-settings-form">
+    //     <span class="modal-settings-subtitle">Languague</span>
+    //     <select class="modal-settings-select" name="change-lang" id="selectLang">
+    //         <option disabled>Select languague</option>
+    //         <option value="1">English</option>
+    //         <option value="2">Russian</option>
+    //     </select>
+    //     <button onclick="saveLangButton()" class="modal-settings-select" type="button">Save</button>
+    // </form>
 })
 
 const modalQrMonero = $.modal({
@@ -98,7 +95,7 @@ const modalQrMonero = $.modal({
     content: `
     <img class="modal-img" src="src/img/payments/crypto/crypto-monero.png" alt="monero-address">
     `,
-    with: `380px`
+    width: `330px`
 })
 
 const modalQrBitcoin = $.modal({
@@ -107,7 +104,7 @@ const modalQrBitcoin = $.modal({
     content: `
     <img class="modal-img" src="src/img/payments/crypto/crypto-bitcoin.png" alt="btc-address">
     `,
-    with: `380px`,
+    width: `330px`
 })
 
 
@@ -117,5 +114,5 @@ const modalQrDA = $.modal({
     content: `
     <img class="modal-img" src="src/img/payments/others/others-donation-alerts.png" alt="dl-qr">
     `,
-    with: `380px`,
+    width: `330px`
 })

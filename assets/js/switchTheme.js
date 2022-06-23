@@ -32,19 +32,19 @@ function themeSelectorFunc() {
     let selectIndex = selectTheme.selectedIndex
     
     if (selectIndex === 1) {
-        localStorage.setItem('dynamicTheme', 'true')
-        localStorage.setItem('firstTheme', 'device')
+        document.body.classList.remove('dark')
+        localStorage.removeItem('dynamicTheme', 'true')
+        localStorage.setItem('firstTheme', 'light')
     }
-
+    
     if (selectIndex === 2) {
         document.body.classList.add('dark')
         localStorage.removeItem('dynamicTheme', 'true')
         localStorage.setItem('firstTheme', 'dark')
     }
-
+    
     if (selectIndex === 3) {
-        document.body.classList.remove('dark')
-        localStorage.removeItem('dynamicTheme', 'true')
-        localStorage.setItem('firstTheme', 'light')
+        localStorage.setItem('dynamicTheme', 'true')
+        localStorage.setItem('firstTheme', 'device')
     }
 }

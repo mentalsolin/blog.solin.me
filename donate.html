@@ -46,7 +46,7 @@
                         <a class="donate-page-coin" href="src/files/payments-solin4035.txt">Monero</a>
                         <div class="donate-page-bar-center">
                             <span class="donate-page-address">8AdrcJgoMux2pKMapcd2ACJJ5bKFdx5trMRMiFt8Ph8rDH4dZVMZZr9iXJRV95gdbH1eBQNwppkMq6Uhz8KjRFEV1VBT5F2</span>
-                            <span id="donate-monero" onclick="copyMonero()" class="donate-page-icons material-symbols-outlined">content_copy</span>
+                            <span onclick="copyMonero()" class="donate-monero donate-page-icons material-symbols-outlined">content_copy</span>
                             <span onclick="modalQrMonero.open()" class="donate-page-icons donate-QR material-symbols-outlined">qr_code</span>
                         </div>
                     </div>
@@ -54,7 +54,7 @@
                         <a class="donate-page-coin" href="src/files/payments-solin4035.txt">Bitcoin</a>
                         <div class="donate-page-bar-center">
                             <span class="donate-page-address">1BDbKDhf199NjDv23khdcKzbNNYEyzgK9</span>
-                            <span id="donate-bitcoin" onclick="copyBitcoin()" class="donate-page-icons material-symbols-outlined">content_copy</span>
+                            <span onclick="copyBitcoin()" class="donate-bitcoin donate-page-icons material-symbols-outlined">content_copy</span>
                             <span onclick="modalQrBitcoin.open()" class="donate-page-icons donate-QR material-symbols-outlined">qr_code</span>
                         </div>
                     </div>
@@ -70,10 +70,10 @@
         </div>
     </main>
     <footer id="footer" class="footer"></footer>
-
     <script src="assets/js/main.js"></script>
-    <script src="assets/js/modal.js"></script>
+    <script src="assets/js/base.js"></script>
     <script src="assets/js/scripts/cryptoCopy.js"></script>
-    <script src="assets/js/scripts/switchTheme.js"></script>
+    <script src="assets/js/modal.js"></script>
+    <script src="assets/js/switchTheme.js"></script>
 </body>
 </html>

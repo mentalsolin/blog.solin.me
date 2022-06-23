@@ -1,9 +1,3 @@
-:root {
-	--grab-cursor: url('../../src/cursor/cursor_grab.cur'), grab;
-    --pointer-cursor: url('../../src/cursor/cursor_pointer.cur'), pointer;
-    --default-cursor: url('../../src/cursor/cursor_default.cur'), default;
-}
-
 .swiper-button-prev,
 .swiper-rtl .swiper-button-next {
 	right: auto

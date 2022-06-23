@@ -1,4 +1,4 @@
-    /* Laptop HiDPI ( Horizontal ) - 1440 */
+/* Laptop HiDPI ( Horizontal ) - 1440 */
 
 @media (max-width: 1440px) {
     
@@ -78,12 +78,18 @@
     }
 
 
-    /* Donate page */
+        /* Donate page */
 
     .donate-page-icons {
         font-size: 30px;
     }
+    
+        /* Modal */
 
+    .modal-close {
+        font-size: 35px;
+        padding: 10px;
+    }
 }
 
     /* iPad - 1080 ( Horizontal ) */
@@ -160,10 +166,31 @@
         width: 100%;
     }
 
-    .article-desc {
+    .article-desc-project {
+        text-align: center;
+        width: 450px;
+        height: 100%;
+        overflow: hidden;
+        display: block;
+        -webkit-line-clamp: 2;
+        display: box;
+        display: -webkit-box;
+        text-overflow: ellipsis;
+        white-space: normal;
+    }
+
+    .article-desc-project-recent {
         text-align: center;
         width: 450px;
         height: 52px;
+        overflow: hidden;
+        display: block;
+        -webkit-line-clamp: 2;
+        display: box;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        text-overflow: ellipsis;
+        white-space: normal;
     }
 
         /* projects-swiper */
@@ -258,7 +285,10 @@
         font-size: 60px;
     }
     
-    
+    .modal-close {
+        font-size: 35px;
+    }
+
         /* Main */
     
     .main-subtitle {
@@ -312,6 +342,7 @@
 
     .article-desc {
         font-size: 18px;
+        height: 45px;
     }
 
     .projects-slogan {
@@ -406,13 +437,6 @@
 
 }
 
-    /* Pixel 2 - 731 ( Horizontal ) */
-
-@media (max-width: 411px) {
-
-
-}
-
 @media (max-height: 411px) {
 
         /* Main */
@@ -440,3 +464,4 @@
     }
 
 }
+

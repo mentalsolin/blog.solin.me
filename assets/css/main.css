@@ -119,6 +119,11 @@ span, a, p {
     width: 200px;
     height: 140px;
     fill: var(--text-color);
+    transition: opacity .2s;
+}
+
+.logo:hover {
+    opacity: 0.9;
 }
 
 .logo-small {
@@ -232,6 +237,11 @@ span, a, p {
 .article-img {
     height: 320px;
     border-radius: 50px;
+    transition: transform .2s;
+}
+
+.article-img:hover {
+    transform: scale(1.02);
 }
 
 .article-content {
@@ -247,7 +257,17 @@ span, a, p {
     font-weight: 600;
 }
 
-.article-desc {
+.article-desc-project {
+    font-size: 25px;
+    font-weight: 400;
+    margin-top: 10px;
+    font-size: 20px;
+    max-height: 196px;
+    overflow: hidden;
+    text-overflow: unset;
+}
+
+.article-desc-project-recent {
     font-size: 25px;
     font-weight: 400;
     margin-top: 10px;
@@ -262,7 +282,7 @@ span, a, p {
     font-weight: 500;
     color: var(--accent-color);
     position: absolute;
-    bottom: 0;
+    bottom: 30px;
     right: 0;
 }
 
@@ -293,7 +313,7 @@ span, a, p {
 
 .social-title {
     width: 100%;
-    margin-bottom: 30px;
+    margin: 30px 0;
 }
 
 .social-bar {
@@ -437,7 +457,7 @@ span, a, p {
 
 .settings {
     position: absolute;
-    bottom: 30px;
+    bottom: 25px;
     right: 0;
     font-size: 40px;
     cursor: pointer;
@@ -445,11 +465,11 @@ span, a, p {
 }
 
 .settings:hover {
-    transform: rotate(-90deg);
+    transform: rotate(-45deg);
 }
 
 .settings:active {
-    transform: rotate(-90deg) scale(1.1);
+    transform: rotate(-45deg) scale(1.1);
 }
 
 .copyright {
@@ -513,6 +533,16 @@ span, a, p {
     font-size: 35px;
     margin-left: 10px;
     cursor: pointer;
+
+    transition: .06s;
+}
+
+.donate-page-icons:active {
+    font-variation-settings:
+    'FILL' 1,
+    'wght' 700,
+    'GRAD' 0,
+    'opsz' 48
 }
 
 .donate-page-coin {
@@ -533,17 +563,6 @@ span, a, p {
     color: var(--second-strong-color);
 }
 
-.donate-monero {
-    transition: 9s;
-    font-variation-settings:
-    'FILL' 1
-}
-
-.donate-bitcoin {
-    font-variation-settings:
-    'FILL' 1
-}
-
 .danate-page-payments-title {
     font-size: 25px;
     margin-bottom: 10px;
@@ -552,7 +571,6 @@ span, a, p {
     width: 100%;
     margin-left: 30px;
 }
-
 
 
     /* Modal Window */
@@ -592,8 +610,8 @@ span, a, p {
 
 .modal-bg {
     position: fixed;
-    top: 0;
-    bottom: 0;
+    top: -30px;
+    bottom: -30px;
     left: 0;
     right: 0;
     background-color: rgba(0, 0, 0, 0);
@@ -637,7 +655,7 @@ span, a, p {
 .modal-content {
     width: 100%;
     padding: 15px;
-    margin: 20px 0;
+    margin-top: 20px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -682,4 +700,17 @@ span, a, p {
     cursor: pointer;
     color: var(--text-color);
     margin-top: 10px;
+}
+
+.modal-settings-subtitle {
+    font-size: 25px;
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+.modal-settings-form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
