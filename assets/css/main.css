@@ -117,7 +117,7 @@ span, a, p {
 
 .logo {
     width: 200px;
-    height: 100px;
+    height: 160px;
     fill: var(--text-color);
     transition: opacity .2s;
 }
@@ -168,7 +168,7 @@ span, a, p {
 
 .main-arrow {
     position: absolute;
-    bottom: 60px;
+    bottom: 30px;
     display: flex;
     justify-content: center;
 }
@@ -313,7 +313,8 @@ span, a, p {
 
 .social-title {
     width: 100%;
-    margin: 30px 0;
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 
 .social-bar {

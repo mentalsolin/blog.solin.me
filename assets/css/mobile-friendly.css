@@ -135,7 +135,7 @@
 
     .projects-swiper {
         width: 100%;
-        height: 560px;
+        height: 485px;
         cursor: grab;
         padding: 0;
     }
@@ -310,6 +310,7 @@
 
     .logo {
         width: 60px;
+        height: 100px;
     }
 
     .logo-wide {
@@ -352,7 +353,7 @@
         /* projects-swiper */
 
     .projects-swiper {
-        height: 430px;
+        height: 360px;
     }
 
     .swiper-button-next {
