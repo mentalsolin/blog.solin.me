@@ -117,7 +117,7 @@ span, a, p {
 
 .logo {
     width: 200px;
-    height: 140px;
+    height: 100px;
     fill: var(--text-color);
     transition: opacity .2s;
 }
