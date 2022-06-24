@@ -119,11 +119,6 @@ span, a, p {
     width: 200px;
     height: 160px;
     fill: var(--text-color);
-    transition: opacity .2s;
-}
-
-.logo:hover {
-    opacity: 0.9;
 }
 
 .logo-small {
