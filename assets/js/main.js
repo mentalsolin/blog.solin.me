@@ -12,9 +12,9 @@ header.innerHTML = `
         </a>
         <div class="nav-links">
             <a class="nav-link" href="https://github.com/SolinCode">Github</a>
+            <a class="nav-link" href="projects.html">Projects</a>
             <a class="nav-link" href="https://twitter.com/Solin4035">Twitter</a>
             <a class="nav-link" href="mailto:thesolincontact@gmail.com">Contact</a>
-            <a class="nav-link" href="donate.html">Donate</a>
         </div>
     </nav>
 </div>
@@ -78,7 +78,11 @@ footer.innerHTML = `
                     <span class="footer-credits-text">Coded by <a class="footer-credits-link" href="https://twitter.com/Solin4035">Solin4035</a></span>
                 </div>
             </div>
-            <span class="copyright">Copyright © Solin4035</span>
+            <div class="copyright-wrapper" style="width: 100%; display: flex; justify-content: center;">
+                <span class="copyright">Copyright © Solin4035</span>
+                <span class="copyright">-</span>
+                <a class="copyright" href="donate.html">Donate</a>
+            </div>
             <span onclick="modal.open()" class="settings material-symbols-outlined">settings</span>
         </div>
     </div>

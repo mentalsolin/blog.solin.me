@@ -21,6 +21,13 @@ $.project = function(options) {
     const $project = _createProject(options)
 }
 
+const project1 = $.project({
+    title: `Solin Website`,
+    desc: `Solin's personal website development, html, css, js`,
+    img: `src/img/projects/web/solin_website_preview.jpg`,
+    link: `https://github.com/SolinCode/Solin-Website`,
+})
+
 const project4 = $.project({
     title: `Solin Battleship`,
     desc: `My first game in С++ programming language. Сonsole battleship.`,
@@ -40,11 +47,4 @@ const project2 = $.project({
     desc: `A resource pack that adds 5 different types of katana, which can be obtained by renaming swords in the anvil.`,
     img: `src/img/projects/others/katana_pack_preview.jpg`,
     link: `https://github.com/SolinCode/Katanas-Pack`,
-})
-
-const project1 = $.project({
-    title: `Solin Website`,
-    desc: `Solin's personal website development, html, css, js`,
-    img: `src/img/projects/web/solin_website_preview.jpg`,
-    link: `https://github.com/SolinCode/Solin-Website`,
 })
