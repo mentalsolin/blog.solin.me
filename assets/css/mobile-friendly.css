@@ -397,6 +397,19 @@
     .settings {
         font-size: 40px;
     }
+
+    .copyright-wrapper {
+        flex-wrap: wrap;
+        height: 50px;
+    }
+
+    .copyright {
+        width: 100%;
+    }
+
+    .dash {
+        display: none;
+    }
     
     
     /* Donate page */

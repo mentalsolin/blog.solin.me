@@ -80,7 +80,7 @@ footer.innerHTML = `
             </div>
             <div class="copyright-wrapper" style="width: 100%; display: flex; justify-content: center;">
                 <span class="copyright">Copyright © Solin4035</span>
-                <span class="copyright">-</span>
+                <span class="copyright dash">-</span>
                 <a class="copyright" href="donate.html">Donate</a>
             </div>
             <span onclick="modal.open()" class="settings material-symbols-outlined">settings</span>
