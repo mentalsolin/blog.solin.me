@@ -13,10 +13,10 @@
 }
 
 .dark {
-    --main-color: #202020;
+    --main-color: #202128;
     --second-strong-color: #c5c5c5;
     --text-color: #fff;
-    --bar-color: #2b2b2b;
+    --bar-color: #1a1a20;
 }
 
 *,
@@ -326,17 +326,43 @@ span, a, p {
 }
 
 .social-bar:hover {
-    transform: scale(1.05);
+    transform: matrix3d();
+}
+
+    /* Social bars */
+
+.twitter:hover {
+    background-color: #1d9bf0;
+}
+
+.vkontakte:hover {
+    background-color: #0077FF;
+}
+
+.youtube:hover {
+    background-color: #ff0000;
+}
+
+.twitch:hover {
+    background-color: #9146ff;
+}
+
+.github:hover {
+    background-color: #1b1f23;
+}
+
+.curseforge:hover {
+    background-color: #f16436;
+}
+
+.twitter:hover {
+    background-color: #1d9bf0;
 }
 
 .social-logo {
     height: 60px;
     padding-left: 10px;
     transition: .15s;
-}
-
-.social-logo:hover {
-    transform: translate(0, -2px);
 }
 
 .social-nickname {
@@ -346,11 +372,6 @@ span, a, p {
     color: var(--alternative-text-color);
     transition: .15s;
 }
-
-.social-nickname:hover {
-    transform: translate(0, -2px);
-}
-
 
     /* Footer */
 
@@ -695,7 +716,7 @@ span, a, p {
 .modal-settings-select {
     background-color: var(--bar-color);
     border: none;
-    padding: 15px 20px;
+    padding: 15px 15px;
     border-radius: 15px;
     font-size: 20px;
     cursor: pointer;

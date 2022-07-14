@@ -1,5 +1,39 @@
+if (localStorage.getItem('lang') === 'rus') {
+    lang = {
+        settingsTitle: 'Настройки',
+        selectTheme: 'Выберите тему',
+        light: 'Светлая',
+        dark: 'Темная',
+
+
+        selectLanguage: 'Выберите язык',
+        eng: 'Английский',
+        rus: 'Русский',
+        
+        device: 'Как на устройстве',
+        save: 'Сохранить',
+    }
+}
+
+else {
+    lang = {
+        settingsTitle: 'Settings',
+        selectTheme: 'Select theme',
+        light: 'Light',
+        dark: 'Dark',
+
+
+        selectLanguage: 'Select language',
+        eng: 'English',
+        rus: 'Russian',
+        
+        device: 'On device',
+        save: 'Save',
+    }
+}
+
 function _createModal(options) {
-    const DEFAULT_WIDTH = '380px'
+    const DEFAULT_WIDTH = '430px'
     const modal = document.createElement('div')
     modal.classList.add('settings-modal')
     modal.insertAdjacentHTML('afterbegin', `
@@ -46,6 +80,8 @@ $.modal = function(options) {
     const listener = event => {
         if (event.target.dataset.close) {
             modal.close()
+            location.reload()
+            location.reload()
         }
     }
 
@@ -64,29 +100,30 @@ $.modal = function(options) {
 }
 
 const modal = $.modal({
-    title: 'Settings',
+    title: lang.settingsTitle,
     closable: true,
     content: `
     <form class="modal-settings-form">
-        <span class="modal-settings-subtitle">Select theme</span>
+        <span class="modal-settings-subtitle">${lang.selectLanguage}</span>
         <select class="modal-settings-select" name="change-theme" id="selectTheme">
-            <option disabled>Select theme</option>
-            <option value="1">Light</option>
-            <option value="2">Dark</option>
-            <option value="3">On device</option>
+            <option disabled>${lang.selectTheme}</option>
+            <option value="1">${lang.light}</option>
+            <option value="2">${lang.dark}</option>
+            <option value="3">${lang.device}</option>
         </select>
-        <button onclick="themeSelectorFunc()" class="modal-settings-select" type="button">Save</button>
+        <button onclick="themeSelectorFunc()" class="modal-settings-select" type="button">${lang.save}</button>
+    </form>
+    <form class="modal-settings-form">
+        <span class="modal-settings-subtitle">${lang.selectLanguage}</span>
+        <select class="modal-settings-select" name="change-lang" id="selectLang">
+            <option disabled>${lang.selectLanguage}</option>
+            <option value="1">${lang.eng}</option>
+            <option value="2">${lang.rus}</option>
+            <option value="3">${lang.device}</option>
+        </select>
+        <button onclick="saveLangButton()" class="modal-settings-select" type="button">${lang.save}</button>
     </form>
     `
-    // <form class="modal-settings-form">
-    //     <span class="modal-settings-subtitle">Languague</span>
-    //     <select class="modal-settings-select" name="change-lang" id="selectLang">
-    //         <option disabled>Select languague</option>
-    //         <option value="1">English</option>
-    //         <option value="2">Russian</option>
-    //     </select>
-    //     <button onclick="saveLangButton()" class="modal-settings-select" type="button">Save</button>
-    // </form>
 })
 
 const modalQrMonero = $.modal({

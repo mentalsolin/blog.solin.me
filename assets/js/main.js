@@ -1,5 +1,40 @@
-header = document.getElementById('header')
-footer = document.getElementById('footer')
+if (localStorage.getItem('lang') === 'rus') {
+    lang = {
+        github: `GitHub`,
+        projects: `Проекты`,
+        news: `Новости`,
+        contact: `Контакты`,
+
+        siteMap: `Карта сайта`,
+        links: `Ссылки`,
+        libraries: `Библиотеки`,
+
+        designed: `Дизайнеры `,
+        and: ` и `,
+        coded: `Накодил `,
+
+        donate: `Донат`
+    }
+}
+
+else {
+    lang = {
+        github: `GitHub`,
+        projects: `Projects`,
+        news: `News`,
+        contact: `Contact`,
+
+        siteMap: `Site map`,
+        links: `Site map`,
+        libraries: `Site map`,
+
+        designed: `Designed by `,
+        and: ` and `,
+        coded: `Coded `,
+
+        donate: `Donate`
+    }
+}
 
 header.innerHTML = `
 <div class="container">
@@ -11,10 +46,10 @@ header.innerHTML = `
             </div>
         </a>
         <div class="nav-links">
-            <a class="nav-link" href="https://github.com/SolinCode">Github</a>
-            <a class="nav-link" href="projects.html">Projects</a>
-            <a class="nav-link" href="https://twitter.com/Solin4035">Twitter</a>
-            <a class="nav-link" href="mailto:thesolincontact@gmail.com">Contact</a>
+            <a class="nav-link" href="https://github.com/SolinCode">${lang.github}</a>
+            <a class="nav-link" href="projects.html">${lang.projects}</a>
+            <a class="nav-link" href="https://twitter.com/Solin4035">${lang.news}</a>
+            <a class="nav-link" href="contact.html">${lang.contact}</a>
         </div>
     </nav>
 </div>
@@ -35,7 +70,7 @@ footer.innerHTML = `
             <div class="footer-faq">
                 <dl class="footer-dl">
                     <dt>
-                        <a class="footer-dt-title">Site map</a>
+                        <a class="footer-dt-title">${lang.siteMap}</a>
                     </dt>
                     <dt>
                         <a class="footer-dt-link" href="home.html">Home</a>
@@ -49,7 +84,7 @@ footer.innerHTML = `
                 </dl>
                 <dl class="footer-dl">
                     <dt>
-                        <a class="footer-dt-title">Links</a>
+                        <a class="footer-dt-title">${lang.links}</a>
                     </dt>
                     <dt>
                         <a class="footer-dt-link" href="mailto:thesolin@pm.me">Secure mail</a>
@@ -63,7 +98,7 @@ footer.innerHTML = `
                 </dl>
                 <dl class="footer-dl">
                     <dt>
-                        <a class="footer-dt-title">Libraries</a>
+                        <a class="footer-dt-title">${lang.libraries}</a>
                     </dt>
                     <dt>
                         <a class="footer-dt-link" href="https://swiperjs.com/">Swiper</a>
@@ -72,16 +107,16 @@ footer.innerHTML = `
             </div>
             <div class="footer-credits">
                 <div>
-                    <span class="footer-credits-text">Designed by <a class="footer-credits-link" href="https://twitter.com/Solin4035">Solin4035</a> and <a class="footer-credits-link" href="https://vk.com/nik_the_vaga">Telephonkin</a></span>
+                    <span class="footer-credits-text">${lang.designed}<a class="footer-credits-link" href="https://twitter.com/Solin4035">Solin4035</a>${lang.and}<a class="footer-credits-link" href="https://vk.com/nik_the_vaga">Telephonkin</a></span>
                 </div>
                 <div>
-                    <span class="footer-credits-text">Coded by <a class="footer-credits-link" href="https://twitter.com/Solin4035">Solin4035</a></span>
+                    <span class="footer-credits-text">${lang.coded}<a class="footer-credits-link" href="https://twitter.com/Solin4035">Solin4035</a></span>
                 </div>
             </div>
             <div class="copyright-wrapper" style="width: 100%; display: flex; justify-content: center;">
                 <span class="copyright">Copyright © Solin4035</span>
                 <span class="copyright dash">-</span>
-                <a class="copyright" href="donate.html">Donate</a>
+                <a class="copyright" href="donate.html">${lang.donate}</a>
             </div>
             <span onclick="modal.open()" class="settings material-symbols-outlined">settings</span>
         </div>
