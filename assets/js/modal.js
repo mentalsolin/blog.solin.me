@@ -1,34 +1,51 @@
 if (localStorage.getItem('lang') === 'rus') {
     lang = {
-        settingsTitle: 'Настройки',
-        selectTheme: 'Выберите тему',
-        light: 'Светлая',
-        dark: 'Темная',
+        settingsTitle: `Настройки`,
+        selectTheme: `Выберите тему`,
+        light: `Светлая`,
+        dark: `Темная`,
 
-
-        selectLanguage: 'Выберите язык',
-        eng: 'Английский',
-        rus: 'Русский',
+        selectLanguage: `Выберите язык`,
+        eng: `English`,
+        rus: `Русский`,
+        fr: `Français`,
         
-        device: 'Как на устройстве',
-        save: 'Сохранить',
+        device: `Как на устройстве`,
+        save: `Сохранить`,
+    }
+}
+
+else if (localStorage.getItem('lang') === 'fr') {
+    lang = {
+        settingsTitle: `Paramètres`,
+        selectTheme: `Sélectionner un thème`,
+        light: `Lumière`,
+        dark: `Sombre`,
+
+        selectLanguage: `Sélectionner la langue`,
+        eng: `English`,
+        rus: `Русский`,
+        fr: `Français`,
+        
+        device: `Sur l'appareil`,
+        save: `Enregistrer`,
     }
 }
 
 else {
     lang = {
-        settingsTitle: 'Settings',
-        selectTheme: 'Select theme',
-        light: 'Light',
-        dark: 'Dark',
+        settingsTitle: `Settings`,
+        selectTheme: `Select theme`,
+        light: `Light`,
+        dark: `Dark`,
 
-
-        selectLanguage: 'Select language',
-        eng: 'English',
-        rus: 'Russian',
+        selectLanguage: `Select language`,
+        eng: `English`,
+        rus: `Русский`,
+        fr: `Français`,
         
-        device: 'On device',
-        save: 'Save',
+        device: `On device`,
+        save: `Save`,
     }
 }
 
@@ -81,7 +98,6 @@ $.modal = function(options) {
         if (event.target.dataset.close) {
             modal.close()
             location.reload()
-            location.reload()
         }
     }
 
@@ -119,7 +135,8 @@ const modal = $.modal({
             <option disabled>${lang.selectLanguage}</option>
             <option value="1">${lang.eng}</option>
             <option value="2">${lang.rus}</option>
-            <option value="3">${lang.device}</option>
+            <option value="3">${lang.fr}</option>
+            <option value="4">${lang.device}</option>
         </select>
         <button onclick="saveLangButton()" class="modal-settings-select" type="button">${lang.save}</button>
     </form>
@@ -150,6 +167,15 @@ const modalQrDA = $.modal({
     closable: true,
     content: `
     <img class="modal-img" src="src/img/payments/others/others-donation-alerts.png" alt="dl-qr">
+    `,
+    width: `330px`
+})
+
+const modalQrQIWI = $.modal({
+    title: 'QIWI Solin4035',
+    closable: true,
+    content: `
+    <img class="modal-img" src="src/img/payments/others/others-qiwi-solin4035.png" alt="qiwi-solin4035">
     `,
     width: `330px`
 })

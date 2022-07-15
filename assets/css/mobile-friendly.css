@@ -427,6 +427,10 @@
         justify-content: center;
     }
 
+    .donate-page-bar-small:last-child {
+        margin: 0;
+    }
+
     .donate-page-coin {
         font-size: 25px;
     }

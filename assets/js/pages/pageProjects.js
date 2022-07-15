@@ -4,6 +4,12 @@ if (localStorage.getItem('lang') === 'rus') {
     }
 }
 
+else if (localStorage.getItem('lang') === 'fr') {
+    lang = {
+        projectsTitle: `Projects`
+    }
+}
+
 else {
     lang = {
         projectsTitle: `Projects`
@@ -16,7 +22,7 @@ pageProjects.innerHTML = `
             <div class="page-title">
                 <h1>${lang.projectsTitle}</h1>
             </div>
-            <div id="projectsInner"></div>
+            <div class="projects-inner" id="projectsInner"></div>
         </div>
     </div>
 `

@@ -16,7 +16,7 @@
     --main-color: #202128;
     --second-strong-color: #c5c5c5;
     --text-color: #fff;
-    --bar-color: #1a1a20;
+    --bar-color: #1c1c22;
 }
 
 *,
@@ -222,6 +222,10 @@ span, a, p {
     display: flex;
     flex-wrap: wrap;
     padding: 0 30px;
+}
+
+.projects-inner {
+    margin: 50px 0;
 }
 
 .article {
@@ -544,6 +548,10 @@ span, a, p {
 
 .donate-page-bar-small {
     width: 320px;
+}
+
+.donate-page-bar-small:last-child {
+    margin-left: 15px;
 }
 
 .donate-page-bar-center {

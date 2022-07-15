@@ -1,9 +1,16 @@
-
 if (localStorage.getItem('lang') === 'rus') {
     lang = {
         donateTitle: `Донат`,
         cryptocurrency: `Криптовалюта`,
         others: `Остольное`
+    }
+}
+
+else if (localStorage.getItem('lang') === 'fr') {
+    lang = {
+        donateTitle: `Faire un don`,
+        cryptocurrency: `Crypto-monnaie`,
+        others: `Les autres`
     }
 }
 
@@ -44,6 +51,10 @@ pageDonate.innerHTML = `
                 <div class="donate-page-bar donate-page-bar-small">
                     <a class="donate-page-coin" href="https://www.donationalerts.com/r/solin4035">Donation Alerts</a>
                     <span onclick="modalQrDA.open()" class="donate-page-icons donate-QR material-symbols-outlined">qr_code</span>
+                </div>
+                <div class="donate-page-bar donate-page-bar-small">
+                    <a class="donate-page-coin" href="https://qiwi.com/n/SOLIN4035">QIWI Solin4035</a>
+                    <span onclick="modalQrQIWI.open()" class="donate-page-icons donate-QR material-symbols-outlined">qr_code</span>
                 </div>
             </div>
         </div>

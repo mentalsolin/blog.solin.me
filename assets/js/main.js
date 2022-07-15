@@ -17,6 +17,25 @@ if (localStorage.getItem('lang') === 'rus') {
     }
 }
 
+else if (localStorage.getItem('lang') === 'fr') {
+    lang = {
+        github: `GitHub`,
+        projects: `Projets`,
+        news: `Actualités`,
+        contact: `Contacts`,
+
+        siteMap: `Plan du site`,
+        links: `Liens`,
+        libraries: `Bibliothèques`,
+
+        designed: `Designers `,
+        and: ` et `,
+        coded: `Code `,
+
+        donate: `faire un don `
+    }
+}
+
 else {
     lang = {
         github: `GitHub`,
@@ -25,8 +44,8 @@ else {
         contact: `Contact`,
 
         siteMap: `Site map`,
-        links: `Site map`,
-        libraries: `Site map`,
+        links: `Links`,
+        libraries: `Libraries`,
 
         designed: `Designed by `,
         and: ` and `,
@@ -48,8 +67,8 @@ header.innerHTML = `
         <div class="nav-links">
             <a class="nav-link" href="https://github.com/SolinCode">${lang.github}</a>
             <a class="nav-link" href="projects.html">${lang.projects}</a>
-            <a class="nav-link" href="https://twitter.com/Solin4035">${lang.news}</a>
-            <a class="nav-link" href="contact.html">${lang.contact}</a>
+            <a class="nav-link" href="https://twitter.com/TheSolinNews">${lang.news}</a>
+            <a class="nav-link" href="mailto:solinsolinov@gmail.com">${lang.contact}</a>
         </div>
     </nav>
 </div>

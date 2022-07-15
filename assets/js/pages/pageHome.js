@@ -12,6 +12,20 @@ if (localStorage.getItem('lang') === 'rus') {
     }
 }
 
+else if (localStorage.getItem('lang') === 'fr') {
+    lang = {
+        mainTitle: `Bonjour, je suis Solin`,
+        mainSubtitle: `Je suis un programmeur C++ débutant, parfois j'écris des sites Web et je travaille dans Photoshop.`,
+
+        recentProjects: `Les projets récents`,
+        allProjects: `Tous les projets`,
+        justSwiteIt: `Glissez-le simplement!`,
+
+        socialMedia: `Des médias sociaux`,
+        myWorks: `Mes travaux`,
+    }
+}
+
 else {
     lang = {
         mainTitle: `Hello, i'm Solin`,

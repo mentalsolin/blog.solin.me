@@ -16,6 +16,24 @@ if (localStorage.getItem('lang') === 'rus') {
     }
 }
 
+else if (localStorage.getItem('lang') === 'fr') {
+    lang = {
+        learnMore: `En savoir plus...`,
+
+        projectTitle1: `Solin Website`,
+        projectDesc1: `Développement du site Web personnel de Solin. html, css, js`,
+
+        projectTitle2: `Solin Battleship`,
+        projectDesc2: `Mon premier jeu en langage de programmation С++. Сonsole cuirassé.`,
+
+        projectTitle3: `Dice Game`,
+        projectDesc3: `Mini jeu de dés en C++. le joueur et l'ordinateur lancent les dés à tour de rôle, le gagnant est celui qui a le plus de points après cinq tours.`,
+
+        projectTitle4: `Katana's Pack`,
+        projectDesc4: `Un pack de ressources qui ajoute 5 types de katana différents, qui peuvent être obtenus en renommant les épées dans l'enclume.`,
+    }
+}
+
 else {
     lang = {
         learnMore: 'Learn more...',
