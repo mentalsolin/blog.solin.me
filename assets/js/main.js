@@ -3,7 +3,7 @@ if (localStorage.getItem('lang') === 'rus') {
         github: `GitHub`,
         projects: `Проекты`,
         news: `Новости`,
-        contact: `Контакты`,
+        contact: `Связаться`,
 
         siteMap: `Карта сайта`,
         links: `Ссылки`,
@@ -67,8 +67,7 @@ header.innerHTML = `
         <div class="nav-links">
             <a class="nav-link" href="https://github.com/SolinCode">${lang.github}</a>
             <a class="nav-link" href="projects.html">${lang.projects}</a>
-            <a class="nav-link" href="https://twitter.com/TheSolinNews">${lang.news}</a>
-            <a class="nav-link" href="mailto:solinsolinov@gmail.com">${lang.contact}</a>
+            <a class="nav-link" href="mailto:thesolincontact@gmail.com">${lang.contact}</a>
         </div>
     </nav>
 </div>
