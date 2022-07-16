@@ -680,12 +680,12 @@ span, a, p {
     font-size: 40px;
     font-weight: 600;
     margin-top: 15px;
+    text-align: center;
 }
 
 .modal-content {
     width: 100%;
     padding: 15px;
-    margin-top: 20px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -693,6 +693,7 @@ span, a, p {
 
 .modal-img {
     border-radius: 25px;
+    width: 300px;
 }
 
 .modal-content-title {
@@ -735,7 +736,6 @@ span, a, p {
 .modal-settings-subtitle {
     font-size: 25px;
     width: 100%;
-    margin-top: 10px;
     margin-left: 15px;
 }
 
@@ -743,4 +743,8 @@ span, a, p {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+}
+
+.modal-settings-form:last-child {
+    margin-top: 10px;
 }
