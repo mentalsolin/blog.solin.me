@@ -147,7 +147,7 @@ const modalQrMonero = $.modal({
     title: 'Monero',
     closable: true,
     content: `
-    <img class="modal-img" src="src/img/payments/crypto/crypto-monero.png" alt="monero-address">
+    <img class="modal-img" src="src/img/payments/crypto/crypto-monero.svg" alt="monero-address">
     `,
     width: `330px`
 })
@@ -156,7 +156,7 @@ const modalQrBitcoin = $.modal({
     title: 'Bitcoin',
     closable: true,
     content: `
-    <img class="modal-img" src="src/img/payments/crypto/crypto-bitcoin.png" alt="btc-address">
+    <img class="modal-img" src="src/img/payments/crypto/crypto-bitcoin.svg" alt="btc-address">
     `,
     width: `330px`
 })
@@ -166,7 +166,7 @@ const modalQrDA = $.modal({
     title: 'Donation Alerts',
     closable: true,
     content: `
-    <img class="modal-img" src="src/img/payments/others/others-donation-alerts.png" alt="dl-qr">
+    <img class="modal-img" src="src/img/payments/others/others-donation-alerts.svg" alt="dl-qr">
     `,
     width: `330px`
 })
@@ -175,7 +175,7 @@ const modalQrQIWI = $.modal({
     title: 'QIWI Solin4035',
     closable: true,
     content: `
-    <img class="modal-img" src="src/img/payments/others/others-qiwi-solin4035.png" alt="qiwi-solin4035">
+    <img class="modal-img" src="src/img/payments/others/others-qiwi-solin4035.svg" alt="qiwi-solin4035">
     `,
     width: `330px`
 })

@@ -2,7 +2,7 @@ if (localStorage.getItem('lang') === 'rus') {
     lang = {
         github: `GitHub`,
         projects: `Проекты`,
-        news: `Новости`,
+        news: `Twitter`,
         contact: `Связаться`,
 
         siteMap: `Карта сайта`,
@@ -21,7 +21,7 @@ else if (localStorage.getItem('lang') === 'fr') {
     lang = {
         github: `GitHub`,
         projects: `Projets`,
-        news: `Actualités`,
+        news: `Twitter`,
         contact: `Contacts`,
 
         siteMap: `Plan du site`,
@@ -40,7 +40,7 @@ else {
     lang = {
         github: `GitHub`,
         projects: `Projects`,
-        news: `News`,
+        news: `Twitter`,
         contact: `Contact`,
 
         siteMap: `Site map`,
@@ -65,9 +65,10 @@ header.innerHTML = `
             </div>
         </a>
         <div class="nav-links">
-            <a class="nav-link" href="https://github.com/SolinCode">${lang.github}</a>
-            <a class="nav-link" href="projects.html">${lang.projects}</a>
-            <a class="nav-link" href="mailto:thesolincontact@gmail.com">${lang.contact}</a>
+        <a class="nav-link" href="projects.html">${lang.projects}</a>
+        <a class="nav-link" href="https://github.com/SolinCode">${lang.github}</a>
+        <a class="nav-link" href="https://twitter.com/Solin4035">${lang.news}</a>
+        <a class="nav-link" href="mailto:thesolincontact@gmail.com">${lang.contact}</a>
         </div>
     </nav>
 </div>

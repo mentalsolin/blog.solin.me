@@ -58,6 +58,22 @@ span, a, p {
     color: var(--text-color);
 }
 
+.enable-js-container {
+    width: 100vw;
+    height: calc(100vh - 250px);
+    background-color: #fff;
+    z-index: 10000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.enable-js-span {
+    font-size: 30px;
+    margin-top: 232px;
+}
+
 .material-symbols-outlined {
     font-size: 90px;
     color: var(--second-color);
