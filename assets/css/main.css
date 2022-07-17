@@ -396,9 +396,11 @@ span, a, p {
     /* Footer */
 
 .footer {
-    height: 250px;
-    position: relative;
+    position: absolute;
     z-index: 1;
+    height: 250px;
+    left: 0;
+    right: 0;
 }
 
 .footer-curve {
