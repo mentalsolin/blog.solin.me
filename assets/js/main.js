@@ -112,7 +112,7 @@ footer.innerHTML = `
                         <a class="footer-dt-link" href="https://github.com/SolinCode/Solin-Website">Guthub page</a>
                     </dt>
                     <dt>
-                        <a class="footer-dt-link" href="https://tb.solin.website/home.html">Testing branch</a>
+                        <a class="footer-dt-link" href="https://beta.solin.website/main/home.html">Beta branch</a>
                     </dt>
                 </dl>
                 <dl class="footer-dl">
