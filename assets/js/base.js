@@ -30,7 +30,7 @@ function langReload() {
             localStorage.removeItem('lang', 'rus')
         }
     }
-}z
+}
 
 function saveLangButton() {
     let selectIndex = selectLang.selectedIndex
@@ -51,3 +51,8 @@ function saveLangButton() {
         localStorage.removeItem('fixedLang')
     }
 }
+
+nodeObj.scrollIntoView({
+   behavior: "smooth",
+   block:    "start" 
+});

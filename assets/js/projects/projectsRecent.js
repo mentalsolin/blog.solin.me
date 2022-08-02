@@ -1,6 +1,6 @@
 if (localStorage.getItem('lang') === 'rus') {
     lang = {
-        learnMore: 'Узнать больше...',
+        learnMore: `Узнать больше...`,
 
         projectTitle1: `Solin Website`,
         projectDesc1: `Создание персонального вебсайта Солина. html, css, js`,
@@ -13,6 +13,12 @@ if (localStorage.getItem('lang') === 'rus') {
 
         projectTitle4: `Katana's Pack`,
         projectDesc4: `Ресурспак добавляет 5 видов катан, переименуйте любой меч в наковальне`,
+    
+        projectTitle5: `Solin's Todo`,
+        projectDesc5: `Todo list written in javascript. Использующий localStorage`,
+        
+        projectTitle6: `Solin's Vicinity`,
+        projectDesc6: `Вебсайт, для проекта в Minecraft с таблом которое парсится из гугл таблиц в реальном времени.`,
     }
 }
 
@@ -31,12 +37,19 @@ else if (localStorage.getItem('lang') === 'fr') {
 
         projectTitle4: `Katana's Pack`,
         projectDesc4: `Un pack de ressources qui ajoute 5 types de katana différents, qui peuvent être obtenus en renommant les épées dans l'enclume.`,
+    
+        projectTitle5: `Solin's Todo`,
+        projectDesc5: `Todo list written in javascript. Использующий localStorage`,
+        
+        projectTitle6: `Solin's Vicinity`,
+        projectDesc6: `A website for a Minecraft project with a table that is parsed from google sheets in real time.`,
     }
 }
 
+
 else {
     lang = {
-        learnMore: 'Learn more...',
+        learnMore: `Learn more...`,
 
         projectTitle1: `Solin Website`,
         projectDesc1: `Solin's personal website development. html, css, js`,
@@ -49,6 +62,12 @@ else {
 
         projectTitle4: `Katana's Pack`,
         projectDesc4: `A resource pack that adds 5 different types of katana, which can be obtained by renaming swords in the anvil.`,
+        
+        projectTitle5: `Solin's Todo`,
+        projectDesc5: `Todo list written in javascript. Use localStorage`,
+        
+        projectTitle6: `Solin's Vicinity`,
+        projectDesc6: `A website for a Minecraft project with a table that is parsed from google sheets in real time.`,
     }
 }
 
@@ -82,16 +101,16 @@ const project2 = $.projectRecent({
     link: `https://github.com/SolinCode/Katanas-Pack`,
 })
 
+const project5 = $.projectRecent({
+    title: lang.projectTitle5,
+    desc: lang.projectDesc5,
+    img: `src/img/projects/web/solin_todo_preview.jpg`,
+    link: `https://github.com/SolinCode/solin-todo-with-localstorage`,
+})
+
 const project4 = $.projectRecent({
     title: lang.projectTitle2,
     desc: lang.projectDesc2,
     img: `src/img/projects/cpp/solin_battleship_game_preview.jpg`,
     link: `https://github.com/SolinCode/Solin-Battleship`,
-})
-
-const project3 = $.projectRecent({
-    title: lang.projectTitle3,
-    desc: lang.projectDesc3,
-    img: `src/img/projects/cpp/solin_dice_game_preview.jpg`,
-    link: `https://github.com/SolinCode/Solin-Dice-game`,
 })

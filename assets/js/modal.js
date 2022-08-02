@@ -135,7 +135,6 @@ const modal = $.modal({
             <option disabled>${lang.selectLanguage}</option>
             <option value="1">${lang.eng}</option>
             <option value="2">${lang.rus}</option>
-            <option value="3">${lang.fr}</option>
             <option value="4">${lang.device}</option>
         </select>
         <button onclick="saveLangButton()" class="modal-settings-select" type="button">${lang.save}</button>

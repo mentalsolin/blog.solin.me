@@ -1,7 +1,7 @@
 if (localStorage.getItem('lang') === 'rus') {
     lang = {
         mainTitle: `Привет, я Солин`,
-        mainSubtitle: `Я начинающий C++ программист, иногда пишу вебсайты и работаю в Фотошопе.`,
+        mainSubtitle: `Я занимаюсь фронт-энд версткой, недавно начал изучать JavaScript. Работаю в Фотошопе и Иллюстраторе.`,
 
         recentProjects: `Недавние проекты`,
         allProjects: `Все проекты`,
@@ -15,7 +15,7 @@ if (localStorage.getItem('lang') === 'rus') {
 else if (localStorage.getItem('lang') === 'fr') {
     lang = {
         mainTitle: `Bonjour, je suis Solin`,
-        mainSubtitle: `Je suis un programmeur C++ débutant, parfois j'écris des sites Web et je travaille dans Photoshop.`,
+        mainSubtitle: `Je suis un développeur front-end, j'ai récemment commencé à apprendre JavaScript. Je travaille sous Photoshop et Illustrator.`,
 
         recentProjects: `Les projets récents`,
         allProjects: `Tous les projets`,
@@ -29,7 +29,7 @@ else if (localStorage.getItem('lang') === 'fr') {
 else {
     lang = {
         mainTitle: `Hello, i'm Solin`,
-        mainSubtitle: `I am a beginner C++ programmer, sometimes i write websites and work in Photoshop.`,
+        mainSubtitle: `I'm a front-end developer, I recently started learning JavaScript. I work in Photoshop and Illustrator.`,
 
         recentProjects: `Recent projects`,
         allProjects: `All projects`,
@@ -46,7 +46,7 @@ pageHome.innerHTML = `
             <h1 class="mainTitle">${lang.mainTitle}</h1>
             <span class="main-subtitle">${lang.mainSubtitle}</span>
         </div>
-        <div class="main-arrow">
+        <div onclick="scrollWin()" class="main-arrow">
             <span class="material-symbols-outlined main-arrow-animation">expand_more</span>
         </div>
         </div>

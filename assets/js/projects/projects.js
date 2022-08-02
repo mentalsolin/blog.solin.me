@@ -13,6 +13,12 @@ if (localStorage.getItem('lang') === 'rus') {
 
         projectTitle4: `Katana's Pack`,
         projectDesc4: `Ресурспак добавляет 5 видов катан, переименуйте любой меч в наковальне`,
+    
+        projectTitle5: `Solin's Todo`,
+        projectDesc5: `Todo list written in javascript. Использующий localStorage`,
+        
+        projectTitle6: `Solin's Vicinity`,
+        projectDesc6: `Вебсайт, для проекта в Minecraft с таблом которое парсится из гугл таблиц в реальном времени.`,
     }
 }
 
@@ -31,6 +37,12 @@ else if (localStorage.getItem('lang') === 'fr') {
 
         projectTitle4: `Katana's Pack`,
         projectDesc4: `Un pack de ressources qui ajoute 5 types de katana différents, qui peuvent être obtenus en renommant les épées dans l'enclume.`,
+    
+        projectTitle5: `Solin's Todo`,
+        projectDesc5: `Todo list written in javascript. Использующий localStorage`,
+        
+        projectTitle6: `Solin's Vicinity`,
+        projectDesc6: `A website for a Minecraft project with a table that is parsed from google sheets in real time.`,
     }
 }
 
@@ -50,8 +62,15 @@ else {
 
         projectTitle4: `Katana's Pack`,
         projectDesc4: `A resource pack that adds 5 different types of katana, which can be obtained by renaming swords in the anvil.`,
+        
+        projectTitle5: `Solin's Todo`,
+        projectDesc5: `Todo list written in javascript. Use localStorage`,
+        
+        projectTitle6: `Solin's Vicinity`,
+        projectDesc6: `A website for a Minecraft project with a table that is parsed from google sheets in real time.`,
     }
 }
+
 
 const projectsRecentInner = document.getElementById('projectsRecentInner')
 
@@ -102,4 +121,18 @@ const project2 = $.project({
     desc: lang.projectDesc4,
     img: `src/img/projects/others/katana_pack_preview.jpg`,
     link: `https://github.com/SolinCode/Katanas-Pack`,
+})
+
+const project5 = $.project({
+    title: lang.projectTitle5,
+    desc: lang.projectDesc5,
+    img: `src/img/projects/web/solin_todo_preview.jpg`,
+    link: `https://github.com/SolinCode/solin-todo-with-localstorage`,
+})
+
+const project6 = $.project({
+    title: lang.projectTitle6,
+    desc: lang.projectDesc6,
+    img: `src/img/projects/web/solin_vicinity_preview.jpg`,
+    link: `https://github.com/SolinCode/Solin-Vicinity`,
 })

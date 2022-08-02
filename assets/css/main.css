@@ -166,7 +166,7 @@ span, a, p {
     /* Main */
 
 .main-title-container {
-    width: 1000px;
+    width: 1080px;
 }
 
 .main-subtitle {
@@ -187,6 +187,7 @@ span, a, p {
 .main-arrow-animation {
     display: block;
     animation: arrow-down 2.5s infinite;
+    cursor: pointer;
 }
 
 @keyframes arrow-down {
