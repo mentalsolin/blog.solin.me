@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap" rel="stylesheet"> 
+    
+    <script src="libs/swiper-js/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="libs/swiper-js/swiper-bundle.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Solin's Website</title>
+</head>
+<body class="light">
+    <header class="header">
+        <div class="container header-inner">
+            <img class="logo-wide" width="200px" src="static/imgs/logo/solin-wide-black.svg" alt="Logo">
+            <img class="logo-small" width="200px" src="static/imgs/logo/solin-small-black.svg" alt="Small logo">
+            <nav>
+                <ul class="nav">
+                    <li><a class="nav-link" href="#">Github</a></li>
+                    <li><a class="nav-link" href="#">Twitter</a></li>
+                    <li><a class="nav-link" href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="container-main">
+        <main class="intro-title">
+            <h1 class="title">Hello, i'm Solin</h1>
+            <span class="subtitle">I'm a front-end developer, I recently started learning JavaScript. I work in Photoshop and Illustrator.</span>
+        </main>
+        <div class="intro-arrow">
+            <svg class="icon intro-arrow-animation" xmlns="http://www.w3.org/2000/svg" height="48" width="48" viewBox="0 0 50 50"><path d="m24 30.8-12-12 2.15-2.15L24 26.5l9.85-9.85L36 18.8Z"/></svg>
+        </div>
+    </main>
+    <main class="container-main">
+        <div class="container center">
+            <div class="project-title">
+                <h2>Recent projects</h2>
+                <a class="project-more" href="#">All projects</a>
+            </div>
+            <div class="projects-swiper">
+                <div class="swiper projectSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <article class="article">
+                                <a href="#"><img class="article-img" src="static/imgs/projects/example-image.png" alt="Example project"></a>
+                                <div class="article-content">
+                                    <h3 class="article-title">Lorem, ipsum.</h3>
+                                    <p class="article-desc-project-recent">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente, debitis.</p>
+                                    <a class="article-more" href="#">Learn more...</a>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="swiper-slide">
+                            <article class="article">
+                                <a href="#"><img class="article-img" src="static/imgs/projects/example-image.png" alt="Example project"></a>
+                                <div class="article-content">
+                                    <h3 class="article-title">Lorem, ipsum.</h3>
+                                    <p class="article-desc-project-recent">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente, debitis.</p>
+                                    <a class="article-more" href="#">Learn more...</a>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="swiper-slide">
+                            <article class="article">
+                                <a href="#"><img class="article-img" src="static/imgs/projects/example-image.png" alt="Example project"></a>
+                                <div class="article-content">
+                                    <h3 class="article-title">Lorem, ipsum.</h3>
+                                    <p class="article-desc-project-recent">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente, debitis.</p>
+                                    <a class="article-more" href="#">Learn more...</a>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next">
+                        <div class="projects_arrow">
+                            <svg class="icon" xmlns="http://www.w3.org/2000/svg" height="48" width="48" viewBox="0 0 50 50"><path d="m18.75 36-2.15-2.15 9.9-9.9-9.9-9.9 2.15-2.15L30.8 23.95Z"/></svg>
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev">
+                        <div class="projects_arrow">
+                            <svg class="icon" xmlns="http://www.w3.org/2000/svg" height="48" width="48" viewBox="0 0 50 50"><path d="M28.05 36 16 23.95 28.05 11.9l2.15 2.15-9.9 9.9 9.9 9.9Z"/></svg>
+                        </div>
+                    </div>
+                </div>
+                <script>
+                    var swiper = new Swiper(".projectSwiper", {
+                        initialSlide: 0,
+                        navigation: {
+                            nextEl: ".swiper-button-next",
+                            prevEl: ".swiper-button-prev",
+                        },
+                    });
+                </script>
+            </div>
+            <span class="project-slogan">Just swipe it!</span>
+        </div>
+    </main>
+    <main class="container-main">
+        <div class="container social-container">
+            <ul class="social-coll social-container">
+                <h2 class="social-title">Social media</h2>
+                <li><a class="social-bar twitter" href="#" aria-label="Twitter Solin4035"><img class="social-icon" src="static/icons/social-media-twitter.svg" alt="Twitter">Solin4035</a></li>
+                <li><a class="social-bar vkontakte" href="#" aria-label="Vkontakte Solingrad"><img class="social-icon" src="static/icons/social-media-vkontakte.svg" alt="Vkontakte">Solingrad</a></li>
+                <li><a class="social-bar youtube" href="#" aria-label="Youtube Solin4035"><img class="social-icon" src="static/icons/social-media-youtube.svg" alt="Youtube">Solin4035</a></li>
+                <li><a class="social-bar twitch" href="#" aria-label="Twitch Solin4035"><img class="social-icon" src="static/icons/social-media-twitch.svg" alt="Twitch">Solin4035</a></li>
+            </ul>
+            <ul class="social-coll social-container">
+                <h2 class="social-title">My works</h2>
+                <li><a class="social-bar github" href="#" aria-label="Github SolinCode"><img class="social-icon" src="static/icons/social-media-github.svg" alt="Github">SolinCode</a></li>
+                <li><a class="social-bar curseforge" href="#" aria-label="Curseforge Solin4035"><img class="social-icon" src="static/icons/social-media-curseforge.svg" alt="Curseforge">Solin4035</a></li>
+            </ul>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer-bg">
+            <div class="container-mini footer-container">
+                <div class="footer-tab">
+                    <ul class="footer-ul">
+                        <span class="f-title">Links</span>
+                        <li><a class="f-li" href="#">Github page</a></li>
+                        <li><a class="f-li" href="#">Testing branch</a></li>
+                    </ul>
+                    <ul class="footer-ul">
+                        <span class="f-title">Projects</span>
+                        <li><a class="f-li" href="#">Solin's Todo</a></li>
+                    </ul>
+                    <ul class="footer-ul">
+                        <span class="f-title">Libraries</span>
+                        <li><a class="f-li" href="#">Swiper</a></li>
+                    </ul>
+                </div>
+                <div class="footer-credits">
+                    <span class="fc-style">Designed by <a class="fc-style" aria-label="Designer Solin4035" href="#">Solin4035</a> and <a class="fc-style" aria-label="Designer Telephonkin" href="#">Telephonkin</a></span><br>
+                    <span class="fc-style">Coded <a class="fc-style" aria-label="Coder Solin4035" href="#">Solin4035</a></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <span class="c-nickname">Copyright © Solin4035</span>
+            <span class="c-nickname">•</span>
+            <a class="c-donate" href="#">Donate</a>
+        </div>
+        <div class="footer-circle-bg bg-left"><div class="footer-circle-border b-left"></div></div>
+        <div class="footer-circle-bg bg-right"><div class="footer-circle-border b-right"></div></div>
+    </footer>
+</body>
+</html>
