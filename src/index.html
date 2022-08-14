@@ -4,6 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Hello, i'm Solin. I am a beginner C++ programmer, sometimes i write websites and work in Photoshop.">
+    <meta name="keywords" content="html, css, js, javascript, c++, cpp, thesolin, the solin, the solin website, thesolin website,the solin contact, thesolin contact, the solin projects, thesolin projects, the solin donate, thesolin donate, solin website">
+    
+    <meta name="yandex-verification" content="e6ce2297cf05dae4" />
+    <meta name="msvalidate.01" content="0721B58D8494900E306B2760896A6853" />
+    <meta name="google-site-verification" content="2ELZ0-Af6o7cpANQRBsh_JdWhrIpD8ajIRyWZOiihIA" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap" rel="stylesheet"> 
@@ -11,143 +19,128 @@
     <script src="libs/swiper-js/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="libs/swiper-js/swiper-bundle.min.css">
     <link rel="stylesheet" href="styles.css">
-
+    <link id="icon" rel="icon" href="favicon.ico">
     <title>Solin's Website</title>
 </head>
-<body class="light">
+<body class="light" id="body">
     <header class="header">
         <div class="container header-inner">
-            <img class="logo-wide" width="200px" src="static/imgs/logo/solin-wide-black.svg" alt="Logo">
-            <img class="logo-small" width="200px" src="static/imgs/logo/solin-small-black.svg" alt="Small logo">
+            <picture>
+                <source srcset="./static/imgs/logo/solin-wide-black.svg" media="(min-width: 800px)">
+                <img class="logo" src="./static/imgs/logo/solin-small-black.svg" alt="logo" id="logo">
+            </picture>
             <nav>
                 <ul class="nav">
-                    <li><a class="nav-link" href="#">Github</a></li>
-                    <li><a class="nav-link" href="#">Twitter</a></li>
-                    <li><a class="nav-link" href="#">Contact</a></li>
+                    <li><a class="nav-link" href="https://github.com/SolinCode">Github</a></li>
+                    <li><a class="nav-link" href="https://twitter.com/Solin4035">Twitter</a></li>
+                    <li><a class="nav-link" href="mailto:thesolincontact@gmail.com">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-    <main class="container-main">
-        <main class="intro-title">
-            <h1 class="title">Hello, i'm Solin</h1>
-            <span class="subtitle">I'm a front-end developer, I recently started learning JavaScript. I work in Photoshop and Illustrator.</span>
-        </main>
-        <div class="intro-arrow">
-            <svg class="icon intro-arrow-animation" xmlns="http://www.w3.org/2000/svg" height="48" width="48" viewBox="0 0 50 50"><path d="m24 30.8-12-12 2.15-2.15L24 26.5l9.85-9.85L36 18.8Z"/></svg>
-        </div>
-    </main>
-    <main class="container-main">
-        <div class="container center">
-            <div class="project-title">
-                <h2>Recent projects</h2>
-                <a class="project-more" href="#">All projects</a>
+    <main>
+        <div class="container-main">
+            <main class="intro-title">
+                <h1 class="title">Hello, i'm Solin</h1>
+                <span class="subtitle">I'm a front-end developer, I recently started learning JavaScript. I work in Photoshop and Illustrator.</span>
+            </main>
+            <div class="intro-arrow">
+                <svg class="icon intro-arrow-animation" height="48" width="48" viewBox="0 0 50 50"><path d="m24 30.8-12-12 2.15-2.15L24 26.5l9.85-9.85L36 18.8Z"/></svg>
             </div>
-            <div class="projects-swiper">
-                <div class="swiper projectSwiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <article class="article">
-                                <a href="#"><img class="article-img" src="static/imgs/projects/example-image.png" alt="Example project"></a>
-                                <div class="article-content">
-                                    <h3 class="article-title">Lorem, ipsum.</h3>
-                                    <p class="article-desc-project-recent">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente, debitis.</p>
-                                    <a class="article-more" href="#">Learn more...</a>
-                                </div>
-                            </article>
-                        </div>
-                        <div class="swiper-slide">
-                            <article class="article">
-                                <a href="#"><img class="article-img" src="static/imgs/projects/example-image.png" alt="Example project"></a>
-                                <div class="article-content">
-                                    <h3 class="article-title">Lorem, ipsum.</h3>
-                                    <p class="article-desc-project-recent">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente, debitis.</p>
-                                    <a class="article-more" href="#">Learn more...</a>
-                                </div>
-                            </article>
-                        </div>
-                        <div class="swiper-slide">
-                            <article class="article">
-                                <a href="#"><img class="article-img" src="static/imgs/projects/example-image.png" alt="Example project"></a>
-                                <div class="article-content">
-                                    <h3 class="article-title">Lorem, ipsum.</h3>
-                                    <p class="article-desc-project-recent">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente, debitis.</p>
-                                    <a class="article-more" href="#">Learn more...</a>
-                                </div>
-                            </article>
-                        </div>
-                    </div>
-                    <div class="swiper-button-next">
-                        <div class="projects_arrow">
-                            <svg class="icon" xmlns="http://www.w3.org/2000/svg" height="48" width="48" viewBox="0 0 50 50"><path d="m18.75 36-2.15-2.15 9.9-9.9-9.9-9.9 2.15-2.15L30.8 23.95Z"/></svg>
-                        </div>
-                    </div>
-                    <div class="swiper-button-prev">
-                        <div class="projects_arrow">
-                            <svg class="icon" xmlns="http://www.w3.org/2000/svg" height="48" width="48" viewBox="0 0 50 50"><path d="M28.05 36 16 23.95 28.05 11.9l2.15 2.15-9.9 9.9 9.9 9.9Z"/></svg>
-                        </div>
+        </div>
+        <div class="container-main">
+            <div class="container center">
+                <div class="project-title">
+                    <h2>Recent projects</h2>
+                    <div class="project-more-container">
+                        <a class="project-more" href="https://github.com/SolinCode">All projects</a>
                     </div>
                 </div>
-                <script>
-                    var swiper = new Swiper(".projectSwiper", {
-                        initialSlide: 0,
-                        navigation: {
-                            nextEl: ".swiper-button-next",
-                            prevEl: ".swiper-button-prev",
-                        },
-                    });
-                </script>
+                <div class="projects-swiper">
+                    <noscript>
+                        <div class="swiper-slide">
+                            <article class="article">
+                                <a class="article-img" href="https://www.curseforge.com/minecraft/texture-packs/katanas-pack">
+                                <img class="article-img" aria-label="Katana's Pack"
+                                    src="static/imgs/projects/katanas-pack-1x.jpg"
+                                    srcset="static/imgs/projects/katanas-pack-2x.jpg 2x"
+                                    alt="Katana's Pack">
+                                </a>
+                                <div class="article-content">
+                                    <h3 class="article-title">Katana's Pack</h3>
+                                    <p class="article-desc-project-recent">A resource pack that adds 5 different types of katana, which can be obtained by renaming swords in the anvil.</p>
+                                    <a class="article-more" href="https://www.curseforge.com/minecraft/texture-packs/katanas-pack">Learn more...</a>
+                                </div>
+                            </article>
+                        </div>
+                    </noscript>
+                    <div class="swiper projectSwiper">
+                        <div class="swiper-wrapper" id="swiperInner">
+                        </div>
+                        <div class="swiper-button-next">
+                            <div class="projects_arrow">
+                                <svg class="icon" height="48" width="48" viewBox="0 0 50 50"><path d="m18.75 36-2.15-2.15 9.9-9.9-9.9-9.9 2.15-2.15L30.8 23.95Z"/></svg>
+                            </div>
+                        </div>
+                        <div class="swiper-button-prev">
+                            <div class="projects_arrow">
+                                <svg class="icon" height="48" width="48" viewBox="0 0 50 50"><path d="M28.05 36 16 23.95 28.05 11.9l2.15 2.15-9.9 9.9 9.9 9.9Z"/></svg>
+                            </div>
+                        </div>
+                    </div>
+                    <script src="scripts/swiper.js"></script>
+                </div>
+                <span class="project-slogan">Just swipe it!</span>
             </div>
-            <span class="project-slogan">Just swipe it!</span>
+        </div>
+        <div class="container-main">
+            <div class="container social-container">
+                <ul class="social-coll social-container">
+                    <h2 class="social-title">Social media</h2>
+                    <li><a class="social-bar twitter" href="https://twitter.com/Solin4035" aria-label="Twitter Solin4035"><img class="social-icon" src="static/icons/social-media-twitter.svg" alt="Twitter"><span class="social-bar-title">Solin4035</span></a></li>
+                    <li><a class="social-bar vkontakte" href="https://vk.com/solingrad" aria-label="Vkontakte Solingrad"><img class="social-icon" src="static/icons/social-media-vkontakte.svg" alt="Vkontakte"><span class="social-bar-title">Solingrad</span></a></li>
+                    <li><a class="social-bar youtube" href="https://www.youtube.com/channel/UCHrVxQmCu0PtLTyPRwBOBYA" aria-label="Youtube Solin4035"><img class="social-icon" src="static/icons/social-media-youtube.svg" alt="Youtube"><span class="social-bar-title">Solin4035</span></a></li>
+                    <li><a class="social-bar twitch" href="https://www.twitch.tv/solin4035" aria-label="Twitch Solin4035"><img class="social-icon" src="static/icons/social-media-twitch.svg" alt="Twitch"><span class="social-bar-title">Solin4035</span></a></li>
+                </ul>
+                <ul class="social-coll social-container">
+                    <h2 class="social-title">My works</h2>
+                    <li><a class="social-bar github" href="https://github.com/SolinCode" aria-label="Github SolinCode"><img class="social-icon" src="static/icons/social-media-github.svg" alt="Github"><span class="social-bar-title">SolinCode</span></a></li>
+                    <li><a class="social-bar curseforge" href="https://www.curseforge.com/members/solin4035/projects" aria-label="Curseforge Solin4035"><img class="social-icon" src="static/icons/social-media-curseforge.svg" alt="Curseforge"><span class="social-bar-title">Solin4035</span></a></li>
+                </ul>
+            </div>
         </div>
     </main>
-    <main class="container-main">
-        <div class="container social-container">
-            <ul class="social-coll social-container">
-                <h2 class="social-title">Social media</h2>
-                <li><a class="social-bar twitter" href="#" aria-label="Twitter Solin4035"><img class="social-icon" src="static/icons/social-media-twitter.svg" alt="Twitter">Solin4035</a></li>
-                <li><a class="social-bar vkontakte" href="#" aria-label="Vkontakte Solingrad"><img class="social-icon" src="static/icons/social-media-vkontakte.svg" alt="Vkontakte">Solingrad</a></li>
-                <li><a class="social-bar youtube" href="#" aria-label="Youtube Solin4035"><img class="social-icon" src="static/icons/social-media-youtube.svg" alt="Youtube">Solin4035</a></li>
-                <li><a class="social-bar twitch" href="#" aria-label="Twitch Solin4035"><img class="social-icon" src="static/icons/social-media-twitch.svg" alt="Twitch">Solin4035</a></li>
-            </ul>
-            <ul class="social-coll social-container">
-                <h2 class="social-title">My works</h2>
-                <li><a class="social-bar github" href="#" aria-label="Github SolinCode"><img class="social-icon" src="static/icons/social-media-github.svg" alt="Github">SolinCode</a></li>
-                <li><a class="social-bar curseforge" href="#" aria-label="Curseforge Solin4035"><img class="social-icon" src="static/icons/social-media-curseforge.svg" alt="Curseforge">Solin4035</a></li>
-            </ul>
-        </div>
-    </main>
-    <footer class="footer">
+    <footer class="footer" role="contentinfo">
         <div class="footer-bg">
             <div class="container-mini footer-container">
                 <div class="footer-tab">
-                    <ul class="footer-ul">
-                        <span class="f-title">Links</span>
-                        <li><a class="f-li" href="#">Github page</a></li>
-                        <li><a class="f-li" href="#">Testing branch</a></li>
+                    <ul class="footer-tab-container">
+                        <span class="footer-tab-title">Links</span>
+                        <li><a class="footer-tab-link" href="https://github.com/SolinCode/Solin-Website">Github page</a></li>
+                        <li><a class="footer-tab-link" href="https://cdn.solin.website/testing">Testing branch</a></li>
                     </ul>
-                    <ul class="footer-ul">
-                        <span class="f-title">Projects</span>
-                        <li><a class="f-li" href="#">Solin's Todo</a></li>
-                    </ul>
-                    <ul class="footer-ul">
-                        <span class="f-title">Libraries</span>
-                        <li><a class="f-li" href="#">Swiper</a></li>
+                    <!-- <ul class="footer-tab-container">
+                        <span class="footer-tab-title">Projects</span>
+                        <li><a class="footer-tab-link" href="https://todo.solin.website">Solin's Todo</a></li>
+                    </ul> -->
+                    <ul class="footer-tab-container">
+                        <span class="footer-tab-title">Libraries</span>
+                        <li><a class="footer-tab-link" href="https://swiperjs.com/">Swiper</a></li>
                     </ul>
                 </div>
                 <div class="footer-credits">
-                    <span class="fc-style">Designed by <a class="fc-style" aria-label="Designer Solin4035" href="#">Solin4035</a> and <a class="fc-style" aria-label="Designer Telephonkin" href="#">Telephonkin</a></span><br>
-                    <span class="fc-style">Coded <a class="fc-style" aria-label="Coder Solin4035" href="#">Solin4035</a></span>
+                    <span class="footer-credits-text">Designed by <a class="footer-credits-text" aria-label="Designer Solin4035" href="https://vk.com/solingrad">Solin4035</a> and <a class="footer-credits-text fc-link" aria-label="Designer Telephonkin" href="https://vk.com/nik_the_vaga">Telephonkin</a></span><br>
+                    <span class="footer-credits-text">Coded <a class="footer-credits-text" aria-label="Coder Solin4035" href="https://twitter.com/Solin4035">Solin4035</a></span>
                 </div>
             </div>
         </div>
-        <div class="copyright">
-            <span class="c-nickname">Copyright © Solin4035</span>
-            <span class="c-nickname">•</span>
-            <a class="c-donate" href="#">Donate</a>
+        <div class="copyright">            
+            <span class="copyright-text">Copyright © Solin4035 • <a class="copyright-text" href="https://www.donationalerts.com/r/solin4035">Donate</a></span>            
         </div>
         <div class="footer-circle-bg bg-left"><div class="footer-circle-border b-left"></div></div>
         <div class="footer-circle-bg bg-right"><div class="footer-circle-border b-right"></div></div>
     </footer>
+    <script src="scripts/projects.js"></script>
+    <script src="scripts/theme.js"></script>
 </body>
 </html>
