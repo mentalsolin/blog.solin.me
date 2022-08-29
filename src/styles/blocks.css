@@ -228,7 +228,7 @@ span, a, p {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 30px 0;
+    margin: 45px 0;
     width: 100%;
 }
 
@@ -285,9 +285,6 @@ span, a, p {
     font-size: 21px;
     font-weight: 400;
     letter-spacing: 0.04em;
-    width: 239px;
-    height: 24px;
-    overflow: clip;
 }
 
 .article-more {
@@ -319,7 +316,7 @@ span, a, p {
 
 
 /* Social bars */
-    
+
 .social-container {
     display: flex;
     justify-content: center;

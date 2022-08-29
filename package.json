@@ -1,22 +1,22 @@
 {
-    "private": true,
-    "scripts": {
-        "start": "npx eleventy --serve --quiet",
-        "build": "rm -rf dist && npx eleventy && npx gulp",
-        "deploy": "npm run build && cd dist && rsync --archive --compress --delete . solin@solin.vps:/var/www/www.solinofficial.com"
-    },
-    "bugs": {
-            "url": "https://github.com/SolinCode/Solin-website/issues"
-    },
-    "homepage": "https://www.solinofficial.com",
-    "dependencies": {
-        "@11ty/eleventy": "^1.0.2",
-        "del": "^6.0.0",
-        "gulp-clean-css": "^4.3.0",
-        "gulp-copy": "^4.0.1",
-        "gulp-htmlmin": "^5.0.1"
-    },
-    "devDependencies": {
-        "gulp": "^4.0.2"
-    }
+	"private": true,
+	"scripts": {
+		"start": "npx eleventy --serve --quiet",
+		"build": "rm -rf dist && npx eleventy && npx gulp",
+		"deploy": "npm run build && cd dist && rsync --archive --compress --delete . solin@solin.vps:/var/www/www.solinofficial.com"
+	},
+	"bugs": {
+			"url": "https://github.com/SolinCode/Solin-website/issues"
+	},
+	"homepage": "https://www.solinofficial.com",
+	"dependencies": {
+		"@11ty/eleventy": "^1.0.2",
+		"del": "^6.0.0",
+		"gulp-clean-css": "^4.3.0",
+		"gulp-copy": "^4.0.1",
+		"gulp-htmlmin": "^5.0.1"
+	},
+	"devDependencies": {
+		"gulp": "^4.0.2"
+	}
 }

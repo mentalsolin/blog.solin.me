@@ -34,7 +34,7 @@ permalink: index.html
                                 <div class="article-content">
                                     <h3 class="article-title">{{project.data.title}}</h3>
                                     <p class="article-desc-project-recent">{{project.data.desc}}</p>
-                                    <date class="article-date-project-recent">{{project.data.date.toUTCString()}}</date>
+                                    <time class="article-date-project-recent" datetime="project.date.toISOString()">{{project.date.toLocaleString('en-US', { year: 'numeric', month: '2-digit', day: '2-digit'})}}</time>
                                     <a class="article-more" href="{{project.data.link}}">Learn more...</a>
                                 </div>
                             </article>
