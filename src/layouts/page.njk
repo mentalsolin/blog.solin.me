@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Hello, i'm Solin. I am a beginner C++ programmer, sometimes i write websites and work in Photoshop.">
+    <meta name="keywords" content="html, css, js, javascript, c++, cpp, thesolin, the solin, the solin website, thesolin website,the solin contact, thesolin contact, the solin projects, thesolin projects, the solin donate, thesolin donate, solin website">
+
+    <script src="/libs/swiper-js/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="/libs/swiper-js/swiper-bundle.min.css">
+
+    <link rel="stylesheet" href="/styles/styles.css">
+
+    <link id="icon" rel="icon" href="/favicon.svg">
+    <title>Solin's Website</title>
+</head>
+<body class="light" id="body">
+    {% include 'header.njk' %}
+
+    {{ content | safe }}
+
+    {% include 'footer.njk' %}
+</body>
+</html>

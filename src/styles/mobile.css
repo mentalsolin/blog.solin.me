@@ -41,6 +41,12 @@
         font-size: 18px;
     }
 
+    .article-date-project-recent {
+        font-size: 16px;
+        width: 197px;
+        height: 19px;
+    }
+
     .article-content {
         width: 400px;
     }
@@ -139,6 +145,10 @@
         margin-top: 5px;
     }
 
+    .article-date-project-recent {
+        display: none;
+    }
+
     .article-content {
         width: 300px;
         margin: 0px;
@@ -153,6 +163,10 @@
         font-size: 20px;
     }
     .article-more {
+        font-size: 15px;
+    }
+
+    .article-date-project-recent {
         font-size: 15px;
     }
 
@@ -240,6 +254,8 @@
 @media (max-width: 428px) {
     .nav {
         width: 100px;
+        width: 185px;
+        justify-content: right;
     }
 
     .nav-link {
@@ -260,7 +276,7 @@
 
     .article-img {
         height: 180px;
-        border-radius: 40px;
+        border-radius: 30px;
     }
 
     .article-content {

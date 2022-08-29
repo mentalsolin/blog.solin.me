@@ -1,0 +1,76 @@
+---
+title: Solin's Website
+layout: page.njk
+permalink: index.html
+---
+
+<main>
+    <div class="container-main">
+        <main class="intro-title">
+            <h1 class="title">Hello, i'm Solin</h1>
+            <span class="subtitle">I'm a front-end developer, I recently started learning JavaScript. I work in Photoshop and Illustrator.</span>
+        </main>
+        <div class="intro-arrow">
+            <svg class="icon intro-arrow-animation" height="48" width="48" viewBox="0 0 50 50"><path d="m24 30.8-12-12 2.15-2.15L24 26.5l9.85-9.85L36 18.8Z"/></svg>
+        </div>
+    </div>
+    <div class="container-main">
+        <div class="container center">
+            <div class="project-title">
+                <h2>Recent projects</h2>
+                <div class="project-more-container">
+                    <a class="project-more" href="https://github.com/SolinCode?tab=repositories">All projects</a>
+                </div>
+            </div>
+            <div class="projects-swiper">
+                <div class="swiper projectSwiper">
+                    <div class="swiper-wrapper" id="swiperInner">
+                    {%- for project in collections.projects | reverse -%}
+                        <div class="swiper-slide">
+                            <article class="article">
+                                <a class="article-img" href="{{project.data.link}}">
+                                    <img class="article-img" aria-label="{{project.data.title}}" src="{{ project.url + "1.jpg" }}" alt="{{project.data.title}}">
+                                </a>
+                                <div class="article-content">
+                                    <h3 class="article-title">{{project.data.title}}</h3>
+                                    <p class="article-desc-project-recent">{{project.data.desc}}</p>
+                                    <date class="article-date-project-recent">{{project.data.date.toUTCString()}}</date>
+                                    <a class="article-more" href="{{project.data.link}}">Learn more...</a>
+                                </div>
+                            </article>
+                        </div>
+                    {%- endfor -%}
+                    </div>
+                    <div class="swiper-button-next">
+                        <div class="projects_arrow">
+                            <svg class="icon" height="48" width="48" viewBox="0 0 50 50"><path d="m18.75 36-2.15-2.15 9.9-9.9-9.9-9.9 2.15-2.15L30.8 23.95Z"/></svg>
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev">
+                        <div class="projects_arrow">
+                            <svg class="icon" height="48" width="48" viewBox="0 0 50 50"><path d="M28.05 36 16 23.95 28.05 11.9l2.15 2.15-9.9 9.9 9.9 9.9Z"/></svg>
+                        </div>
+                    </div>
+                </div>
+                <script src="scripts/swiper.js"></script>
+            </div>
+            <span class="project-slogan">Just swipe it!</span>
+        </div>
+    </div>
+    <div class="container-main">
+        <div class="container social-container">
+            <ul class="social-coll social-container">
+                <h2 class="social-title">Social media</h2>
+                <li><a class="social-bar twitter" href="https://twitter.com/Solin4035" aria-label="Twitter Solin4035"><img class="social-icon" src="/images/icons/social-media-twitter.svg" alt="Twitter"><span class="social-bar-title">Solin4035</span></a></li>
+                <li><a class="social-bar vkontakte" href="https://vk.com/solinoff" aria-label="Vkontakte Solinoff"><img class="social-icon" src="/images/icons/social-media-vkontakte.svg" alt="Vkontakte"><span class="social-bar-title">Solinoff</span></a></li>
+                <li><a class="social-bar youtube" href="https://www.youtube.com/channel/UCHrVxQmCu0PtLTyPRwBOBYA" aria-label="Youtube Solin4035"><img class="social-icon" src="/images/icons/social-media-youtube.svg" alt="Youtube"><span class="social-bar-title">Solin4035</span></a></li>
+                <li><a class="social-bar twitch" href="https://www.twitch.tv/solin4035" aria-label="Twitch Solin4035"><img class="social-icon" src="/images/icons/social-media-twitch.svg" alt="Twitch"><span class="social-bar-title">Solin4035</span></a></li>
+            </ul>
+            <ul class="social-coll social-container">
+                <h2 class="social-title">My works</h2>
+                <li><a class="social-bar github" href="https://github.com/SolinCode" aria-label="Github SolinCode"><img class="social-icon" src="/images/icons/social-media-github.svg" alt="Github"><span class="social-bar-title">SolinCode</span></a></li>
+                <li><a class="social-bar curseforge" href="https://www.curseforge.com/members/solin4035/projects" aria-label="Curseforge Solin4035"><img class="social-icon" src="/images/icons/social-media-curseforge.svg" alt="Curseforge"><span class="social-bar-title">Solin4035</span></a></li>
+            </ul>
+        </div>
+    </div>
+</main>
