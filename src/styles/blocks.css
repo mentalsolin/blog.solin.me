@@ -236,6 +236,7 @@ span, a, p {
     height: 320px;
     border-radius: 50px;
     transition: transform .2s;
+    box-shadow: 0 8px 15px #00000010;
 }
 
 .article-img:hover {
