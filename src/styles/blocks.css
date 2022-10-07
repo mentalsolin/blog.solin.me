@@ -9,25 +9,6 @@
     --alternative-text-color: #fff;
 }
 
-.dark {
-    --bg-color: #0f1215;
-    --main-color: #c5c5c5;
-    --font-color: #fff;
-    --accent-color: #0B84FF;
-
-    --default-border: 25px;
-    --black-color: #000;
-    --alternative-text-color: #fff;
-}
-
-.smooth-switch {
-    transition: .2s;
-}
-
-.invert {
-    filter: invert();
-}
-
 body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
@@ -311,10 +292,6 @@ span, a, p {
     text-align: center;
 }
 
-
-/* Social Media */
-
-
 /* Social bars */
 
 .social-container {
@@ -353,7 +330,7 @@ span, a, p {
     font-weight: 600;
     padding-right: 20px;
     color: var(--alternative-text-color);
-    transition: .15s;
+    transition: background .15s;
     border-radius: var(--default-border);
 }
 
@@ -370,7 +347,7 @@ span, a, p {
     height: 60px;
 }
 
-.twitter:hover, .twitch:focus {
+.twitter:hover, .twitter:focus {
     background-color: #1d9bf0;
 }
 
@@ -378,12 +355,8 @@ span, a, p {
     background-color: #0077FF;
 }
 
-.youtube:hover, .youtube:focus {
-    background-color: #ff0000;
-}
-
-.twitch:hover, .twitch:focus {
-    background-color: #9146ff;
+.instagram:hover, .instagram:focus {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
 }
 
 .github:hover, .github:focus {
@@ -392,10 +365,6 @@ span, a, p {
 
 .curseforge:hover, .curseforge:focus {
     background-color: #f16436;
-}
-
-.twitter:hover, .twitter:focus {
-    background-color: #1d9bf0;
 }
 
 /* Footer */
