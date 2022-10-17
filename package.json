@@ -3,7 +3,7 @@
 	"scripts": {
 		"start": "npx eleventy --serve --quiet",
 		"build": "rm -rf dist && npx eleventy && npx gulp",
-		"deploy": "npm run build && cd dist && rsync --archive --compress --delete . solin@solin.vps:/var/www/www.solinofficial.com"
+		"deploy": "npm run build && cd dist && rsync --archive --compress --delete . solin@host:/var/www/www.solinofficial.com"
 	},
 	"bugs": {
 			"url": "https://github.com/SolinCode/Solin-website/issues"
