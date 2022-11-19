@@ -1,76 +1,82 @@
 ---
-title: Solin's Website
+title: Solin's Official
 layout: page.njk
 permalink: index.html
 ---
 
-<main>
-    <div class="container-main">
-        <main class="intro-title">
-            <h1 class="title">Hello, i'm Solin</h1>
-            <span class="subtitle">I am a beginner Front-end developer, I also work in Photoshop.</span>
-        </main>
-        <div class="intro-arrow">
-            <svg class="icon intro-arrow-animation" height="48" width="48" viewBox="0 0 50 50"><path d="m24 30.8-12-12 2.15-2.15L24 26.5l9.85-9.85L36 18.8Z"/></svg>
+<main class="main">
+    <div class="intro">
+        <div class="intro__inner">
+            <div class="intro__logo">
+                <img class="intro__logo--logo" src="images/icons/intro/solin.svg" alt="#">
+            </div>
+            <h1 class="intro__title">@mentalsolin</h1>
+            <p class="intro__desc">Я начинающий фронтендер, изучаю c++. Люблю minecraft и делать ресурс-паки для него. Иногда дизайню сайты, ценю нестандартные решения в дизайне. Обрабатываю фотографии в фотошопе. Когда никто не видит настраиваю серваки, и изучаю линукс.</p>
+            <ul class="intro__social">
+                <li class="intro__social--item">
+                    <img class="intro__social--item-icon" src="images/icons/intro/twitter.svg" alt="#">
+                    <a class="intro__social--item-link" href="{{ links.social.twitter }}"></a>
+                </li>
+                <li class="intro__social--item">
+                    <img class="intro__social--item-icon" src="images/icons/intro/github.svg" alt="#">
+                    <a class="intro__social--item-link" href="{{ links.social.github }}"></a>
+                </li>
+                <li class="intro__social--item">
+                    <img class="intro__social--item-icon" src="images/icons/intro/telegram.svg" alt="#">
+                    <a class="intro__social--item-link" href="{{ links.social.telegram }}"></a>
+                </li>
+            </ul>
+        </div>
+        <div class="intro__arrow">
+            <img class="intro__arrow--animation" src="images/icons/intro/arrow_down.svg" alt="#">
         </div>
     </div>
-    <div class="container-main">
-        <div class="container center">
-            <div class="project-title">
-                <h2>Recent projects</h2>
-                <div class="project-more-container">
-                    <a class="project-more" href="https://github.com/SolinCode?tab=repositories">All projects</a>
-                </div>
+    <div class="harticles">
+        <div class="harticles__header">
+            <h2 class="harticles__header--title">Мои статьи</h2>
+            <div class="harticles__header--more">
+                <img class="harticles__header--more--icon" src="images/icons/articles/more.svg" alt="#">
+                <a class="harticles__header--more--link" href="articles.html"></a>
             </div>
-            <div class="projects-swiper">
-                <div class="swiper projectSwiper">
-                    <div class="swiper-wrapper" id="swiperInner">
-                    {%- for project in collections.projects | reverse -%}
-                        <div class="swiper-slide">
-                            <article class="article">
-                                <a class="article-img" href="{{project.data.link}}">
-                                    <img class="article-img" aria-label="{{project.data.title}}" src="{{ project.url + "1.jpg" }}" alt="{{project.data.title}}">
-                                </a>
-                                <div class="article-content">
-                                    <h3 class="article-title">{{project.data.title}}</h3>
-                                    <p class="article-desc-project-recent">{{project.data.desc}}</p>
-                                    <time class="article-date-project-recent" datetime="project.date.toISOString()">{{project.date.toLocaleString('en-US', { year: 'numeric', month: '2-digit', day: '2-digit'})}}</time>
-                                    <a class="article-more" href="{{project.data.link}}">Learn more...</a>
-                                </div>
-                            </article>
-                        </div>
+        </div>
+        <div class="projects-swiper">
+            <div class="swiper projectSwiper">
+                <div class="swiper-wrapper" id="swiperInner">
+                    {%- for article in collections.article | reverse -%}
+                    <div class="swiper-slide">
+                        <article class="harticles__article">
+                            <img class="harticles__article--image" src="{{ article.url + "images/preview.jpg" }}" alt="#">
+                            <h3 class="harticles__article--title">{{ article.data.title }}</h3>
+                            <p class="harticles__article--desc">{{ article.data.preview }}</p>
+                            <a class="harticles__article--link" href="{{ article.url }}"></a>
+                        </article>
+                    </div>
                     {%- endfor -%}
-                    </div>
-                    <div class="swiper-button-next">
-                        <div class="projects_arrow">
-                            <svg class="icon" height="48" width="48" viewBox="0 0 50 50"><path d="m18.75 36-2.15-2.15 9.9-9.9-9.9-9.9 2.15-2.15L30.8 23.95Z"/></svg>
-                        </div>
-                    </div>
-                    <div class="swiper-button-prev">
-                        <div class="projects_arrow">
-                            <svg class="icon" height="48" width="48" viewBox="0 0 50 50"><path d="M28.05 36 16 23.95 28.05 11.9l2.15 2.15-9.9 9.9 9.9 9.9Z"/></svg>
-                        </div>
-                    </div>
                 </div>
-                <script src="scripts/swiper.js"></script>
             </div>
-            <span class="project-slogan">Just swipe it!</span>
+        </div>
+        <script src="/scripts/modules/swiper.js"></script>
+        <div class="harticle__footer">
+            <img class="harticle__footer--icon" src="images/icons/articles/double_arrow_left.svg" alt="#">
+            <p class="harticle__footer--slogan">Просто свайпните</p>
+            <img class="harticle__footer--icon" src="images/icons/articles/double_arrow_right.svg" alt="#">
         </div>
     </div>
-    <div class="container-main">
-        <div class="container social-container">
-            <ul class="social-coll social-container">
-                <h2 class="social-title">Social media</h2>
-                <li><a class="social-bar twitter" href="https://twitter.com/mentalsolin" aria-label="Twitter Mentalsolin"><img class="social-icon" src="/images/icons/social-media-twitter.svg" alt="Twitter"><span class="social-bar-title">mentalsolin</span></a></li>
-                <li><a class="social-bar vkontakte" href="https://vk.com/mentalsolin" aria-label="Vkontakte Mentalsolin"><img class="social-icon" src="/images/icons/social-media-vkontakte.svg" alt="Vkontakte"><span class="social-bar-title">mentalsolin</span></a></li>
-                <li><a class="social-bar instagram" href="https://www.instagram.com/cutesolin/" aria-label="Twitch cutesolin"><img class="social-icon" src="/images/icons/social-media-instagram.svg" alt="Instagram"><span class="social-bar-title">cutesolin</span></a></li>
-            </ul>
-            <ul class="social-coll social-container">
-                <h2 class="social-title">My works</h2>
-                <li><a class="social-bar github" href="https://github.com/SolinCode" aria-label="Github SolinCode"><img class="social-icon" src="/images/icons/social-media-github.svg" alt="Github"><span class="social-bar-title">SolinCode</span></a></li>
-                <li><a class="social-bar curseforge" href="https://www.curseforge.com/members/solin4035/projects" aria-label="Curseforge Solin4035"><img class="social-icon" src="/images/icons/social-media-curseforge.svg" alt="Curseforge"><span class="social-bar-title">Solin4035</span></a></li>
-            </ul>
+    <div class="hprojects">
+        <h2 class="hprojects__title">Мои проекты</h2>
+        <div class="hprojects__list">
+            <div class="hprojects__list--item">
+                <h3 class="hprojects__list--item-title">Minecraft</h3>
+                <p class="hprojects__list--item-desc">Ресурс-паки</p>
+                <img class="hprojects__list--item-icon" src="images/icons/projects/arrow_right.svg" alt="#">
+                <a class="hprojects__list--item-link" href="projects.html"></a>
+            </div>
+            <div class="hprojects__list--item">
+                <h3 class="hprojects__list--item-title">Websites</h3>
+                <p class="hprojects__list--item-desc">Сайты</p>
+                <img class="hprojects__list--item-icon" src="images/icons/projects/arrow_right.svg" alt="#">
+                <a class="hprojects__list--item-link" href="projects.html"></a>
+            </div>
         </div>
     </div>
 </main>
-

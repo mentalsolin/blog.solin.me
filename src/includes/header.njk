@@ -1,16 +1,24 @@
 <header class="header">
-    <div class="container header-inner">
-        <picture>
-            <source srcset="/images/logo-wide.svg" media="(min-width: 800px)">
-            <img class="logo" src="/images/logo-small.svg" alt="logo" id="logo">
-        </picture>
-        <nav>
-            <ul class="nav">
-                <li><a class="nav-link" href="https://blog.solinofficial.com/">Blog</a></li>
-                <li><a class="nav-link" href="https://github.com/SolinCode">Github</a></li>
-                <li><a class="nav-link" href="https://twitter.com/Solin4035">Twitter</a></li>
-                <li><a class="nav-link" href="mailto:contact@solin.cc">Contact</a></li>
-            </ul>
-        </nav>
+    <div class="header_logo logo">
+        <img class="logo__image" src="/images/icons/logo.svg" width="60" height="60" alt="#">
+        <p class="logo__title">Solin's <span class="logo__title--hidden">Official</span> Blog</p>
+        <a class="logo__link" {% if page.url != '/' %}href="/"{% endif %}></a>
     </div>
+    <nav class="header__menu menu">
+        <button class="menu__button" type="button" aria-expanded="false" aria-controls="menu__list" aria-label="Открыть меню">
+            <svg class="menu__icon" aria-hidden="true" width="35" height="35">
+                <use class="menu__icon-menu" href="/images/icons/menu.svg#menu"></use>
+                <use class="menu__icon-cross" href="/images/icons/menu.svg#cross"></use>
+            </svg>
+        </button>
+        <ul class="menu__list" id="menu__list">
+            <li class="menu__item">
+                <a class="menu__link" href="https://solin.cc/" aria-label="Обо мне">Обо мне</a>
+            </li>
+            <li class="menu__item">
+                <a class="menu__link" href="https://www.donationalerts.com/c/solin4035" aria-label="Поддержать">Поддержать</a>
+            </li>
+        </ul>
+    </nav>
+    <script src="/scripts/modules/menu.js"></script>
 </header>

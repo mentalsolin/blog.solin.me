@@ -1,30 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="page" lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description" content="I'm a front-end developer, I recently started learning JavaScript. I work in Photoshop and Illustrator.">
-    <meta name="keywords" content="html, css, js, javascript, c++, cpp, thesolin, the solin, the solin website, thesolin website,the solin contact, thesolin contact, the solin projects, thesolin projects, the solin donate, thesolin donate, solin website">
+    <meta property="title" content="{{title}} — Solin's Official"/>
+    <meta property="description" content="{% if page.url != '/' %}{{preview}}{% else %}Я начинающий фронтендер, изучаю c++. Люблю minecraft и делать ресурс-паки для него. Иногда дизайню сайты, ценю нестандартные решения в дизайне. Обрабатываю фотографии в фотошопе. Когда никто не видит настраиваю серваки, и изучаю линукс.{% endif %}"/>
 
-    <script src="/libs/swiper-js/swiper-bundle.min.js"></script>
-    <link rel="stylesheet" href="/libs/swiper-js/swiper-bundle.min.css">
+    <meta property="og:locale" content="ru_RU"/>
+    <meta property="og:type" content="article"/>
+    <meta property="og:title" content="{{title}}"/>
+    <meta property="og:description" content="{% if page.url != '/' %}{{preview}}{% else %}Я начинающий фронтендер, изучаю c++. Люблю minecraft и делать ресурс-паки для него. Иногда дизайню сайты, ценю нестандартные решения в дизайне. Обрабатываю фотографии в фотошопе. Когда никто не видит настраиваю серваки, и изучаю линукс.{% endif %}"/>
+    <meta property="og:image" content="{{"https://beta.solinofficial.com" + page.url + "images/preview.jpg"}}"/>
+    <meta property="og:url" content="https://beta.solinofficial.com{% if page.url != '/' %}{{page.url}}{% endif %}"/>
+    <meta property="og:site_name" content="Solin's Official"/>
 
-    <link rel="stylesheet" href="/styles/styles.css">
+    {% if page.url != '/' %}
+        <meta property="og:title" content="{{title}}">
+        <meta property="og:type" content="article" />
+        <meta property="og:description" content="{{preview}}">
+        <meta property="og:image" content="{{"https://beta.solinofficial.com" + page.url + "images/preview.jpg"}}">
+        <meta property="og:url" content="https://beta.solinofficial.com{{page.url}}">
+        <meta name="twitter:card" content="summary_large_image">
+    {% endif %}
+
+    <meta name="theme-color" content="#ffffff">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;1,500&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Montserrat:wght@400;500;600&family=Roboto:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
 
     <link rel="icon" href="https://solin.cc/favicon.svg" type="image/svg+xml">
-    <title>Solin's Website</title>
-</head>
-<body class="light" id="body">
-    {% include 'header.njk' %}
+    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="stylesheet" href="/styles/print.css" media="print">
 
+    <link rel="stylesheet" href="/libs/swiper/swiper-bundle.min.css">
+    <script src="/libs/swiper/swiper-bundle.min.js"></script>
+
+    <title>{{title}}{% if page.url != '/' %} — Solin's Official{% endif %}</title>
+</head>
+<body class="page__body">
     {{ content | safe }}
 
     {% include 'footer.njk' %}
+    {% include 'navbar.njk' %}
 </body>
 </html>

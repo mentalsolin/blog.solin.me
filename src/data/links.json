@@ -1,0 +1,15 @@
+{
+    "social": {
+      "twitter": "https://twitter.com/mentalsolin",
+      "github": "https://github.com/solincode",
+      "telegram": "https://t.me/solin4035"
+    },
+    "donate": {
+      "donation": "https://solin.cc/donate"
+    },
+    "footer": {
+      "swiper": "https://swiperjs.com/",
+      "11ty": "https://www.11ty.dev/",
+      "telephonkin": "https://vk.com/nik_the_vaga"
+    }
+}
