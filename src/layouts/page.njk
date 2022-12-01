@@ -41,7 +41,7 @@
 
     <title>{{title}}{% if page.url != '/' %} — Solin's Official{% endif %}</title>
 </head>
-<body class="page__body">
+<body class="page__body {% if page.url == '/' %}home{% endif %}">
     {{ content | safe }}
 
     {% include 'footer.njk' %}

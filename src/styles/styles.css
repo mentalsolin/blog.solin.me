@@ -8,8 +8,13 @@
     letter-spacing: 0.04em;
     font-size: 20px;
     font-family: 'Montserrat', sans-serif;
-    width: 430px;
+    width: 1200px;
     max-width: 100%;
+    max-width: 100%;
+}
+
+.home {
+    width: 430px;
 }
 
 *,
@@ -585,6 +590,12 @@ h3 {
     grid-template-columns: 50% 50%;
 }
 
+@media (min-width: 700px) {
+    .article__heading {
+        display: grid;
+    }
+}
+
 .article__heading--date {
     margin: 0;
     grid-column: 1;
@@ -672,6 +683,12 @@ h3 {
 
 .article__content--figure {
     width: 100%;
+}
+
+.article__content--figure {
+    width: 100%;
+    max-height: 250px;
+    object-fit: contain;
 }
 
 .article__content figure figcaption {
