@@ -654,7 +654,7 @@ h3 {
 }
 
 .article__content h2 {
-    border-bottom: 1px var(--separator-color) solid;
+    border-bottom: 1px var(--second-color) solid;
     padding-bottom: 5px;
     line-height: 1.2;
     font-weight: 500;
