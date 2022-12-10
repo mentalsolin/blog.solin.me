@@ -12,16 +12,16 @@
     <meta property="og:type" content="article"/>
     <meta property="og:title" content="{{title}}"/>
     <meta property="og:description" content="{% if page.url != '/' %}{{preview}}{% else %}Я начинающий фронтендер, изучаю c++. Люблю minecraft и делать ресурс-паки для него. Иногда дизайню сайты, ценю нестандартные решения в дизайне. Обрабатываю фотографии в фотошопе. Когда никто не видит настраиваю серваки, и изучаю линукс.{% endif %}"/>
-    <meta property="og:image" content="{{"https://beta.solinofficial.com" + page.url + "images/preview.jpg"}}"/>
-    <meta property="og:url" content="https://beta.solinofficial.com{% if page.url != '/' %}{{page.url}}{% endif %}"/>
+    <meta property="og:image" content="{{"https://solinofficial.com" + page.url + "images/preview.jpg"}}"/>
+    <meta property="og:url" content="https://solinofficial.com{% if page.url != '/' %}{{page.url}}{% endif %}"/>
     <meta property="og:site_name" content="Solin's Official"/>
 
     {% if page.url != '/' %}
         <meta property="og:title" content="{{title}}">
         <meta property="og:type" content="article" />
         <meta property="og:description" content="{{preview}}">
-        <meta property="og:image" content="{{"https://beta.solinofficial.com" + page.url + "images/preview.jpg"}}">
-        <meta property="og:url" content="https://beta.solinofficial.com{{page.url}}">
+        <meta property="og:image" content="{{"https://solinofficial.com" + page.url + "images/preview.jpg"}}">
+        <meta property="og:url" content="https://solinofficial.com{{page.url}}">
         <meta name="twitter:card" content="summary_large_image">
     {% endif %}
 
