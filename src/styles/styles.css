@@ -29,7 +29,7 @@
     --pre--bg-color: #c5c5c530;
 }
 
-h1, h2, h3, p, a {
+h1, h2, h3 {
     margin: 0;
 }
 
@@ -351,12 +351,14 @@ h3 {
     font-size: 24px;
     font-weight: 600;
     margin-bottom: 10px;
+    margin: 0;
 }
 
 .footer__list--item-link {
     font-family: 'Roboto', sans-serif;
     color: var(--second-color);
     line-height: 25px;
+    margin: 0;
 }
 
 .footer__list--item-link a {
@@ -369,6 +371,7 @@ h3 {
     text-align: center;
     color: var(--second-color);
     font-size: 20px;
+    margin: 0;
 }
 
 
