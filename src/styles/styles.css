@@ -670,7 +670,13 @@ h3 {
 
 
 .article__content {
-    padding: 0 80px;
+    
+}
+
+@media (min-width: 700px) {
+    .article__content {
+        padding: 0 80px;
+    }
 }
 
 .article__content h2 {
