@@ -1,5 +1,5 @@
 ---
-title: 'Spotify Premium. На 3 месяца за 10$, без зарубежной карты?'
+title: '3 месяца Spotify Premium за 10$, без зарубежной карты'
 date: 2022-12-10
 tags:
     - finance

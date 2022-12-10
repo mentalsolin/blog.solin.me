@@ -40,3 +40,7 @@ h6 {
     background-color: #fff;
     color: #000;
 }
+
+.navbar {
+    display: none;
+}
