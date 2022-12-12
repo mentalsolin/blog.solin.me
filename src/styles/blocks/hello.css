@@ -1,0 +1,83 @@
+.hello {
+    display: grid;
+    row-gap: 30px;
+}
+
+.hello__logo {
+    height: 200px;
+    width: 200px;
+    background-color: var(--primary-color);
+    border-radius: 100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0 auto;
+}
+
+.hello__logo--icon {
+    height: 100px;
+}
+
+.hello__nickname {
+    text-align: center;
+    font-size: 28px;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+@media (min-width: 700px) {
+    .hello__nickname {
+        font-size: 30px;
+    }
+}
+
+.hello__preview {
+    text-align: center;
+    font-size: 20px;
+    margin: 0;
+}
+
+@media (min-width: 700px) {
+    .hello__preview {
+        font-size: 22px;
+        padding: 0 300px;
+    }
+}
+
+
+/* Social */
+
+.social {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    justify-content: center;
+    flex-direction: row;
+    column-gap: 30px;
+}
+
+.social__item {
+    position: relative;
+    width: 70px;
+    height: 70px;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.social__item--icon {
+    width: 50px;
+}
+
+.social__item--link {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}

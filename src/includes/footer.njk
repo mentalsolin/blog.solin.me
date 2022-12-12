@@ -1,34 +1,33 @@
 <footer class="footer">
-    <ul class="footer__list">
-        <li class="footer__list--item">
-            <p class="footer__list--item-title">Ссылки</p>
-        </li>
-        <li class="footer__list--item">
-            <p class="footer__list--item-link"><a class="footer__list--item-link" href="{{ links.social.github }}">GitHub Page</a></p>
-        </li>
-        <li class="footer__list--item">
-            <p class="footer__list--item-link"><a class="footer__list--item-link" href="{{ links.social.telegram }}">Telegram</a></p>
-        </li>
-        <li class="footer__list--item">
-            <p class="footer__list--item-link"><a class="footer__list--item-link" href="{{ links.social.twitter }}">Twitter</a></p>
-        </li>
-    </ul>
-    <ul class="footer__list">
-        <li class="footer__list--item">
-            <p class="footer__list--item-title">Кто? Что?</p>
-        </li>
-        <li class="footer__list--item">
-            <p class="footer__list--item-link">Вёрстка <a href="{{ links.social.github }}">mentalsolin</a></p>
-        </li>
-        <li class="footer__list--item">
-            <p class="footer__list--item-link">Дизайн <a href="{{ links.social.github }}">mentalsolin</a>, <a href="{{ links.footer.telephonkin }}">Telephonkin</a></p>
-        </li>
-        <li class="footer__list--item">
-            <p class="footer__list--item-link">Библиотеки <a href="{{ links.footer.swiper }}">Swiper</a></p>
-        </li>
-        <li class="footer__list--item">
-            <p class="footer__list--item-link">Создано на <a href="{{ links.footer.11ty }}">11ty</a></p>
-        </li>
-    </ul>
-    <p class="copyright">Copyright © mentalsolin</p>
+        <div class="container footer__container">
+            <ul class="links">
+                <li class="links__item">
+                    <h3 class="links__item--title">Ссылки</h3>
+                </li>
+                <li class="links__item">
+                    <a class="links__item--text links__item--link" href="{{ links.social.twitter }}">Twitter</a>
+                </li>
+                <li class="links__item">
+                    <a class="links__item--text links__item--link" href="{{ links.social.github }}">Github</a>
+                </li>
+                <li class="links__item">
+                    <a class="links__item--text links__item--link" href="{{ links.donate.donation }}">Donate</a>
+                </li>
+            </ul>
+            <ul class="links">
+                <li class="links__item">
+                    <h3 class="links__item--title">Кто? Что?</h3>
+                </li>
+                <li class="links__item">
+                    <p class="links__item--text">Вёрстка <a class="links__item--text links__item--link" href="{{ links.social.telegram }}">mentalsolin</a></p>
+                </li>
+                <li class="links__item">
+                    <p class="links__item--text">Дизайн <a class="links__item--text links__item--link" href="{{ links.social.telegram }}">mentalsolin</a>, <a class="links__item--text links__item--link" href="{{ links.footer.telephonkin }}">Telephonkin</a></p>
+                </li>
+                <li class="links__item">
+                    <p class="links__item--text">Создано на <a class="links__item--text links__item--link" href="{{ links.footer.11ty }}">11ty</a></p>
+                </li>
+            </ul>
+            <p class="footer__copyright">Copyright © mentalsolin</p>
+        </div>
 </footer>

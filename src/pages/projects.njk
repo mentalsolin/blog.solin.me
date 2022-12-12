@@ -5,29 +5,41 @@ permalink: projects.html
 ---
 
 <main class="main">
-    <div class="projects">
-        <h1 class="projects__title">Проекты</h1>
-        <p class="projects__tag">Websites</p>
-        {%- for website in collections.pwebsite | reverse -%}
-            <div class="projects__list">
-                <article class="project">
-                    <img class="project__image" src="{{ website.url }}1.jpg" alt="#">
-                    <h2 class="project__title">{{ website.data.title }}</h2>
-                    <p class="project__subtitle">{{ website.data.desc }}</p>
-                    <a class="project__link" href="{{ website.data.link }}"></a>
+    <div class="lop__container container">
+        <h2 class="lop__heading-title">Websites</h2>
+        <div class="lop__wrapper">
+            {%- for project in collections.pwebsite | reverse -%}
+                <article class="lop">
+                    <img class="lop__image" src="{{ project.url }}1.jpg" alt="{{ project.data.title }}">
+                    <h3 class="lop__title">{{ project.data.title }}</h3>
+                    <p class="lop__preview">{{ project.data.desc }}</p>
+                    <a class="lop__link" href="{{ project.data.link }}"></a>
                 </article>
-            </div>
-        {%- endfor -%}
-        <p class="projects__tag">Minecraft</p>
-        {%- for minecraft in collections.pminecraft | reverse -%}
-            <div class="projects__list">
-                <article class="project">
-                    <img class="project__image" src="{{ minecraft.url }}1.jpg" alt="#">
-                    <h2 class="project__title">{{ minecraft.data.title }}</h2>
-                    <p class="project__subtitle">{{ minecraft.data.desc }}</p>
-                    <a class="project__link" href="{{ minecraft.data.link }}"></a>
+            {%- endfor -%}
+        </div>
+
+        <h2 class="lop__heading-title">Minecraft</h2>
+        <div class="lop__wrapper">
+            {%- for project in collections.pminecraft | reverse -%}
+                <article class="lop">
+                    <img class="lop__image" src="{{ project.url }}1.jpg" alt="{{ project.data.title }}">
+                    <h3 class="lop__title">{{ project.data.title }}</h3>
+                    <p class="lop__preview">{{ project.data.desc }}</p>
+                    <a class="lop__link" href="{{ project.data.link }}"></a>
                 </article>
-            </div>
-        {%- endfor -%}
+            {%- endfor -%}
+        </div>
+
+        <h2 class="lop__heading-title">Utilities</h2>
+        <div class="lop__wrapper">
+            {%- for project in collections.putilities | reverse -%}
+                <article class="lop">
+                    <img class="lop__image" src="{{ project.url }}1.jpg" alt="{{ project.data.title }}">
+                    <h3 class="lop__title">{{ project.data.title }}</h3>
+                    <p class="lop__preview">{{ project.data.desc }}</p>
+                    <a class="lop__link" href="{{ project.data.link }}"></a>
+                </article>
+            {%- endfor -%}
+        </div>
     </div>
 </main>

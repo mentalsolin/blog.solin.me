@@ -29,22 +29,19 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Montserrat:wght@400;500;600&family=Inter:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=JetBrains+Mono&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
 
     <link rel="icon" href="https://solin.cc/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="/styles/styles.css">
     <link rel="stylesheet" href="/styles/print.css" media="print">
 
-    <link rel="stylesheet" href="/libs/swiper/swiper-bundle.min.css">
-    <script src="/libs/swiper/swiper-bundle.min.js"></script>
-
     <title>{{title}}{% if page.url != '/' %} — Solin's Official{% endif %}</title>
 </head>
-<body class="page__body {% if page.url == '/' %}home{% endif %}">
+<body class="page__body">
+    {% if page.url != '/' %}{% include 'header.njk' %}{% endif %}
     {{ content | safe }}
-
     {% include 'footer.njk' %}
-    {% include 'navbar.njk' %}
+
+    <script type="module" src="/scripts/index.js"></script>
 </body>
 </html>

@@ -1,0 +1,35 @@
+.page {
+
+}
+
+.page__body {
+    margin: 0;
+    letter-spacing: 0.04em;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6em;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.main {
+    padding: 160px 30px 60px 30px;
+}
+
+.main__nm {
+    padding-top: 60px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.container__inner {
+    width: 100%;
+    max-width: 800px;
+}

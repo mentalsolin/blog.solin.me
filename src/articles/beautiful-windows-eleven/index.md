@@ -35,7 +35,7 @@ preview: 'Если вы несчастливый обладатель 11-той 
 
 
     <figure>
-        <img class="article__content--figure" src="images/1.jpg" alt="Шкала громкости Windows">
+        <img src="images/1.jpg" alt="Шкала громкости Windows">
         <figcaption>Шкала громкости Windows</figcaption>
     </figure>
 
@@ -43,14 +43,14 @@ preview: 'Если вы несчастливый обладатель 11-той 
     Если использовать 1 из виджетов JaxCore, то он будет выглядеть примерно так:
 
     <figure>
-        <img class="article__content--figure" src="images/2.jpg" alt="Шкала громкости в одной из тем JaxCore. Тема Ameber">
+        <img src="images/2.jpg" alt="Шкала громкости в одной из тем JaxCore. Тема Ameber">
         <figcaption>Шкала громкости в одной из тем JaxCore. Тема Ameber</figcaption>
     </figure>
 
     Или так:
 
     <figure>
-        <img class="article__content--figure" src="images/3.jpg" alt="Шкала громкости JaxCore. Тема Gnome">
+        <img src="images/3.jpg" alt="Шкала громкости JaxCore. Тема Gnome">
         <figcaption>Шкала громкости в одной из тем JaxCore. Тема Gnome</figcaption>
     </figure>
 
@@ -65,7 +65,7 @@ preview: 'Если вы несчастливый обладатель 11-той 
     Открыв программу, можно увидеть 2 ползунка первый отвечает за отступ со всех сторон, что позволяет сделать ее не только закругленной, но и придать эффект отступа снизу, вторым ползунком можно задать закругление панели, мои настройки 4, 8 и дает такой эффект:
 
     <figure>
-        <img class="article__content--figure" src="images/4.jpg" alt="Моя панель задач">
+        <img class="content__figure" src="images/4.jpg" alt="Моя панель задач">
         <figcaption>Моя панель задач</figcaption>
     </figure>
 

@@ -5,28 +5,15 @@ permalink: articles.html
 ---
 
 <main class="main">
-    <div class="articles">
-        <h1 class="articles__title">Статьи</h1>
-        {# <div class="articles__taglist">
-            <a class="articles__taglist--tag" href="#">minecraft</a>
-            <a class="articles__taglist--tag" href="#">c++</a>
-            <a class="articles__taglist--tag" href="#">web</a>
-            <a class="articles__taglist--tag" href="#">java</a>
-            <a class="articles__taglist--tag" href="#">python</a>
-            <a class="articles__taglist--tag" href="#">js</a>
-        </div> #}
-        <div class="articles__list">
-            {%- for article in collections.article | reverse -%}
-            <article class="article">
-                <div class="article__container">
-                    <time class="article__container--date" datetime="{{ article.date.toISOString() }}">{{ article.date | ruDate }}</time>
-                    <h2 class="article__container--title">{{ article.data.title }}</h2>
-                    <p class="article__container--tag">{{ article.data.tags | tag }}</p>
-                    <a class="article__container--link" href="{{ article.url }}"></a>
-                </div>
-                <p class="article__desc">{{ article.data.preview }}</p>
+    <div class="loa__container container">
+        {%- for article in collections.article | reverse -%}
+            <article class="loa">
+                <h3 class="loa__title">{{ article.data.title }}</h3>
+                <p class="loa__preview">{{ article.data.preview }}</p>
+                <time class="loa__time" datetime="{{ article.date.toISOString() }}">{{ article.date | ruDate }}</time>
+                <img class="loa__image" src="{{ article.url }}images/preview.jpg" alt="{{ article.data.title }}">
+                <a class="loa__link" href="{{ article.url }}"></a>
             </article>
-            {%- endfor -%}
-        </div>
+        {%- endfor -%}
     </div>
 </main>
