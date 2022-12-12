@@ -42,7 +42,9 @@
 @media (min-width: 700px) {
     .hello__preview {
         font-size: 22px;
-        padding: 0 300px;
+        width: 400px;
+        margin: 0 auto;
+        line-height: 1.6em;
     }
 }
 
