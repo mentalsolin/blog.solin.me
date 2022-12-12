@@ -3,7 +3,7 @@
     row-gap: 30px;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 900px) {
     .hello {
         grid-template-columns: 300px 2fr;
         column-gap: 100px;
@@ -23,7 +23,7 @@
     margin: 0 auto;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 900px) {
     .hello__logo {
         height: 300px;
         width: 300px;
@@ -35,7 +35,7 @@
     height: 100px;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 900px) {
     .hello__logo--icon {
         height: 150px;
     }
@@ -48,7 +48,7 @@
     margin: 0;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 900px) {
     .hello__nickname {
         font-size: 30px;
         grid-column: 1;
@@ -61,7 +61,7 @@
     margin: 0;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 900px) {
     .hello__preview {
         margin: 0 auto;
         grid-column: 2;

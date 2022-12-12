@@ -3,7 +3,7 @@
     grid-template-columns: 1fr;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 900px) {
     .lop__container {
         padding: 0 30px;
     }
@@ -20,7 +20,7 @@
     margin-bottom: 30px;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 900px) {
     .lop__heading-title {
         font-size: 28px;
     }
@@ -46,7 +46,7 @@
     padding: 0 30px;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 900px) {
     .lop__title {
         font-size: 26px;
     }
@@ -59,7 +59,7 @@
     padding: 0 30px;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 900px) {
     .lop__preview {
         font-size: 22px;
     }
@@ -78,7 +78,7 @@
     grid-template-columns: 1fr;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 900px) {
     .lop__wrapper {
         grid-template-columns: 1fr 1fr 1fr;
         column-gap: 30px;

@@ -9,7 +9,7 @@
     color: var(--secondary-color);
 }
 
-@media (min-width: 700px) {
+@media (min-width: 900px) {
     .article__heading--time {
         font-size: 22px;
     }
@@ -23,7 +23,7 @@
     margin: 0;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 900px) {
     .article__heading--title {
         font-weight: 400;
         font-size: 70px;
@@ -37,7 +37,7 @@
     margin: 0;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 900px) {
     .article__heading--preview {
         font-weight: 300;
         font-size: 32px;
@@ -52,7 +52,7 @@
     color: var(--secondary-color);
 }
 
-@media (min-width: 700px) {
+@media (min-width: 900px) {
     .article__heading--tags {
         font-size: 22px;
     }
@@ -70,7 +70,7 @@
     color: var(--primary-color);
 }
 
-@media (min-width: 700px) {
+@media (min-width: 900px) {
     .article__heading--link {
         font-size: 22px;
         width: max-content;
@@ -81,7 +81,7 @@
     padding: 0;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 900px) {
     .article__container {
         padding: 0 30px;
     }
@@ -104,7 +104,7 @@
     margin-bottom: 30px;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 900px) {
     .content h2 {
         font-size: 28px;
     }
@@ -116,7 +116,7 @@
     margin-bottom: 10px;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 900px) {
     .content h3 {
         font-size: 26px;
     }
@@ -128,7 +128,7 @@
     margin-bottom: 10px;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 900px) {
     .content h4 {
         font-size: 24px;
     }
@@ -139,7 +139,7 @@
     line-height: 1.6em;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 900px) {
     .content p {
         font-size: 22px;
         line-height: 1.8em;
@@ -151,7 +151,7 @@
     color: var(--primary-color);
 }
 
-@media (min-width: 700px) {
+@media (min-width: 900px) {
     .content a {
         font-size: 22px;
     }
@@ -172,7 +172,7 @@
     font-size: 20px;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 900px) {
     .content ol,
     .content ul {
         font-size: 22px;
@@ -184,7 +184,7 @@
     margin-bottom: 0;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 900px) {
     .content ol,
     .content ul {
         margin-top: 19px;
@@ -205,7 +205,7 @@
     padding-left: 25px;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 900px) {
     .content ol > li,
     .content ul > li {
         padding-left: 42px;
@@ -223,7 +223,7 @@
     content: '—';
 }
 
-@media (min-width: 700px) {
+@media (min-width: 900px) {
     .content ul > li::before {
         top: -2px;
         font-size: 22px;
@@ -247,7 +247,7 @@
     content: counter(list);
 }
 
-@media (min-width: 700px) {
+@media (min-width: 900px) {
     .content ol > li::before {
         font-size: 22px;
     }
@@ -265,7 +265,7 @@
     font-size: 0.8em;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 900px) {
     .content figure {
         margin: 60px 0;
     }
@@ -282,7 +282,7 @@
     border-radius: 30px;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 900px) {
     .content img,
     .content video {
         margin: 60px 0;
@@ -300,7 +300,7 @@
     color: var(--secondary-color);
 }
 
-@media (min-width: 700px) {
+@media (min-width: 900px) {
     .content figcaption {
         font-size: 22px;
     }
@@ -330,7 +330,7 @@
     }
 }
 
-@media (min-width: 700px) {
+@media (min-width: 900px) {
     .content blockquote {
         margin-top: 40px;
         margin-bottom: 60px;
@@ -349,7 +349,7 @@
     content: '';
 }
 
-@media (min-width: 700px) {
+@media (min-width: 900px) {
     .content blockquote::before {
         top: 0.5em;
         bottom: 0.5em;
@@ -374,7 +374,7 @@
     padding-left: 30px;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 900px) {
     .content pre {
         margin-top: 60px;
         margin-bottom: 60px;
@@ -402,7 +402,7 @@
     user-select: all;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 900px) {
     .content pre code {
         font-size: 24px;
     }
@@ -418,7 +418,7 @@
     }
 }
 
-@media (min-width: 700px) {
+@media (min-width: 900px) {
     .content pre code {
         padding: 30px 0;
     }
@@ -488,7 +488,7 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 900px) {
     .content th,
     .content td {
         font-size: 22px;

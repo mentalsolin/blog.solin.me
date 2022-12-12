@@ -7,7 +7,7 @@
     margin-bottom: 30px;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 900px) {
     .projects__title {
         font-size: 28px;
     }
@@ -21,7 +21,7 @@
     row-gap: 30px;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 900px) {
     .projects {
         grid-template-columns: 1fr 1fr 1fr;
         column-gap: 30px;
@@ -46,13 +46,13 @@
     font-family: 'Montserrat';
 }
 
-@media (min-width: 700px) {
+@media (min-width: 900px) {
     .project-card__title {
         font-size: 26px;
     }
 }
 
-@media (min-width: 700px) {
+@media (min-width: 900px) {
     .project-card__title {
         margin-bottom: 60px;
     }
@@ -63,7 +63,7 @@
     font-size: 20px;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 900px) {
     .project-card__subtitle {
         font-size: 22px;
     }

@@ -26,7 +26,7 @@
     margin-bottom: 10px;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 900px) {
     .links__item--title {
         font-size: 26px;
     }
@@ -45,7 +45,7 @@
     color: var(--secondary-color);
 }
 
-@media (min-width: 700px) {
+@media (min-width: 900px) {
     .links__item--text {
         font-size: 22px;
     }
@@ -61,7 +61,7 @@
     margin-top: 30px;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 900px) {
     .footer__copyright {
         font-size: 22px;
     }
