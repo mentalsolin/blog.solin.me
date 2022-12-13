@@ -95,6 +95,7 @@
 
 .content h2, .content h3, .content h4 {
     letter-spacing: 0.1em;
+    line-height: normal;
     font-family: 'Montserrat', sans-serif;
 }
 
