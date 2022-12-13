@@ -6,7 +6,7 @@ permalink: projects.html
 
 <main class="main">
     <div class="lop__container container">
-        <h2 class="lop__heading-title">Websites</h2>
+        <h2 class="lop__heading-title" id="websites">Websites</h2>
         <div class="lop__wrapper">
             {%- for project in collections.pwebsite | reverse -%}
                 <article class="lop">
@@ -18,7 +18,7 @@ permalink: projects.html
             {%- endfor -%}
         </div>
 
-        <h2 class="lop__heading-title">Minecraft</h2>
+        <h2 class="lop__heading-title" id="minecraft">Minecraft</h2>
         <div class="lop__wrapper">
             {%- for project in collections.pminecraft | reverse -%}
                 <article class="lop">
@@ -30,7 +30,7 @@ permalink: projects.html
             {%- endfor -%}
         </div>
 
-        <h2 class="lop__heading-title">Utilities</h2>
+        <h2 class="lop__heading-title" id="utilities">Utilities</h2>
         <div class="lop__wrapper">
             {%- for project in collections.putilities | reverse -%}
                 <article class="lop">

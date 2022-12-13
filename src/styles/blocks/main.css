@@ -1,5 +1,5 @@
 .page {
-
+    scroll-behavior: smooth;
 }
 
 .page__body {
@@ -32,4 +32,8 @@
 .container__inner {
     width: 100%;
     max-width: 800px;
+}
+
+h2, h3, h4 {
+    scroll-margin-block-start: 100px;
 }
