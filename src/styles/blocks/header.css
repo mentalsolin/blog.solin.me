@@ -6,7 +6,9 @@
     column-gap: 30px;
     padding: 0 30px;
     width: 100%;
-    background-color: var(--bg-color);
+    background-color:rgba(255,255,255,0.6);
+    filter:blur(10px);
+    z-index: 1000;
     z-index: 1000;
 }
 
