@@ -93,11 +93,11 @@ preview: 'Если вы несчастливый обладатель 11-той 
 
     [Скачать светлую и темную версию](https://www.deviantart.com/jepricreations/art/Windows-11-Cursors-Concept-v2-886489356).
 
-![Windows 11 Cursors Concept v2](images/5.jpg)
+    ![Windows 11 Cursors Concept v2](images/5.jpg)
 
 2. **Material Design Cursors**
 
     [Скачать темную версию](https://www.deviantart.com/jepricreations/art/Material-Design-Cursors-Dark-756850032)\
     [Скачать светлую версию](https://www.deviantart.com/jepricreations/art/Material-Design-Cursors-Light-775995490)
 
-![Material Design Cursors Dark](images/6.jpg)
+    ![Material Design Cursors Dark](images/6.jpg)
