@@ -16,8 +16,8 @@ module.exports = function(eleventyConfig) {
         }).replace(' г.', '')
     })
 
-    eleventyConfig.addFilter('tag', (value) => {
-        return value[1]
+    eleventyConfig.addFilter('prettyTags', (value) => {
+        return value.slice(1).join(', ', '')
     })
 
     eleventyConfig.addFilter('lastArticles', (value) => {

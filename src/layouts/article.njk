@@ -9,7 +9,7 @@ layout: page.njk
                 <time class="article__heading--time" datetime="{{ date.toISOString() }}">{{ date | ruDate }}</time>
                 <h1 class="article__heading--title">{{ title }}</h1>
                 <p class="article__heading--preview">{{ preview }}</p>
-                <p class="article__heading--tags">{{ tags | join(', ') }}</p>
+                <p class="article__heading--tags">{{ tags | prettyTags }}</p>
                 <img class="article__heading--image" src="images/preview.jpg" alt="{{title}}">
                 <a class="article__heading--link" href="https://github.com/SolinCode/solinofficial.com/blob/main/src{{page.url}}index.md">Редактировать статью</a>
             </div>
