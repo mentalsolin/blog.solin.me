@@ -37,6 +37,10 @@
     text-decoration: none;
 }
 
+.links__item--link:hover {
+    text-decoration: underline;
+}
+
 .links__item--text {
     font-weight: 400;
     font-size: 20px;

@@ -104,6 +104,32 @@
     }
 }
 
+
+/* Notice */
+
+.notice {
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 0;
+}
+
+.notice__link {
+    color: var(--primary-color);
+    font-size: 26px;
+    text-decoration: none;
+}
+
+@media (min-width: 900px) {
+    .notice__link {
+        font-size: 28px;
+    }
+}
+
+.notice__link:hover {
+    text-decoration: underline;
+}
+
+
 /* Content */
 
 .content {

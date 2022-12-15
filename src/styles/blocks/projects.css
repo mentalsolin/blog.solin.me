@@ -34,8 +34,9 @@
 
 .project-card {
     padding: 30px;
-    border: 1px var(--primary-color) solid;
+    outline: 1px var(--primary-color) solid;
     border-radius: 30px;
+    transition: .001s;
 }
 
 .project-card__title {
