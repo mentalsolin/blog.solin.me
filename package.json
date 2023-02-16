@@ -10,7 +10,7 @@
   },
   "homepage": "https://solinofficial.com",
   "dependencies": {
-    "@11ty/eleventy": "^1.0.2",
+    "@11ty/eleventy": "^2.0.0",
     "del": "^6.0.0",
     "gulp-clean-css": "^4.3.0",
     "gulp-copy": "^4.0.1",
