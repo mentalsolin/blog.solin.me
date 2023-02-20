@@ -38,7 +38,7 @@
     <title>{{title}}{% if page.url != '/' %} — Solin's Official{% endif %}</title>
 </head>
 <body class="page__body">
-    {% if page.url != '/' %}{% include 'header.njk' %}{% endif %}
+    {% include 'header.njk' %}
     {{ content | safe }}
     {% include 'footer.njk' %}
 

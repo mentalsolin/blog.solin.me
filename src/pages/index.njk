@@ -4,70 +4,16 @@ layout: page.njk
 permalink: index.html
 ---
 
-    <main class="main main__nm container">
-        <div class="hello">
-            <div class="hello__logo">
-                <img class="hello__logo--icon" src="/images/icons/logo.svg" alt="S">
-            </div>
-            <h1 class="hello__nickname">@mentalsolin</h1>
-            <p class="hello__preview">Я начинающий фронтендер, изучаю c++. Люблю minecraft и делать ресурс-паки для него. Иногда дизайню сайты, ценю нестандартные решения в дизайне. Обрабатываю фотографии в фотошопе. Когда никто не видит настраиваю серваки, и изучаю линукс.</p>
-            <ul class="social">
-                <li class="social__item">
-                    <img class="social__item--icon" src="/images/icons/github.svg" alt="Github">
-                    <a class="social__item--link" href="{{ links.links.github }}"></a>
-                <li class="social__item">
-                    <img class="social__item--icon" src="/images/icons/donation.svg" alt="Donation">
-                    <a class="social__item--link" href="{{ links.links.donation }}"></a>
-                </li>
-                </li>
-                <li class="social__item">
-                    <img class="social__item--icon" src="/images/icons/telegram.svg" alt="Telegram">
-                    <a class="social__item--link" href="{{ links.links.telegram }}"></a>
-                </li>
-            </ul>
-        </div>
-        <h2 class="articles__title">Мои статьи</h2>
-        <ul class="articles">
-            {%- for article in collections.article | lastArticles -%}
-                <li class="articles__item">
-                    <article class="article-card">
-                        <img class="article-card__image" src="{{ article.url }}images/preview.jpg" alt="{{ article.data.title }}">
-                        <time class="article-card__time">{{ article.data.date | ruDate }}</time>
-                        <h3 class="article-card__title">{{ article.data.title }}</h3>
-                        <a class="article-card__link" href="{{ article.url }}"></a>
-                    </article>
-                </li>
-            {%- endfor -%}
-            </li>
-        </ul>
-        <p class="articles__notice">
-            <a class="articles__notice--link" href="articles.html">Все статьи</a>
-        </p>
-        <h2 class="projects__title">Мои проекты</h2>
-        <ul class="projects">
-            <li class="projects__item">
-                <div class="project-card">
-                    <h3 class="project-card__title">Websites</h3>
-                    <p class="project-card__subtitle">Сайты</p>
-                    <svg class="project-card__icon" height="48" width="48"><path d="m35.1 32.3-1.65-1.6 5.5-5.55H6.5V22.9H39l-5.5-5.5 1.55-1.6 8.25 8.25Z"/></svg>
-                    <a class="project-card__link" href="/projects.html#websites"></a>
-                </div>
-            </li>
-            <li class="projects__item">
-                <div class="project-card">
-                    <h3 class="project-card__title">Minecraft</h3>
-                    <p class="project-card__subtitle">Ресурс-паки</p>
-                    <svg class="project-card__icon" height="48" width="48"><path d="m35.1 32.3-1.65-1.6 5.5-5.55H6.5V22.9H39l-5.5-5.5 1.55-1.6 8.25 8.25Z"/></svg>
-                    <a class="project-card__link" href="/projects.html#minecraft"></a>
-                </div>
-            </li>
-            <li class="projects__item">
-                <div class="project-card">
-                    <h3 class="project-card__title">Utilities</h3>
-                    <p class="project-card__subtitle">Программы</p>
-                    <svg class="project-card__icon" height="48" width="48"><path d="m35.1 32.3-1.65-1.6 5.5-5.55H6.5V22.9H39l-5.5-5.5 1.55-1.6 8.25 8.25Z"/></svg>
-                    <a class="project-card__link" href="/projects.html#utilities"></a>
-                </div>
-            </li>
-        </ul>
-    </main>
+<main class="main">
+    <div class="loa__container container">
+        {%- for article in collections.article | reverse -%}
+            <article class="loa">
+                <h3 class="loa__title">{{ article.data.title }}</h3>
+                <p class="loa__preview">{{ article.data.preview }}</p>
+                <time class="loa__time" datetime="{{ article.date.toISOString() }}">{{ article.date | ruDate }}</time>
+                <img class="loa__image" src="{{ article.url }}images/preview.jpg" alt="{{ article.data.title }}">
+                <a class="loa__link" href="{{ article.url }}"></a>
+            </article>
+        {%- endfor -%}
+    </div>
+</main>
