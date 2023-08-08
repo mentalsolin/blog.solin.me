@@ -59,7 +59,8 @@ exports.clean = clean
 
 // Default
 
-exports.default = gulp.series(
+
+gulp.task('build', gulp.series(
     gulp.parallel(
         html,
         styles
@@ -67,5 +68,4 @@ exports.default = gulp.series(
     gulp.parallel(
         clean,
         stylesPrint
-    )
-)
+    )))
