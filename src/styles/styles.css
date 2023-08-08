@@ -4,9 +4,5 @@
 @import 'blocks/header.css';
 @import 'blocks/footer.css';
 
-@import 'blocks/hello.css';
-@import 'blocks/articles.css';
-@import 'blocks/projects.css';
-@import 'blocks/loa.css';
-@import 'blocks/lop.css';
 @import 'blocks/content.css';
+@import 'blocks/articles.css';
