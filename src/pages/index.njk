@@ -5,14 +5,14 @@ permalink: index.html
 ---
 
 <main class="main">
-    <div class="loa__container container">
+    <div class="articles__container container">
         {%- for article in collections.article | reverse -%}
-            <article class="loa">
-                <h3 class="loa__title">{{ article.data.title }}</h3>
-                <p class="loa__preview">{{ article.data.preview }}</p>
-                <time class="loa__time" datetime="{{ article.date.toISOString() }}">{{ article.date | ruDate }}</time>
-                <img class="loa__image" src="{{ article.url }}images/preview.jpg" alt="{{ article.data.title }}">
-                <a class="loa__link" href="{{ article.url }}"></a>
+            <article class="articles">
+                <h3 class="articles__title">{{ article.data.title }}</h3>
+                <p class="articles__preview">{{ article.data.preview }}</p>
+                <time class="articles__time" datetime="{{ article.date.toISOString() }}">{{ article.date | toDate }}</time>
+                <img class="articles__image" src="{{ article.url }}images/preview.jpg" alt="{{ article.data.title }}">
+                <a class="articles__link" href="{{ article.url }}"></a>
             </article>
         {%- endfor -%}
     </div>

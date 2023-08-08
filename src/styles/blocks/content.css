@@ -29,9 +29,9 @@
 
 .article__heading--title {
     font-weight: 500;
-    font-size: 34px;
-    line-height: 41px;
-    font-family: 'Montserrat';
+    font-size: 50px;
+    line-height: 50px;
+    font-family: 'Chonburi';
     margin: 0;
     animation: show .8s forwards;
 }
@@ -40,12 +40,12 @@
     .article__heading--title {
         font-weight: 400;
         font-size: 70px;
-        line-height: 85px
+        line-height: 85px;
+        padding: 0 15px;
     }
 }
 
 .article__heading--preview {
-    font-weight: 300;
     font-size: 24px;
     margin: 0;
     animation: show 1s forwards;
@@ -53,7 +53,6 @@
 
 @media (min-width: 900px) {
     .article__heading--preview {
-        font-weight: 300;
         font-size: 32px;
         line-height: 39px;
     }
@@ -70,12 +69,13 @@
 @media (min-width: 900px) {
     .article__heading--tags {
         font-size: 22px;
+        padding: 0 15px;
     }
 }
 
 .article__heading--image {
     width: 100%;
-    border-radius: 30px;
+    border-radius: 60px;
     animation: show 1.4s forwards;
 }
 
@@ -91,6 +91,7 @@
     .article__heading--link {
         font-size: 22px;
         width: max-content;
+        padding: 0 15px;
     }
 }
 
@@ -187,6 +188,7 @@
     .content p {
         font-size: 22px;
         line-height: 1.8em;
+        padding: 0 15px;
     }
 }
 

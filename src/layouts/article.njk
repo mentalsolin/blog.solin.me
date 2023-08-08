@@ -6,18 +6,18 @@ layout: page.njk
     <div class="article__container container">
         <div class="container__inner">
             <div class="article__heading">
-                <time class="article__heading--time" datetime="{{ date.toISOString() }}">{{ date | ruDate }}</time>
+                <time class="article__heading--time" datetime="{{ date.toISOString() }}">{{ date | toDate }}</time>
                 <h1 class="article__heading--title">{{ title }}</h1>
                 <p class="article__heading--preview">{{ preview }}</p>
                 <p class="article__heading--tags">{{ tags | prettyTags }}</p>
                 <img class="article__heading--image" src="images/preview.jpg" alt="{{title}}">
-                <a class="article__heading--link" href="https://github.com/SolinCode/solinofficial.com/blob/main/src{{page.url}}index.md">Редактировать статью</a>
+                <a class="article__heading--link" href="https://github.com/SolinCode/blog.solin.cc/blob/main/src{{page.url}}index.md">Edit the article on GitHub</a>
             </div>
             <div class="content">
                 {{ content | safe }}
             </div>
             <p class="notice">
-                <a class="notice__link" href="/index.html">Главная</a>
+                <a class="notice__link" href="/index.html">Home</a>
             </p>
         </div>
     </div>
