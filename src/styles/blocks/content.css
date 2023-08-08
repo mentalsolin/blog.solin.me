@@ -29,11 +29,12 @@
 
 .article__heading--title {
     font-weight: 500;
-    font-size: 50px;
+    font-size: 30px;
     line-height: 50px;
     font-family: 'Chonburi';
     margin: 0;
     animation: show .8s forwards;
+    overflow-wrap: break-word;
 }
 
 @media (min-width: 900px) {
@@ -49,6 +50,7 @@
     font-size: 24px;
     margin: 0;
     animation: show 1s forwards;
+    line-height: 30px;
 }
 
 @media (min-width: 900px) {
@@ -75,8 +77,14 @@
 
 .article__heading--image {
     width: 100%;
-    border-radius: 60px;
+    border-radius: 30px;
     animation: show 1.4s forwards;
+}
+
+@media (min-width: 900px) {
+    .article__heading--image {
+        border-radius: 60px;
+    }
 }
 
 .article__heading--link {

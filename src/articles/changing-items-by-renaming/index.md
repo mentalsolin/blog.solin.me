@@ -67,7 +67,9 @@ nbt.display.Name=ipattern:{English Name}
 
 {English Name} - Here, you can write any name to which your item will be renamed. For Cyrillic characters, use a unicode converter
 
+```
 Example: название -> \u043d\u0430\u0437\u0432\u0430\u043d\u0438\u0435
+```
 
 Changing Static Item Texture
 Go to the minecraft folder that we created earlier, and create a textures folder inside it, and within that, create an item folder.
