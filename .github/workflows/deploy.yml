@@ -18,7 +18,7 @@ jobs:
         run:
           set -eu
           mkdir "$HOME/.ssh"
-          echo "${{ secrets.KEY }}" > "$HOME/.ssh/key"
+          echo "${{ secrets.key }}" > "$HOME/.ssh/key"
           chmod 600 "$HOME/.ssh/key"
       # Build
       - name: Install dependencies
@@ -27,5 +27,5 @@ jobs:
         run: npm run build
       # Deploy
       - name: Deploy
-        run: rsync -e "ssh -i $HOME/.ssh/key -o StrictHostKeyChecking=no" --archive --compress --delete . solin@${{ secrets.HOST }}:/var/www/blog.solin.cc
+        run: rsync -e "ssh -i $HOME/.ssh/key -o StrictHostKeyChecking=no" --archive --compress --delete . solin@${{ secrets.host }}:/var/www/blog.solin.cc
         working-directory: ./dist
