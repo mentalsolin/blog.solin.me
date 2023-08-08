@@ -2,13 +2,13 @@
   "private": true,
   "scripts": {
     "start": "npx eleventy --serve --quiet",
-    "build": "eleventy && gulp",
-    "deploy": "npm run build && cd dist && rsync --archive --compress --delete . solin@vps:/var/www/beta.solinofficial.com"
+    "build": "rm -rf dist && eleventy && gulp build",
+    "deploy": "npm run build && cd dist && rsync --archive --compress --delete . solin@vps:/var/www/blog.solin.cc"
   },
   "bugs": {
-    "url": "https://github.com/SolinCode/solinofficial.com/issues"
+    "url": "https://github.com/SolinCode/blog.solin.cc/issues"
   },
-  "homepage": "https://solinofficial.com",
+  "homepage": "https://solin.cc",
   "dependencies": {
     "@11ty/eleventy": "^2.0.0",
     "del": "^6.0.0",
