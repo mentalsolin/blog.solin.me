@@ -1,96 +1,102 @@
 ---
-title: "Fundamentals of CIT in Minecraft: Textures, Sounds"
+title: "Основы CIT Minecraft: Текстуры, звуки"
 date: 2022-10-09
 tags:
     - minecraft
-preview: 'How to apply custom textures and sounds to items through Custom Item Textures (CIT).'
+preview: 'Как задать свою текстуру и звук предмету при переименовании. CIT.'
 ---
 
-## Note
+## Примечание
 
-If you want to change textures and sounds for items using an anvil, you will need the CIT Resewn or OptiFine mod. They are not required for static item changes.
+Если вы хотите изменять текстуры и звуки при переименовании на наковальне вам протребуется мод CIT Resewn или OptiFine.
+Для статичного изменения предмета они не требуются.
 
-## Creating a Template
+## Создание шаблона.
 
-Create a folder with the name of your resource pack in the resourcepacks directory.
+Создайте папку с названием ресурс-пака в папке resourcepacks.
 
-Create a file named pack.mcmeta.
+Создайте файл pack.mcmeta
 
-Write the following in it:
+И напишите в нем:
 
 ```
 {
     "pack": {
-        "pack_format": {format},
-        "description": "{description}"
+        "pack_format": {формат},
+        "description": "{описание}"
     }
 }
 ```
-Replace the values in curly braces. {format} -> 9
 
-{Format} - This represents the version, which can be 1, 2, 3, 4, etc. Learn More
+Заменяйте зачения с фигурными скобками. {формат} -> 9
 
-{Description} - This is the description of your resource pack that will be displayed in the selection menu. P.S. For colors, use the section sign § and color codes. Learn More
+{Формат} - Это версия обозначается 1, 2, 3, 4 и тд. [Подробнее](https://minecraft.fandom.com/wiki/Pack_format)
 
-Then add an icon to your resource pack and rename it to pack.png (maximum icon size is 256x256).
+{Описание} - Это описание вашего ресурс пака которое будет отображатся в меню выбора. P. S. Для цветов используйте знак параграфа § и код цвета. [Подробнее](https://minecraft.fandom.com/ru/wiki/%D0%A4%D0%BE%D1%80%D0%BC%D0%B0%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5_%D1%82%D0%B5%D0%BA%D1%81%D1%82%D0%B0)
 
-If you want to statically change an item's texture, the file structure should look like this:
+Затем добавьте иконку вашему ресурс паку и переименуйте ее в pack.png ( максимальные размеры иконки 256x256)
 
-assets
-minecraft
-pack.mcmeta
-pack.png
-If you want to change the texture through renaming, then the structure should look like this:
+Если вы хотите статично изменить текстуру предмету то структура файлов должна выглядить так:
 
-assets
-minecraft
-optifine
-cit
-{pack-name}
-pack.mcmeta
-pack.png
-Changing Item Texture through Renaming
-Choose any item and create a file with its name, for example, stick.properties.
+1. assets
+    - minecraft
+2. pack.mcmeta
+3. pack.png
 
-Write the following in it:
+А если вы хотите изменять текстуру переименованием тогда так:
+
+1. assets
+    - minecraft
+        - optifine
+            - cit
+                - {название-пака}
+2. pack.mcmeta
+3. pack.png
+
+## Изменение текстуры предмету переименованием
+
+Выбираем любой предмет и создаем файл с его названием к примеру stick.properties
+
+Записываем в него:
 
 ```
 type=item
-matchItems={item}
-texture={texture}
-nbt.display.Name=ipattern:{English Name}
+matchItems={предмет}
+texture={текстура}
+nbt.display.Name=ipattern:{Название на английском}
 ```
 
-{item} - The exact name of the item in English. For example, {item} -> stick
+{предмет} - точное название предмета на английском. К примеру {предмет} -> stick
 
-{texture} - The name of the texture to be placed in the folder alongside stick.properties.
+{текстура} - название текстуры которую нужно положить в папку рядом с stick.properties.
 
-{English Name} - Here, you can write any name to which your item will be renamed. For Cyrillic characters, use a unicode converter
+{Название на английском} - Тут можете написать любое название в которое будет переименовыватся ваш предмет. Для кирилицы используйте [unicode converter](https://www.google.com/search?q=unicode+decoder)
 
-```
-Example: название -> \u043d\u0430\u0437\u0432\u0430\u043d\u0438\u0435
-```
+Пример: название -> \u043d\u0430\u0437\u0432\u0430\u043d\u0438\u0435
 
-Changing Static Item Texture
-Go to the minecraft folder that we created earlier, and create a textures folder inside it, and within that, create an item folder.
+### Изменение статичной текстуры предмету
 
-Move the required texture to the item folder and name it after the item.
+Заходим в папку minecraft которую мы создали ранее, и создаем там папку textures а в ней папку item.
+
+В папку item переносим нужную нам текстуру и называем ее именем предмета.
 
 stick -> stick.png
 
-Finding the Original Sound
-Navigate to the root .minecraft directory, then go to assets -> indexes -> select your version.
-Open a file, for example, 1.19.json, and copy its contents.
+## Поиск оригинального звука
 
-Find a JSON Beautifier
+Переходим в корневую директорию .minecraft в папку assets -> indexes -> выбираем нашу версию.
+Открываем файл к примеру 1.19.json и копируем содержимое.
 
-Paste the contents there, then download the resulting file and search for the desired sound. Learn More
+Находим [JSON Beautifier](https://www.google.com/search?q=json+beautifier)
 
-Changing Item Sound
-Go to the minecraft folder and create a sounds folder inside it, and within that, create an item folder.
+И копируем содержимое туда, затем скачиваем получившийся файл и ищем нужный нам звук. [Подробнее](https://youtu.be/SoHYuoPbnPE?t=66)
 
-In the item folder, create a folder for the sound you found during the search for the original sound.
+### Изменение звука предмету
 
-Find any desired sound and convert it to the .ogg format using an OGG Converter
+Переходим в папку minecraft и создаем папку sounds а в ней папку item.
 
-Then place it in our folder.
+В папке item нам нужно создать папку нашего звука которую мы нашли в поиске оригинального звука выше.
+
+Ищем любой нужный нам звук и конвертируем его в формат .ogg [OGG Converter](https://www.google.com/search?q=ogg+converter)
+
+И вставляем его в нашу папку.

@@ -6,12 +6,12 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("src/robots.txt")
 
     eleventyConfig.addFilter('toDate', (value) => {
-        return value.toLocaleString('en-US', {
+        return value.toLocaleString('ru', {
             year: 'numeric',
             month: 'long',
-            day: 'numeric'
-        })
-    })
+            day: 'numeric',
+        }).replace(' г.', '');
+    });
 
     eleventyConfig.addFilter('prettyTags', (value) => {
         return value.slice(1).join(', ', '')
