@@ -8,7 +8,7 @@
   "bugs": {
     "url": "https://github.com/SolinCode/blog.solin.cc/issues"
   },
-  "homepage": "https://solin.cc",
+  "homepage": "https://blog.solin.cc",
   "dependencies": {
     "@11ty/eleventy": "^2.0.0",
     "del": "^6.0.0",
