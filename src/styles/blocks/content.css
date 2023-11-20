@@ -11,12 +11,12 @@
 
 .article__heading {
     display: grid;
-    row-gap: 30px;
+    row-gap: 20px;
 }
 
 .article__heading--time {
     font-weight: 400;
-    font-size: 20px;
+    font-size: 16px;
     color: var(--secondary-color);
     animation: show .6s forwards;
 }
@@ -29,8 +29,8 @@
 
 .article__heading--title {
     font-weight: 500;
-    font-size: 30px;
-    line-height: 50px;
+    font-size: 35px;
+    line-height: 35px;
     font-family: 'Yeseva One';
     margin: 0;
     animation: show .8s forwards;
@@ -47,7 +47,7 @@
 }
 
 .article__heading--preview {
-    font-size: 24px;
+    font-size: 18px;
     margin: 0;
     animation: show 1s forwards;
     line-height: 30px;
@@ -62,7 +62,7 @@
 
 .article__heading--tags {
     font-weight: 400;
-    font-size: 20px;
+    font-size: 18px;
     margin: 0;
     color: var(--secondary-color);
     animation: show 1.2s forwards;
@@ -89,7 +89,7 @@
 
 .article__heading--link {
     font-weight: 400;
-    font-size: 20px;
+    font-size: 18px;
     text-decoration-line: underline;
     color: var(--primary-color);
     animation: show 1.6s forwards;
@@ -142,7 +142,7 @@
 /* Content */
 
 .content {
-    padding-top: 60px;
+    padding-top: 40px;
 }
 
 .content h2, .content h3, .content h4 {
