@@ -4,8 +4,7 @@
     },
     "links": {
       "github": "https://github.com/solincode",
-      "solin": "https://solin.cc",
-      "donation": "https://solin.cc/donate"
+      "solin": "https://solin.cc"
     },
     "footer": {
       "11ty": "https://www.11ty.dev/",
