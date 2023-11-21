@@ -16,7 +16,7 @@
 
 .article__heading--time {
     font-weight: 400;
-    font-size: 16px;
+    font-size: 18px;
     color: var(--secondary-color);
     animation: show .6s forwards;
 }
@@ -28,10 +28,11 @@
 }
 
 .article__heading--title {
-    font-weight: 500;
-    font-size: 35px;
-    line-height: 35px;
-    font-family: 'Yeseva One';
+    font-weight: 400;
+    font-size: 50px;
+    line-height: normal;
+    letter-spacing: normal;
+    font-family: 'Montserrat';
     margin: 0;
     animation: show .8s forwards;
     overflow-wrap: break-word;
@@ -42,15 +43,15 @@
         font-weight: 400;
         font-size: 70px;
         line-height: 85px;
-        padding: 0 15px;
     }
 }
 
 .article__heading--preview {
-    font-size: 18px;
+    font-size: 20px;
     margin: 0;
     animation: show 1s forwards;
-    line-height: 30px;
+    line-height: normal;
+    letter-spacing: normal;
 }
 
 @media (min-width: 900px) {
@@ -66,19 +67,20 @@
     margin: 0;
     color: var(--secondary-color);
     animation: show 1.2s forwards;
+    display: none;
 }
 
 @media (min-width: 900px) {
     .article__heading--tags {
         font-size: 22px;
-        padding: 0 15px;
     }
 }
 
 .article__heading--image {
     width: 100%;
     border-radius: 30px;
-    animation: show 1.4s forwards;
+    margin-top: 30px;
+    animation: show 1.2s forwards;
 }
 
 @media (min-width: 900px) {
@@ -92,14 +94,13 @@
     font-size: 18px;
     text-decoration-line: underline;
     color: var(--primary-color);
-    animation: show 1.6s forwards;
+    animation: show 1.4s forwards;
 }
 
 @media (min-width: 900px) {
     .article__heading--link {
         font-size: 22px;
         width: max-content;
-        padding: 0 15px;
     }
 }
 
@@ -152,26 +153,30 @@
 }
 
 .content h2 {
-    font-size: 26px;
+    font-size: 45px;
+    font-weight: 400;
     margin-top: 60px;
     margin-bottom: 30px;
+    word-wrap: break-word;
 }
 
 @media (min-width: 900px) {
     .content h2 {
-        font-size: 28px;
+        font-size: 55px;
     }
 }
 
 .content h3 {
-    font-size: 24px;
+    font-family: 'Inter';
+    font-size: 30px;
+    font-weight: 600;
     margin-top: 60px;
     margin-bottom: 10px;
 }
 
 @media (min-width: 900px) {
     .content h3 {
-        font-size: 26px;
+        font-size: 35px;
     }
 }
 
@@ -196,7 +201,6 @@
     .content p {
         font-size: 22px;
         line-height: 1.8em;
-        padding: 0 15px;
     }
 }
 
@@ -271,7 +275,7 @@
     top: -1px;
     bottom: 0;
     left: 0;
-    color: var(--secondary-color);
+    color: var(--tips-color);
     font-size: 20px;
     font-stretch: expanded;
     content: '—';
@@ -294,7 +298,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    color: var(--secondary-color);
+    color: var(--tips-color);
     font-size: 20px;
     font-stretch: expanded;
     counter-increment: list;
@@ -423,7 +427,7 @@
 .content pre {
     position: relative;
     display: grid;
-    border-radius: 30px;
+    border-radius: 22px;
     background-color: var(--bg-secondary-color);
     padding-left: 30px;
 }
@@ -446,7 +450,7 @@
 }
 
 .content pre code {
-    font-size: 22px;
+    font-size: 20px;
     line-height: 1.6em;
     display: block;
     padding: 16px 0;
@@ -555,6 +559,6 @@
 
 .content strong {
     font-weight: 600;
-    font-size: 22px;
-    font-family: 'Montserrat';
+    font-size: 20px;
+    font-family: 'Inter', sans-serif;
 }

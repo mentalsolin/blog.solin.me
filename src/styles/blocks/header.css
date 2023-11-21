@@ -1,9 +1,5 @@
 .header {
     position: fixed;
-    height: 100px;
-    display: flex;
-    align-items: center;
-    column-gap: 30px;
     padding: 0 30px;
     width: 100%;
     background-color:rgba(227, 219, 215, 0.6);
@@ -11,24 +7,10 @@
     z-index: 1000;
 }
 
-.header__logo {
-    height: 48px;
-    width: 48px;
-    background-color: var(--primary-color);
-    border-radius: 24px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.header__logo--icon {
-    height: 26px;
-}
-
 .header__title {
-    font-family: 'Montserrat';
-    font-weight: 500;
-    font-size: 24px;
+    font-family: 'Space Grotesk';
+    font-weight: 700;
+    font-size: 22px;
 }
 
 .header__title--link {

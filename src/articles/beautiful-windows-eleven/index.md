@@ -13,24 +13,24 @@ preview: 'Если вы несчастливый обладатель 11-той 
 
 ### Живые обои
 
-1. **Wallpaper engine**. Он прост, красив и имеет очень много разных тем, но является платным и не имеет открытого исходного кода.
+    1. **Wallpaper engine**. Он прост, красив и имеет очень много разных тем, но является платным и не имеет открытого исходного кода.
 
     Для установки вам необходим [Steam](https://store.steampowered.com/) (при установки программы не обязательно запускать Steam перед запуском программы). Напишите “Wallpaper engine” в поиске или нажмите [тут](https://store.steampowered.com/app/431960/Wallpaper_Engine/).
 
-2. **Lively Wallpaper**. Бесплатный имеет открытый исходный код, но имеется всего ~12 стандартных тем при установке программы. Но погуглив можно [найти](https://www.google.com/search?q=lively+wallpaper+wallpapers) много тем для этой программы, которые можно установить, просто переместив видео файл в окно программы.
+    2. **Lively Wallpaper**. Бесплатный имеет открытый исходный код, но имеется всего ~12 стандартных тем при установке программы. Но погуглив можно [найти](https://www.google.com/search?q=lively+wallpaper+wallpapers) много тем для этой программы, которые можно установить, просто переместив видео файл в окно программы.
 
     Скачать программу можно с [GitHub](https://github.com/rocksdanister/lively) или из [Microsoft Store](https://www.microsoft.com/store/apps/9NTM2QC6QWS7?cid=storebadge&ocid=badge).
 
 ### Меняющейся по расписанию
 
-1. **WinDynamicDesktop**. Он также открыт и позволяет плавно менять обои в зависимости от времени. После установки программы можно выбрать темы по умолчанию или же установить [другие](https://windd.info/themes/).
+    1. **WinDynamicDesktop**. Он также открыт и позволяет плавно менять обои в зависимости от времени. После установки программы можно выбрать темы по умолчанию или же установить [другие](https://windd.info/themes/).
 
     Скачать программу можно с [GitHub](https://github.com/t1m0thyj/WinDynamicDesktop) или из [Microsoft Store](https://www.microsoft.com/store/apps/9nm8n7dq3z5f?cid=storebadge&ocid=badge).
 
 
 ## Виджеты
 
-1. **JaxCore**. Это тема для [Rainmeter](https://www.rainmeter.net/), которая добавляет очень много виджетов для рабочего стола и так же добавляет виджеты, заменяющий стандартный оверлей Windows.
+    1. **JaxCore**. Это тема для [Rainmeter](https://www.rainmeter.net/), которая добавляет очень много виджетов для рабочего стола и так же добавляет виджеты, заменяющий стандартный оверлей Windows.
 
     К примеру музыки, когда медиа-клавишей переключаете текущий трек или прибавляете звук вы видите:
 
@@ -59,7 +59,7 @@ preview: 'Если вы несчастливый обладатель 11-той 
 
 ## Панель задач
 
-1. **RoundedTB**. При помощи данной утилиты можно закруглить стандартную панель задач Windows. Она бесплатна и ее можно скачать или в [Microsoft Store](https://apps.microsoft.com/store/detail/roundedtb/9MTFTXSJ9M7F?), либо на [GitHub](https://github.com/torchgm/RoundedTB)
+    1. **RoundedTB**. При помощи данной утилиты можно закруглить стандартную панель задач Windows. Она бесплатна и ее можно скачать или в [Microsoft Store](https://apps.microsoft.com/store/detail/roundedtb/9MTFTXSJ9M7F?), либо на [GitHub](https://github.com/torchgm/RoundedTB)
 
     Интерфейс данной программы очень прост и позволяет настроить панель задач как вам удобно.
 
@@ -83,20 +83,20 @@ preview: 'Если вы несчастливый обладатель 11-той 
 
     P.S. Если вы хотите сделать выдвижение закругленной панели задач, то вам недостаточно просто указать это в настройках системы, в расширеных настройках отступ сверху сделайте на 0 а со всех остальных сторон нужный вам.
 
-2. **TranslucentTB**. В данной утилите можно выбрать несколько тем для панели задач, которые добавляют на задний фон небольшое размытие и убирают затемнение.
+    2. **TranslucentTB**. В данной утилите можно выбрать несколько тем для панели задач, которые добавляют на задний фон небольшое размытие и убирают затемнение.
 
 
 ## Курсоры
 
 Скачать их можно, залогинившись через Google.
 
-1. **Windows 11 Cursors Concept v2**.
+    1. **Windows 11 Cursors Concept v2**.
 
     [Скачать светлую и темную версию](https://www.deviantart.com/jepricreations/art/Windows-11-Cursors-Concept-v2-886489356).
 
     ![Windows 11 Cursors Concept v2](images/5.jpg)
 
-2. **Material Design Cursors**
+    2. **Material Design Cursors**
 
     [Скачать темную версию](https://www.deviantart.com/jepricreations/art/Material-Design-Cursors-Dark-756850032)\
     [Скачать светлую версию](https://www.deviantart.com/jepricreations/art/Material-Design-Cursors-Light-775995490)
