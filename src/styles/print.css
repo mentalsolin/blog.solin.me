@@ -44,3 +44,63 @@ h6 {
 .navbar {
     display: none;
 }
+
+.main {
+    padding-top: 30px;
+}
+
+.article__heading--link {
+    display: none;
+}
+
+.ad {
+    display: none;
+}
+
+.content p {
+    font-size: 11pt;
+}
+
+.content h2 {
+    font-size: 30pt;
+}
+
+.content h3 {
+    font-size: 20px;
+}
+
+.content pre {
+    border: solid 1px #000;
+    border-style: dashed;
+}
+
+.content pre code {
+    font-size: 11pt;
+}
+
+.content a {
+    font-size: 11pt;
+    color: #000;
+}
+
+.content ol > li::before {
+    font-size: 11pt;
+    color: #000;
+}
+
+.content ul > li::before {
+    font-size: 11pt;
+    color: #000;
+}
+
+.content ol, .content ul {
+    font-size: 11pt;
+}
+
+.content strong {
+    font-size: 11pt;
+}
+
+.content figure img {
+    width: max-content;
+}
