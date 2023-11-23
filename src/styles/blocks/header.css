@@ -8,18 +8,10 @@
     display: grid;
     justify-content: start;
     column-gap: 15px;
-    grid-template-rows: 25px 25px;
-}
-
-@media (min-width: 900px) {
-    .header {
-        grid-template-rows: 30px 30px;
-    }
 }
 
 .header__logo {
     height: 50px;
-    grid-row: span 2;
     grid-column: 1;
     align-self: center;
 }
@@ -38,7 +30,7 @@
     grid-column: 2;
     margin: 0;
     letter-spacing: normal;
-    align-self: flex-end;
+    align-self: center;
     line-height: 22px;
 }
 
@@ -46,26 +38,6 @@
     .header__title {
         font-size: 26px;
         line-height: 26px;
-    }
-}
-
-.header__subtitle {
-    font-family: 'Space Grotesk';
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: 15px;
-    grid-row: 2;
-    grid-column: 2;
-    margin: 0;
-    letter-spacing: normal;
-    align-self: flex-start;
-}
-
-@media (min-width: 900px) {
-    .header__subtitle {
-        font-size: 22px;
-        line-height: 19px;
     }
 }
 

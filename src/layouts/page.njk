@@ -5,23 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta property="title" content="{{title}} — mentalsolin | blog"/>
+    <meta property="title" content="mentalsolin — {{title}}"/>
     <meta property="description" content="{% if page.url != '/' %}{{preview}}{% else %}Погрузитесь в цифровую реальность, где сходятся программирование, дизайн и Minecraft.{% endif %}"/>
 
     <meta property="og:locale" content="ru_RU"/>
     <meta property="og:type" content="article"/>
     <meta property="og:title" content="{{title}}"/>
     <meta property="og:description" content="{% if page.url != '/' %}{{preview}}{% else %}Погрузитесь в цифровую реальность, где сходятся программирование, дизайн и Minecraft.{% endif %}"/>
-    <meta property="og:image" content="{{"https://blog.solin.cc" + page.url + "images/preview.jpg"}}"/>
-    <meta property="og:url" content="https://blog.solin.cc{% if page.url != '/' %}{{page.url}}{% endif %}"/>
-    <meta property="og:site_name" content="mentalsolin | blog"/>
+    <meta property="og:image" content="{{"https://mental.solin.cc" + page.url + "images/preview.jpg"}}"/>
+    <meta property="og:url" content="https://mental.solin.cc{% if page.url != '/' %}{{page.url}}{% endif %}"/>
+    <meta property="og:site_name" content="mentalsolin"/>
 
     {% if page.url != '/' %}
         <meta property="og:title" content="{{title}}">
         <meta property="og:type" content="article" />
         <meta property="og:description" content="{{preview}}">
-        <meta property="og:image" content="{{"https://blog.solin.cc" + page.url + "images/preview.jpg"}}">
-        <meta property="og:url" content="https://blog.solin.cc{{page.url}}">
+        <meta property="og:image" content="{{"https://mental.solin.cc" + page.url + "images/preview.jpg"}}">
+        <meta property="og:url" content="https://mental.solin.cc{{page.url}}">
         <meta name="twitter:card" content="summary_large_image">
     {% endif %}
 
@@ -34,9 +34,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/styles/styles.css">
     <link rel="stylesheet" href="/styles/print.css" media="print">
-    <link rel="icon" type="image/x-icon" href="/images/icons/logo.svg">
+    <link rel="icon" type="image/x-icon" href="/images/icons/2.svg">
 
-    <title>{{title}}{% if page.url != '/' %} — mentalsolin | blog{% endif %}</title>
+    <title>{% if page.url != '/' %}mentalsolin — {% endif %}{{title}}</title>
 </head>
 <body class="page__body">
     {% include 'header.njk' %}
