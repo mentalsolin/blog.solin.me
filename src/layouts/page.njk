@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta property="title" content="{{title}} — Solin's Blog"/>
+    <meta property="title" content="{{title}} — mentalsolin | blog"/>
     <meta property="description" content="{% if page.url != '/' %}{{preview}}{% else %}Погрузитесь в цифровую реальность, где сходятся программирование, дизайн и Minecraft.{% endif %}"/>
 
     <meta property="og:locale" content="ru_RU"/>
@@ -14,7 +14,7 @@
     <meta property="og:description" content="{% if page.url != '/' %}{{preview}}{% else %}Погрузитесь в цифровую реальность, где сходятся программирование, дизайн и Minecraft.{% endif %}"/>
     <meta property="og:image" content="{{"https://blog.solin.cc" + page.url + "images/preview.jpg"}}"/>
     <meta property="og:url" content="https://blog.solin.cc{% if page.url != '/' %}{{page.url}}{% endif %}"/>
-    <meta property="og:site_name" content="Solin's Blog"/>
+    <meta property="og:site_name" content="mentalsolin | blog"/>
 
     {% if page.url != '/' %}
         <meta property="og:title" content="{{title}}">
@@ -31,16 +31,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@700&family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/styles/styles.css">
     <link rel="stylesheet" href="/styles/print.css" media="print">
+    <link rel="icon" type="image/x-icon" href="/images/icons/logo.svg">
 
-    <title>{{title}}{% if page.url != '/' %} — Solin's Blog{% endif %}</title>
+    <title>{{title}}{% if page.url != '/' %} — mentalsolin | blog{% endif %}</title>
 </head>
 <body class="page__body">
     {% include 'header.njk' %}
     {{ content | safe }}
     {% include 'footer.njk' %}
-
-    <script type="module" src="/scripts/index.js"></script>
 </body>
 </html>

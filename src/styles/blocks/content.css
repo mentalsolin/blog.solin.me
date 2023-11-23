@@ -16,14 +16,14 @@
 
 .article__heading--time {
     font-weight: 400;
-    font-size: 18px;
+    font-size: 14px;
     color: var(--secondary-color);
     animation: show .6s forwards;
 }
 
 @media (min-width: 900px) {
     .article__heading--time {
-        font-size: 22px;
+        font-size: 18px;
     }
 }
 
