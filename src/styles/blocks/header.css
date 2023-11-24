@@ -1,50 +1,37 @@
 .header {
     position: fixed;
-    padding: 30px;
     width: 100%;
     background-color:rgba(227, 219, 215, 0.6);
     backdrop-filter:blur(10px);
     z-index: 1000;
-    display: grid;
+    height: 100px;
+    display: flex;
+    align-items: center;
     justify-content: start;
-    column-gap: 15px;
 }
 
-.header__logo {
-    height: 30px;
+.logo {
+    position: relative;
+    margin-left: 30px;
+    height: 40px;
+    transition: 0.2s;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+.logo__image {
+    height: 100%;
     grid-column: 1;
     align-self: center;
+    transition: 0.2s;
 }
 
-@media (min-width: 900px) {
-    .header__logo {
-        height: 40px;
-    }
-}
-
-.header__title {
-    font-family: 'Comfortaa';
-    font-weight: 500;
-    font-size: 20px;
-    grid-row: 1;
-    grid-column: 2;
-    margin: 0;
-    letter-spacing: normal;
-    align-self: center;
-    line-height: 22px;
-}
-
-@media (min-width: 900px) {
-    .header__title {
-        font-size: 26px;
-        line-height: 26px;
-    }
-}
-
-.header__link {
+.logo__link {
     position: absolute;
     top: 0;
-    right: 0;
     left: 0;
     bottom: 0;
+    right: 0;
 }
