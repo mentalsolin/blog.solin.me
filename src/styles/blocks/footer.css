@@ -21,9 +21,9 @@
 .links__item--title {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-    font-size: 24px;
+    font-size: 32px;
     margin-top: 0;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 @media (min-width: 900px) {
@@ -42,11 +42,12 @@
 }
 
 .links__item--text {
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 35px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
     margin: 0;
     color: var(--secondary-color);
+    font-family: 'Inter', sans-serif;
 }
 
 @media (min-width: 900px) {
@@ -56,12 +57,12 @@
 }
 
 .footer__copyright {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'JetBrains Mono', sans-serif;
     font-weight: 300;
-    font-size: 20px;
+    font-size: 14px;
     margin: 0;
     text-align: center;
-    color: var(--secondary-color);
+    color: #878180;
     margin-top: 30px;
 }
 

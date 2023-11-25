@@ -8,6 +8,7 @@
     letter-spacing: 0.04em;
     font-family: 'Inter', sans-serif;
     line-height: 1.6em;
+    background-color: var(--bg-secondary-color);
 }
 
 *,
@@ -18,6 +19,8 @@
 
 .main {
     padding: 180px 30px 60px 30px;
+    background-color: var(--bg-color);
+    border-radius: 0 0 30px 30px;
 }
 
 @media (min-width: 900px) {
