@@ -6,8 +6,8 @@ layout: page.njk
     <div class="article__container container">
         <div class="container__inner">
             <div class="article__heading">
-                <time class="article__heading--time" datetime="{{ date.toISOString() }}">{{ date | toDate }}</time>
                 <h1 class="article__heading--title">{{ title }}</h1>
+                <time class="article__heading--time" datetime="{{ date.toISOString() }}">{{ date | toDate }}</time>
                 <p class="article__heading--preview">{{ preview }}</p>
                 <p class="article__heading--tags">{{ tags | prettyTags }}</p>
                 <img class="article__heading--image" src="images/preview.jpg" alt="{{title}}">
