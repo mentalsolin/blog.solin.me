@@ -70,7 +70,7 @@
     animation: show 1.2s forwards;
     display: inline-block;
     display: flex;
-    column-gap: 5px;
+    column-gap: 10px;
 }
 
 @media (min-width: 900px) {
@@ -84,6 +84,7 @@
     padding: 5px 10px;
     border-radius: 30px;
     color: var(--primary-color);
+    text-transform: capitalize;
 }
 
 @media (min-width: 900px) {
