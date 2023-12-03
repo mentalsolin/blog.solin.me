@@ -5,7 +5,7 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("src/articles/**/*.!(md)")
     eleventyConfig.addPassthroughCopy("src/robots.txt")
 
-    eleventyConfig.addFilter('toDate', (value) => {
+    eleventyConfig.addFilter('ruDate', (value) => {
         return value.toLocaleString('ru', {
             year: 'numeric',
             month: 'long',
@@ -14,7 +14,7 @@ module.exports = function(eleventyConfig) {
     });
 
     eleventyConfig.addFilter('prettyTags', (value) => {
-        return value.slice(1).join(', ', '')
+        return value.slice(1)
     })
 
     eleventyConfig.addFilter('lastArticles', (value) => {

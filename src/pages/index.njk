@@ -1,5 +1,5 @@
 ---
-title: mentalsolin
+title: Solin's Blog
 layout: page.njk
 permalink: index.html
 ---
@@ -10,7 +10,7 @@ permalink: index.html
             <article class="articles">
                 <h3 class="articles__title">{{ article.data.title }}</h3>
                 <p class="articles__preview">{{ article.data.preview }}</p>
-                <time class="articles__time" datetime="{{ article.date.toISOString() }}">{{ article.date | toDate }}</time>
+                <time class="articles__time" datetime="{{ article.date.toISOString() }}">{{ article.date | ruDate }}</time>
                 <img class="articles__image" src="{{ article.url }}images/preview.jpg" alt="{{ article.data.title }}">
                 <a class="articles__link" href="{{ article.url }}"></a>
             </article>

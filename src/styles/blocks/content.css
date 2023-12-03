@@ -47,11 +47,12 @@
 }
 
 .article__heading--preview {
-    font-size: 20px;
+    font-size: 14px;
     margin: 0;
     animation: show 1s forwards;
     line-height: normal;
     letter-spacing: normal;
+    line-height: 1.6em;
 }
 
 @media (min-width: 900px) {
@@ -63,16 +64,31 @@
 
 .article__heading--tags {
     font-weight: 400;
-    font-size: 18px;
+    font-size: 14px;
     margin: 0;
     color: var(--secondary-color);
     animation: show 1.2s forwards;
-    display: none;
+    display: inline-block;
+    display: flex;
+    column-gap: 5px;
 }
 
 @media (min-width: 900px) {
     .article__heading--tags {
-        font-size: 22px;
+        font-size: 20px;
+    }
+}
+
+.article__heading--tags-item {
+    background-color: var(--bg-secondary-color);
+    padding: 5px 10px;
+    border-radius: 30px;
+    color: var(--primary-color);
+}
+
+@media (min-width: 900px) {
+    .article__heading--tags-item {
+        padding: 10px 15px;
     }
 }
 
@@ -80,7 +96,7 @@
     width: 100%;
     border-radius: 30px;
     margin-top: 30px;
-    animation: show 1.4s forwards;
+    animation: show 1.6s forwards;
 }
 
 @media (min-width: 900px) {
@@ -91,10 +107,10 @@
 
 .article__heading--link {
     font-weight: 400;
-    font-size: 18px;
+    font-size: 14px;
     text-decoration-line: underline;
     color: var(--primary-color);
-    animation: show 1.6s forwards;
+    animation: show 1.8s forwards;
 }
 
 @media (min-width: 900px) {
@@ -153,7 +169,7 @@
 }
 
 .content h2 {
-    font-size: 45px;
+    font-size: 32px;
     font-weight: 400;
     margin-top: 60px;
     margin-bottom: 30px;
@@ -168,7 +184,7 @@
 
 .content h3 {
     font-family: 'Inter';
-    font-size: 30px;
+    font-size: 24px;
     font-weight: 600;
     margin-top: 60px;
     margin-bottom: 10px;
@@ -180,32 +196,19 @@
     }
 }
 
-.content h4 {
-    font-size: 22px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-@media (min-width: 900px) {
-    .content h4 {
-        font-size: 24px;
-    }
-}
-
-.content p {
-    font-size: 20px;
+.content p, li, a {
+    font-size: 14px;
     line-height: 1.6em;
 }
 
 @media (min-width: 900px) {
-    .content p {
+    .content p, li {
         font-size: 22px;
         line-height: 1.8em;
     }
 }
 
 .content a {
-    font-size: 20px;
     color: var(--primary-color);
 }
 
@@ -227,14 +230,6 @@
     margin-bottom: 29px;
     padding-left: 0;
     list-style: none;
-    font-size: 20px;
-}
-
-@media (min-width: 900px) {
-    .content ol,
-    .content ul {
-        font-size: 22px;
-    }
 }
 
 .content li ul,
@@ -247,20 +242,19 @@
     .content ul {
         margin-top: 19px;
         margin-bottom: 57px;
-        font-size: 22px;
     }
 }
 
 .content li {
     position: relative;
-    margin-top: 16px;
+    margin-top: 30px;
 }
 
 /* Unordered Lists */
 
 .content ul > li,
 .content ol > li {
-    padding-left: 25px;
+    padding-left: 30px;
 }
 
 @media (min-width: 900px) {
@@ -299,7 +293,7 @@
     top: 0;
     left: 0;
     color: var(--tips-color);
-    font-size: 20px;
+    font-size: 14px;
     font-stretch: expanded;
     counter-increment: list;
     content: counter(list);
@@ -331,6 +325,10 @@
 
 /* Images */
 
+.content p img {
+    margin-top: 30px;
+}
+
 .content img,
 .content video {
     display: block;
@@ -353,14 +351,15 @@
 }
 
 .content figcaption {
-    font-size: 20px;
+    font-size: 16px;
     text-align: center;
     color: var(--secondary-color);
+    margin-top: 15px;
 }
 
 @media (min-width: 900px) {
     .content figcaption {
-        font-size: 22px;
+        font-size: 18px;
     }
 }
 
@@ -368,32 +367,17 @@
 
 .content blockquote {
     position: relative;
-    margin-top: 16px;
-    margin-bottom: 16px;
-    padding: 5px 0;
-    padding-left: 14px;
+    margin: 15px;
+    padding: 5px 15px;
     color: black;
     font-size: 18px;
 }
 
-@media (min-width: 600px) {
-    .content blockquote {
-        font-size: 20px;
-    }
-}
-
-@media (min-width: 1024px) {
-    .content blockquote {
-        font-size: 28px;
-    }
-}
-
 @media (min-width: 900px) {
     .content blockquote {
-        margin-top: 40px;
-        margin-bottom: 60px;
-        padding-left: 40px;
         font-size: 32px;
+        margin: 30px;
+        padding: 5px 30px;
     }
 }
 
@@ -402,7 +386,7 @@
     top: 0;
     bottom: 0;
     left: 0;
-    width: 1px;
+    width: 2px;
     background-color: var(--tips-color);
     content: '';
 }
@@ -411,7 +395,7 @@
     .content blockquote::before {
         top: 0.5em;
         bottom: 0.5em;
-        width: 4px;
+        width: 3px;
     }
 }
 
@@ -427,15 +411,26 @@
 .content pre {
     position: relative;
     display: grid;
-    border-radius: 22px;
     background-color: var(--bg-secondary-color);
     padding-left: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    scroll-behavior: smooth;
+}
+
+.content pre code {
+    font-size: 14px;
+    line-height: 1.6em;
+    display: block;
+    padding: 16px 0;
+    overflow-x: auto;
+    scrollbar-width: thin;
+    user-select: all;
 }
 
 @media (min-width: 900px) {
-    .content pre {
-        margin-top: 30px;
-        margin-bottom: 60px;
+    .content pre code {
+        font-size: 24px;
     }
 }
 
@@ -447,23 +442,6 @@
     width: 76px;
     content: '';
     pointer-events: none;
-}
-
-.content pre code {
-    font-size: 20px;
-    line-height: 1.6em;
-    display: block;
-    padding: 16px 0;
-    overflow-x: auto;
-    scrollbar-width: thin;
-    scrollbar-color: #fff transparent;
-    user-select: all;
-}
-
-@media (min-width: 900px) {
-    .content pre code {
-        font-size: 24px;
-    }
 }
 
 .content pre code:focus {
@@ -480,25 +458,6 @@
     .content pre code {
         padding: 30px 0;
     }
-}
-
-.content pre code::-webkit-scrollbar {
-    height: 8px;
-}
-
-.content pre code::-webkit-scrollbar-thumb {
-    background-color: var(--color-green-darker-50a);
-    border-top: 4px solid var(--color-green-light);
-}
-
-.content pre:hover code::-webkit-scrollbar-thumb {
-    background-color: var(--color-green-darker);
-    border-top: none;
-    border-radius: 8px;
-}
-
-.content pre code::-webkit-scrollbar-thumb:active {
-    background-color: var(--color-turquoise);
 }
 
 /* Tables */
@@ -559,6 +518,5 @@
 
 .content strong {
     font-weight: 600;
-    font-size: 20px;
     font-family: 'Inter', sans-serif;
 }

@@ -7,11 +7,17 @@ layout: page.njk
         <div class="container__inner">
             <div class="article__heading">
                 <h1 class="article__heading--title">{{ title }}</h1>
-                <time class="article__heading--time" datetime="{{ date.toISOString() }}">{{ date | toDate }}</time>
+                <time class="article__heading--time" datetime="{{ date.toISOString() }}">{{ date | ruDate }}</time>
                 <p class="article__heading--preview">{{ preview }}</p>
-                <p class="article__heading--tags">{{ tags | prettyTags }}</p>
+                <p class="article__heading--tags">
+                    {% for tag in tags | prettyTags %}
+                        <span class="article__heading--tags-item">
+                            {{ tag }}
+                        </span>
+                    {% endfor %}
+			    </p>
                 <img class="article__heading--image" src="images/preview.jpg" alt="{{title}}">
-                <a class="article__heading--link" href="https://github.com/mentalsolin/mental.solin.cc/blob/main/src{{page.url}}index.md">Редактировать статью на GitHub</a>
+                <a class="article__heading--link" href="https://github.com/mentalsolin/blog.solin.cc/blob/main/src{{page.url}}index.md">Редактировать статью на GitHub</a>
             </div>
             <div class="ad">
                 <div class="ad__logo">
