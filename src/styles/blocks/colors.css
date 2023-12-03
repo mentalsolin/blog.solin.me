@@ -1,7 +1,35 @@
-:root {
+.peach {
     --bg-color: #fff6f5;            /* задний фон */
     --bg-secondary-color: #f3eae8;  /* задний фон (футер, код) */
     --primary-color: #212121;       /* текст */
     --secondary-color: #686868;     /* текст футер */
     --tips-color: #adadad;          /* текст списки */
+    --bg-header: #fff6f599            /* альфа 99 */
+}
+
+.mint {
+    --bg-color: #e5eedf;            /* задний фон */
+    --bg-secondary-color: #D9E3D2;  /* задний фон (футер, код) */
+    --primary-color: #212121;       /* текст */
+    --secondary-color: #686868;     /* текст футер */
+    --tips-color: #adadad;          /* текст списки */
+    --bg-header: #e5eedf99            /* альфа 99 */
+}
+
+.lily {
+    --bg-color: #efe4f8;            /* задний фон */
+    --bg-secondary-color: #ddd0e6;  /* задний фон (футер, код) */
+    --primary-color: #212121;       /* текст */
+    --secondary-color: #686868;     /* текст футер */
+    --tips-color: #adadad;          /* текст списки */
+    --bg-header: #efe4f899            /* альфа 99 */
+}
+
+.cyan {
+    --bg-color: #fff6f5;            /* задний фон */
+    --bg-secondary-color: #f3eae8;  /* задний фон (футер, код) */
+    --primary-color: #212121;       /* текст */
+    --secondary-color: #686868;     /* текст футер */
+    --tips-color: #adadad;          /* текст списки */
+    --bg-header: #fff6f599            /* альфа 99 */
 }

@@ -1,11 +1,12 @@
 .header {
     position: fixed;
     width: 100%;
-    background-color: rgb(255, 246, 245, 0.6);
+    background-color: var(--bg-header);
     backdrop-filter:blur(15px);
     z-index: 1000;
     height: 70px;
     display: flex;
+    justify-content: space-between;
     align-items: center;
     user-select: none;
 }
@@ -41,4 +42,45 @@
     left: 0;
     bottom: 0;
     right: 0;
+}
+
+.palette {
+    display: flex;
+    column-gap: 10px;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    margin-right: 30px;
+}
+
+.palette__item {
+    height: 30px;
+    width: 30px;
+    border-radius: 15px;
+    transition: border 0.15s;
+    cursor: pointer;
+}
+
+.palette__item:hover {
+    border: 3px solid #212121;
+}
+
+.palette__item--active {
+    border: 3px solid #212121;
+}
+
+.palette__item--peach {
+    background-color: #FFF6F5;
+}
+
+.palette__item--mint {
+    background-color: #e5eedf;
+}
+
+.palette__item--lily {
+    background-color: #CEB9DE;
+}
+
+.palette__item--cyan {
+    background-color: #8CC9D1;
 }

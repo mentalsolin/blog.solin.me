@@ -37,11 +37,11 @@
 
     <title>{{title}}{% if page.url != '/' %} — Solin's blog{% endif %}</title>
 </head>
-<body class="page__body">
+<body class="page__body peach">
     {% include 'header.njk' %}
     {{ content | safe }}
     {% include 'footer.njk' %}
 
-    <script src="/scripts/logo.js"></script>
+    <script type="module" src="/scripts/scripts.js"></script>
 </body>
 </html>
