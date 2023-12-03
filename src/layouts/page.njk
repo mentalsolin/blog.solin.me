@@ -12,7 +12,7 @@
     <meta property="og:type" content="article"/>
     <meta property="og:title" content="{{title}}"/>
     <meta property="og:description" content="{% if page.url != '/' %}{{preview}}{% else %}Оригинальный бложек mentalsolin'а.{% endif %}"/>
-    <meta property="og:image" content="{{"https://blog.solin.cc" + page.url + "images/preview.jpg"}}"/>
+    <meta property="og:image" content="{% if page.url != '/' %}{{"https://blog.solin.cc" + page.url + "images/preview.jpg"}}{% else %}{{"https://blog.solin.cc/images/preview.png"}}{% endif %}"/>
     <meta property="og:url" content="https://blog.solin.cc{% if page.url != '/' %}{{page.url}}{% endif %}"/>
     <meta property="og:site_name" content="Solin's Blog"/>
 
