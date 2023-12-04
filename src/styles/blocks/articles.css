@@ -1,6 +1,7 @@
 .articles__container {
     display: grid;
     row-gap: 60px;
+    animation: showArticles 0.6s ease-in;
 }
 
 @media (min-width: 900px) {
@@ -89,4 +90,17 @@
     right: 0;
     left: 0;
     bottom: 0;
+}
+
+/* Animations */
+
+@keyframes showArticles {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    100% {
+        opacity: 100%;
+        transform: translateY(0px);
+    }
 }

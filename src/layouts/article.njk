@@ -2,16 +2,18 @@
 layout: page.njk
 ---
 
+
+
 <main class="main">
     <div class="article__container container">
         <div class="container__inner">
             <div class="article__heading">
                 <h1 class="article__heading--title">{{ title }}</h1>
-                <time class="article__heading--time" datetime="{{ date.toISOString() }}">{{ date | ruDate }}</time>
+                <time class="article__heading--date" datetime="{{ date.toISOString() }}">{{ date | ruDate }}</time>
                 <p class="article__heading--preview">{{ preview }}</p>
-                <p class="article__heading--tags">
+                <p class="tags">
                     {% for tag in tags | prettyTags %}
-                        <span class="article__heading--tags-item">
+                        <span class="tags__item">
                             {{ tag }}
                         </span>
                     {% endfor %}
