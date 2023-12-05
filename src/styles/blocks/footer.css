@@ -4,6 +4,12 @@
     padding: 30px 30px 60px 30px;
 }
 
+@media (min-width: 900px) {
+    .footer__container {
+        padding: 60px 30px 60px 30px;
+    }
+}
+
 .about {
     max-width: 600px;
     font-size: 14px;
@@ -56,12 +62,13 @@
 
 .solin {
     display: block;
+    padding-top: 30px;
 }
 
 @media (min-width: 900px) {
     .solin {
         display: flex;
-        column-gap: 15px;
+        column-gap: 30px;
     }
 }
 

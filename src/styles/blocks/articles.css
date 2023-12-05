@@ -4,7 +4,7 @@
 
 .articles__container {
     display: grid;
-    row-gap: 60px;
+    row-gap: 120px;
     animation: showArticles 0.8s forwards;
 }
 
@@ -21,7 +21,8 @@
 .articles__container--all {
     display: grid;
     grid-template-columns: 100%;
-    row-gap: 60px;
+    row-gap: 120px;
+    margin-bottom: -30px;
 }
 
 @media (min-width: 900px) {
@@ -29,6 +30,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         column-gap: 180px;
+        margin-bottom: 30px;
     }
 }
 

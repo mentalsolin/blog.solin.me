@@ -13,6 +13,8 @@ module.exports = function(eleventyConfig) {
         }).replace(' г.', '');
     });
 
+    const pluginRss = require("@11ty/eleventy-plugin-rss");
+
     eleventyConfig.addFilter('prettyTags', (value) => {
         return value.slice(1)
     })
@@ -24,6 +26,19 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addFilter('articlesAll', (value) => {
         return value.slice(1)
     })
+
+    eleventyConfig.addFilter('fixLinks', (content) => {
+        const reg = /(src="[^(https://)])|(src="\/)|(href="[^(https://)])|(href="\/)/g;
+        const prefix = `https://blog.solin.cc` + content.url;
+        return content.templateContent.replace(reg, (match) => {
+            if (match === `src="/` || match === `href="/`) {
+                match = match.slice(0, -1);
+                return match + prefix;
+            } else {
+                return match.slice(0, -1) + prefix + match.slice(-1);
+            }
+        });
+    });
 
     return {
         dir: {
