@@ -17,16 +17,12 @@ module.exports = function(eleventyConfig) {
         return value.slice(1)
     })
 
-    eleventyConfig.addFilter('lastArticles', (value) => {
-        const articles = value.slice().reverse()
+    eleventyConfig.addFilter('articlesLast', (value) => {
+        return value.reverse().slice(0, 1)
+    })
 
-        let list = []
-
-        for (let i = 0; i < 3; i++) {
-            list.push(articles[i])
-        }
-
-        return list
+    eleventyConfig.addFilter('articlesAll', (value) => {
+        return value.slice(1)
     })
 
     return {

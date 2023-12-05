@@ -35,7 +35,7 @@
 
 .links__item:not(:last-child)::after {
     margin: 0 5px;
-    content: "/";
+    content: " ";
 }
 
 @media (min-width: 900px) {

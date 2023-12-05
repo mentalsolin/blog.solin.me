@@ -6,14 +6,25 @@ permalink: index.html
 
 <main class="main">
     <div class="articles__container container">
-        {%- for article in collections.article | reverse -%}
-            <article class="articles">
-                <h3 class="articles__title">{{ article.data.title }}</h3>
-                <p class="articles__preview">{{ article.data.preview }}</p>
-                <time class="articles__time" datetime="{{ article.date.toISOString() }}">{{ article.date | ruDate }}</time>
-                <img class="articles__image" src="{{ article.url }}images/preview.jpg" alt="{{ article.data.title }}">
-                <a class="articles__link" href="{{ article.url }}"></a>
+        {%- for article in collections.article | articlesLast -%}
+            <article class="articles articles__grid--last">
+                <h3 class="articles__title articles__title--last">{{ article.data.title }}</h3>
+                <time class="articles__time articles__time--last" datetime="{{ article.date.toISOString() }}">{{ article.date | ruDate }}</time>
+                <p class="articles__preview articles__preview--last">{{ article.data.preview }}</p>
+                <img class="articles__image articles__image--last" src="{{ article.url }}images/preview.jpg" alt="{{ article.data.title }}">
+                <a class="articles__link articles__link--last" href="{{ article.url }}"></a>
             </article>
         {%- endfor -%}
+        <div class="articles__container--all container">
+            {%- for article in collections.article | articlesAll -%}
+                <article class="articles articles__grid--all">
+                    <h3 class="articles__title articles__title--all">{{ article.data.title }}</h3>
+                    <p class="articles__preview articles__preview--all">{{ article.data.preview }}</p>
+                    <time class="articles__time articles__time--all" datetime="{{ article.date.toISOString() }}">{{ article.date | ruDate }}</time>
+                    <img class="articles__image articles__image--all" src="{{ article.url }}images/preview.jpg" alt="{{ article.data.title }}">
+                    <a class="articles__link articles__link--all" href="{{ article.url }}"></a>
+                </article>
+            {%- endfor -%}
+        </div>
     </div>
 </main>
