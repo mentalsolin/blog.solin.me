@@ -13,8 +13,6 @@ module.exports = function(eleventyConfig) {
         }).replace(' г.', '');
     });
 
-    const pluginRss = require("@11ty/eleventy-plugin-rss");
-
     eleventyConfig.addFilter('prettyTags', (value) => {
         return value.slice(1)
     })
