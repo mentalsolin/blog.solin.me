@@ -24,12 +24,18 @@
     padding: 0;
     margin: 0;
     list-style-type: none;
-    display: flex;
+    display: block;
     margin: 30px 0;
 }
 
 .links__item {
     font-size: 14px;
+    display: inline-block;
+}
+
+.links__item:not(:last-child)::after {
+    margin: 0 5px;
+    content: "/";
 }
 
 @media (min-width: 900px) {
@@ -49,7 +55,7 @@
 }
 
 .solin {
-    display: grid;
+    display: block;
 }
 
 @media (min-width: 900px) {
@@ -61,6 +67,7 @@
 
 .solin-logo {
     margin-bottom: 10px;
+    display: inline block;
 }
 
 @media (min-width: 900px) {
@@ -71,6 +78,7 @@
 
 .solin-text {
     margin: 0;
+    display: inline block;
 }
 
 .solin-link {
