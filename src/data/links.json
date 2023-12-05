@@ -1,15 +1,11 @@
 {
-    "advertisement": {
-      "letsplay": "https://discord.gg/invite/qKncR2zsDW"
-    },
-    "links": {
-      "github": "https://github.com/mentalsolin/",
-      "vk": "https://vk.com/mentalsolin/",
-      "donation": "https://www.donationalerts.com/c/mentalsolin",
-      "solin": "https://solin.cc/"
-    },
-    "footer": {
-      "11ty": "https://www.11ty.dev/",
-      "telephonkin": "https://vk.com/nik_the_vaga/"
-    }
+  "advertisements": {
+    "letsplay": "https://discord.com/invite/qKncR2zsDW"
+  },
+  "footer": {
+    "github": "https://github.com/mentalsolin/blog.solin.cc",
+    "donate": "https://www.donationalerts.com/c/mentalsolin",
+    "ideas": "https://github.com/mentalsolin/blog.solin.cc/issues/2",
+    "solin": "https://solin.cc/"
+  }
 }
