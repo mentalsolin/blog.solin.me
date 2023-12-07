@@ -4,6 +4,7 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("src/images")
     eleventyConfig.addPassthroughCopy("src/articles/**/*.!(md)")
     eleventyConfig.addPassthroughCopy("src/robots.txt")
+    eleventyConfig.addPassthroughCopy("src/sitemap.xml")
 
     eleventyConfig.addFilter('ruDate', (value) => {
         return value.toLocaleString('ru', {

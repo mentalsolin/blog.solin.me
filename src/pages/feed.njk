@@ -19,7 +19,7 @@ permalink: feed/index.xml
 
         {%- for article in collections.article | articlesLast  %}
             <image>
-                <url>https://{{ url }}/images/preview.jpg</url>
+                <url>{{ url }}/images/preview.jpg</url>
                 <title>{{ title }}</title>
                 <link>{{ url }}</link>
             </image>
@@ -29,8 +29,8 @@ permalink: feed/index.xml
 
         {% set anchors = r/<span class="tooltip">.*span>/g %}
 
-        {%- for article in collections.article | reverse  %}
-            <item>
+        {%- for article in collections.article  %}
+            <item turbo="true">
                 <title>{{ article.data.title }}</title>
                 <link>{{ url }}{{ article.url }}</link>
                 <description>
