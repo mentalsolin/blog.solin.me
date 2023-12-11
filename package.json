@@ -3,12 +3,12 @@
   "scripts": {
     "start": "npx eleventy --serve --quiet",
     "build": "rm -rf dist && eleventy && gulp build",
-    "deploy": "npm run build && cd dist && rsync --archive --compress --delete . solin@vps:/var/www/blog.solin.cc"
+    "deploy": "npm run build && cd dist && rsync --archive --compress --delete . solin@vps:/var/www/blog.solin.me"
   },
   "bugs": {
-    "url": "https://github.com/mentalsolin/blog.solin.cc/issues/3"
+    "url": "https://github.com/mentalsolin/blog.solin.me/issues/3"
   },
-  "homepage": "https://blog.solin.cc",
+  "homepage": "https://blog.solin.me",
   "dependencies": {
     "@11ty/eleventy": "^2.0.0",
     "del": "^6.0.0",

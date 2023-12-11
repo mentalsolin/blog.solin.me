@@ -28,7 +28,7 @@ module.exports = function(eleventyConfig) {
 
     eleventyConfig.addFilter('fixLinks', (content) => {
         const reg = /(src="[^(https://)])|(src="\/)|(href="[^(https://)])|(href="\/)/g;
-        const prefix = `https://blog.solin.cc` + content.url;
+        const prefix = `https://blog.solin.me` + content.url;
         return content.templateContent.replace(reg, (match) => {
             if (match === `src="/` || match === `href="/`) {
                 match = match.slice(0, -1);

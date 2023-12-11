@@ -12,16 +12,16 @@
     <meta property="og:type" content="article"/>
     <meta property="og:title" content="{{title}}"/>
     <meta property="og:description" content="{% if page.url != '/' %}{{preview}}{% else %}Оригинальный бложек mentalsolin'а.{% endif %}"/>
-    <meta property="og:image" content="{% if page.url != '/' %}{{"https://blog.solin.cc" + page.url + "images/preview.jpg"}}{% else %}{{"https://blog.solin.cc/images/preview.png"}}{% endif %}"/>
-    <meta property="og:url" content="https://blog.solin.cc{% if page.url != '/' %}{{page.url}}{% endif %}"/>
+    <meta property="og:image" content="{% if page.url != '/' %}{{"https://blog.solin.me" + page.url + "images/preview.jpg"}}{% else %}{{"https://blog.solin.me/images/preview.png"}}{% endif %}"/>
+    <meta property="og:url" content="https://blog.solin.me{% if page.url != '/' %}{{page.url}}{% endif %}"/>
     <meta property="og:site_name" content="Solin's Blog"/>
 
     {% if page.url != '/' %}
         <meta property="og:title" content="{{title}}">
         <meta property="og:type" content="article" />
         <meta property="og:description" content="{{preview}}">
-        <meta property="og:image" content="{{"https://blog.solin.cc" + page.url + "images/preview.jpg"}}">
-        <meta property="og:url" content="https://blog.solin.cc{{page.url}}">
+        <meta property="og:image" content="{{"https://blog.solin.me" + page.url + "images/preview.jpg"}}">
+        <meta property="og:url" content="https://blog.solin.me{{page.url}}">
         <meta name="twitter:card" content="summary_large_image">
     {% endif %}
 
@@ -33,7 +33,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Montserrat:wght@200;300;400;500;600;700&family=Playfair+Display:wght@700&family=JetBrains+Mono:wght@300;400" rel="stylesheet">
     <link rel="stylesheet" href="/styles/styles.css">
     <link rel="stylesheet" href="/styles/print.css" media="print">
-    <link rel="icon" href="https://blog.solin.cc/images/logos/favicon.svg" type="image/x-icon">
+    <link rel="icon" href="https://blog.solin.me/images/logos/favicon.svg" type="image/x-icon">
 
     <title>{{title}}{% if page.url != '/' %} — Solin's blog{% endif %}</title>
 </head>

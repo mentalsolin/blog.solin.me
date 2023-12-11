@@ -2,7 +2,7 @@
 title: Solin's Blog
 description: Оригинальный бложек mentalsolin'a
 language: ru
-url: https://blog.solin.cc
+url: https://blog.solin.me
 permalink: feed/index.xml
 ---
 <?xml version="1.0" encoding="utf-8"?>
@@ -30,11 +30,12 @@ permalink: feed/index.xml
         {% set anchors = r/<span class="tooltip">.*span>/g %}
 
         {%- for article in collections.article  %}
-            <item turbo="true">
+            <item>
                 <title>{{ article.data.title }}</title>
                 <link>{{ url }}{{ article.url }}</link>
                 <description>
                     <![CDATA[
+                        <p>{{ article.data.preview }}</p>
                         {{ article | fixLinks | replace(anchors, "") | safe }}
                     ]]>
                 </description>

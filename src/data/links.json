@@ -3,10 +3,10 @@
     "letsplay": "https://discord.com/invite/qKncR2zsDW"
   },
   "footer": {
-    "github": "https://github.com/mentalsolin/blog.solin.cc",
-    "rss": "https://blog.solin.cc/feed",
+    "github": "https://github.com/mentalsolin/blog.solin.me",
+    "rss": "https://blog.solin.me/feed",
     "donate": "https://www.donationalerts.com/c/mentalsolin",
-    "ideas": "https://github.com/mentalsolin/blog.solin.cc/issues/2",
-    "solin": "https://solin.cc/"
+    "ideas": "https://github.com/mentalsolin/blog.solin.me/issues/2",
+    "solin": "https://solin.me/"
   }
 }
