@@ -1,7 +1,7 @@
 :root {
-    --bg-color: #fff6f5;            /* задний фон */
-    --bg-secondary-color: #f3eae8;  /* задний фон (футер, код) */
-    --primary-color: #212121;       /* текст */
-    --secondary-color: #686868;     /* текст футер */
+    --bg-color: #fff;            /* задний фон */
+    --bg-secondary-color: #f6f6f6;  /* задний фон (футер, код) */
+    --primary-color: #000;       /* текст */
+    --secondary-color: #5c5c5c;     /* текст футер */
     --tips-color: #adadad;          /* текст списки */
 }
