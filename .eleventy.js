@@ -17,15 +17,7 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addFilter('prettyTags', (value) => {
         return value.slice(1)
     })
-
-    eleventyConfig.addFilter('articlesLast', (value) => {
-        return value.reverse().slice(0, 1)
-    })
-
-    eleventyConfig.addFilter('articlesAll', (value) => {
-        return value.slice(1)
-    })
-
+    
     eleventyConfig.addFilter('fixLinks', (content) => {
         const reg = /(src="[^(https://)])|(src="\/)|(href="[^(https://)])|(href="\/)/g;
         const prefix = `https://blog.solin.me` + content.url;

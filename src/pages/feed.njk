@@ -13,11 +13,11 @@ permalink: feed/index.xml
         <language>{{ language }}</language>
         <link>{{ url }}/</link>
 
-        {%- for article in collections.article | articlesLast  %}
+        {%- for article in collections.article | reverse  %}
             <lastBuildDate>{{ article.date.toUTCString() }}</lastBuildDate>
         {%- endfor %}
 
-        {%- for article in collections.article | articlesLast  %}
+        {%- for article in collections.article | reverse  %}
             <image>
                 <url>{{ url }}/images/preview.jpg</url>
                 <title>{{ title }}</title>
