@@ -75,6 +75,7 @@
 .solin-logo {
     margin-bottom: 10px;
     display: inline block;
+    fill: var(--primary-color);
 }
 
 @media (min-width: 900px) {

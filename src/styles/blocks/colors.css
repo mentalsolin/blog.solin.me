@@ -1,7 +1,23 @@
-:root {
-    --bg-color: #fff;            /* задний фон */
-    --bg-secondary-color: #f6f6f6;  /* задний фон (футер, код) */
-    --primary-color: #000;       /* текст */
-    --secondary-color: #5c5c5c;     /* текст футер */
-    --tips-color: #adadad;          /* текст списки */
+@media (prefers-color-scheme: light) {
+    :root {
+        --bg-color: #fff;            /* задний фон */
+        --bg-header: rgb(255, 255, 255, 0.6); /* задний фон хедер */
+        --bg-secondary-color: #f6f6f6;  /* задний фон (футер, код) */
+        --primary-color: #000;       /* текст */
+        --secondary-color: #5c5c5c;     /* текст футер */
+        --tips-color: #adadad;          /* текст списки */
+        --text-ad-color: #fff;          /* текст реклама */
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg-color: #000000;            /* задний фон */
+        --bg-header: rgba(0, 0, 0, 0.6);              /* задний фон хедера */
+        --bg-secondary-color: #0d0d0d;  /* задний фон (футер, код) */
+        --primary-color: #d0d0d0;          /* текст */
+        --secondary-color: #8e8e8e;     /* текст футера */
+        --tips-color: #adadad;          /* текст списков */
+        --text-ad-color: #d0d0d0;          /* текст реклама */
+    }
 }

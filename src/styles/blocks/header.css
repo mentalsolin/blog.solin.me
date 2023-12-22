@@ -1,7 +1,7 @@
 .header {
     position: fixed;
     width: 100%;
-    background-color: rgb(255, 255, 255, 0.6);
+    background-color: var(--bg-header);
     backdrop-filter:blur(20px);
     z-index: 1000;
     height: 70px;
@@ -33,6 +33,7 @@
     grid-column: 1;
     align-self: center;
     transition: 0.2s;
+    fill: var(--primary-color);
 }
 
 .logo__link {
