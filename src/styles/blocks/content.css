@@ -533,6 +533,10 @@
     word-wrap: break-word;
 }
 
+.content p code {
+    background-color: var(--bg-secondary-color);
+}
+
 .content pre {
     position: relative;
     display: grid;
