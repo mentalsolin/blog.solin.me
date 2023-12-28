@@ -31,6 +31,26 @@ layout: page.njk
             <div class="content">
                 {{ content | safe }}
             </div>
+            <script>
+                var codeElements = document.querySelectorAll('pre code');
+
+                codeElements.forEach(function(codeElement) {
+                    codeElement.addEventListener('click', function() {
+                        let clip = codeElement.innerHTML;
+
+                        navigator.clipboard.writeText(clip);
+
+                        // clearTimeout(timer);
+
+                        // timer = setTimeout(function() {
+                        // }, 5000);
+
+                        // копирует < как &lt
+
+                        // сделать под pre подсказку о копировании текста
+                    });
+                });
+            </script>
             <p class="notice">
                 <a class="notice__link" href="/index.html">Все статьи</a>
             </p>
