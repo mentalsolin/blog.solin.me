@@ -31,7 +31,8 @@
 }
 
 .articles {
-    display: grid;
+    flex-direction: column;
+    display: flex;
     position: relative;
     row-gap: 30px;
     column-gap: 30px;
@@ -94,13 +95,15 @@
     color: var(--secondary-color);
     margin: 0;
     padding: 0;
+    display: inline-block;
+    background-color: var(--bg-secondary-color);
+    align-self: flex-start;
 }
 
 @media (min-width: 900px) {
     .articles__time{
         grid-column: 1;
         font-size: 16px;
-        width: 100%;
     }
 }
 
