@@ -505,13 +505,17 @@
     }
 }
 
+.content blockquote p {
+    color: var(--primary-color);
+}
+
 .content blockquote::before {
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     width: 2px;
-    background-color: var(--tips-color);
+    background-color: var(--primary-color);
     content: '';
 }
 
