@@ -31,17 +31,17 @@
     margin: 0;
     list-style-type: none;
     display: block;
-    margin: 30px 0;
+    margin: 15px 0 30px 0;
 }
 
 .links__item {
     font-size: 14px;
     display: inline-block;
+    margin-right: 8px;
 }
 
-.links__item:not(:last-child)::after {
-    margin: 0 5px;
-    content: " ";
+.links__item:last-child {
+    margin-right: 0;
 }
 
 @media (min-width: 900px) {
@@ -61,15 +61,7 @@
 }
 
 .solin {
-    display: block;
-    padding-top: 30px;
-}
-
-@media (min-width: 900px) {
-    .solin {
-        display: flex;
-        column-gap: 30px;
-    }
+    display: flex;
 }
 
 .solin-logo {
@@ -87,10 +79,19 @@
 .solin-text {
     margin: 0;
     display: inline block;
+    margin-right: 15px;
+}
+
+.solin-text:last-child {
+    margin-right: 0;
 }
 
 .solin-link {
     color: var(--primary-color);
+}
+
+.solin-link-logo {
+    margin-right: 30px;
 }
 
 @media (min-width: 900px) {
