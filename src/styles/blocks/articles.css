@@ -92,11 +92,10 @@
     font-weight: 300;
     font-size: 12px;
     font-family: 'JetBrains Mono', sans-serif;
-    color: var(--secondary-color);
     margin: 0;
+    color: var(--secondary-color);
     padding: 0;
     display: inline-block;
-    background-color: var(--bg-secondary-color);
     align-self: flex-start;
 }
 

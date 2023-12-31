@@ -35,8 +35,6 @@
     font-family: 'JetBrains Mono', sans-serif;
     color: var(--secondary-color);
     animation: showArticle .8s forwards;
-    background-color: var(--bg-secondary-color);
-    width: max-content;
 }
 
 @media (min-width: 900px) {
