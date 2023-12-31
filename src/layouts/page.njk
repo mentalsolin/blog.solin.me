@@ -5,39 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta property="title" content="{{title}} — Solin's Blog"/>
-    <meta property="description" content="{% if page.url != '/' %}{{preview}}{% else %}Оригинальный бложек mentalsolin'а.{% endif %}"/>
+    <meta name="yandex-verification" content="7437c40ba77a0ca9" />
 
-    <meta property="og:locale" content="ru_RU"/>
-    <meta property="og:type" content="article"/>
-    <meta property="og:title" content="{{title}}"/>
-    <meta property="og:description" content="{% if page.url != '/' %}{{preview}}{% else %}Оригинальный бложек mentalsolin'а.{% endif %}"/>
-    <meta property="og:image" content="{% if page.url != '/' %}{{"https://blog.solin.me" + page.url + "images/preview.jpg"}}{% else %}{{"https://blog.solin.me/images/preview.png"}}{% endif %}"/>
-    <meta property="og:url" content="https://blog.solin.me{% if page.url != '/' %}{{page.url}}{% endif %}"/>
-    <meta property="og:site_name" content="Solin's Blog"/>
+    <title>{{title}}{% if page.url != '/' %} — Solin's blog{% endif %}</title>
+    <meta name="description" content="{% if page.url != '/' %}{{preview}}{% else %}Оригинальный бложек mentalsolin'а.{% endif %}">
 
-    {% if page.url != '/' %}
-        <meta property="og:title" content="{{title}}">
-        <meta property="og:type" content="article" />
-        <meta property="og:description" content="{{preview}}">
-        <meta property="og:image" content="{{"https://blog.solin.me" + page.url + "images/preview.jpg"}}">
-        <meta property="og:url" content="https://blog.solin.me{{page.url}}">
-        <meta name="twitter:card" content="summary_large_image">
-    {% endif %}
+    <meta itemprop="name" content="{{title}}{% if page.url != '/' %} — Solin's blog{% endif %}">
+    <meta itemprop="description" content="{% if page.url != '/' %}{{preview}}{% else %}Оригинальный бложек mentalsolin'а.{% endif %}">
+    <meta itemprop="image" content="{% if page.url != '/' %}{{"https://blog.solin.me" + page.url + "images/preview.jpg"}}{% else %}{{"https://blog.solin.me/images/preview.png"}}{% endif %}">
 
-    <meta name="theme-color" content="#fff6f5">
+    <meta property="og:url" content="https://blog.solin.me/articles/ssh-keypair">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="{{title}}{% if page.url != '/' %} — Solin's blog{% endif %}">
+    <meta property="og:description" content="{% if page.url != '/' %}{{preview}}{% else %}Оригинальный бложек mentalsolin'а.{% endif %}">
+    <meta property="og:image" content="{% if page.url != '/' %}{{"https://blog.solin.me" + page.url + "images/preview.jpg"}}{% else %}{{"https://blog.solin.me/images/preview.png"}}{% endif %}">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{title}}{% if page.url != '/' %} — Solin's blog{% endif %}">
+    <meta name="twitter:description" content="{% if page.url != '/' %}{{preview}}{% else %}Оригинальный бложек mentalsolin'а.{% endif %}">
+    <meta name="twitter:image" content="{% if page.url != '/' %}{{"https://blog.solin.me" + page.url + "images/preview.jpg"}}{% else %}{{"https://blog.solin.me/images/preview.png"}}{% endif %}">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Montserrat:wght@200;300;400;500;600;700&family=Playfair+Display:wght@700&family=JetBrains+Mono:wght@300;400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Montserrat:wght@200;300;400;500;600;700&family=JetBrains+Mono:wght@300;400" rel="stylesheet">
+    
     <link rel="stylesheet" href="/styles/styles.css">
     <link rel="stylesheet" href="/styles/print.css" media="print">
+    
     <link rel="icon" href="https://blog.solin.me/images/logos/favicon.svg" type="image/x-icon">
-
-    <title>{{title}}{% if page.url != '/' %} — Solin's blog{% endif %}</title>
 </head>
 <body class="page__body">
+
     <!-- Yandex.Metrika counter -->
     <script type="text/javascript" >
     (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
@@ -46,19 +45,19 @@
     k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
     (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
 
-    ym(95785791, "init", {
+    ym(96028102, "init", {
             clickmap:true,
             trackLinks:true,
-            accurateTrackBounce:true
+            accurateTrackBounce:true,
+            webvisor:true
     });
     </script>
-    <noscript><div><img src="https://mc.yandex.ru/watch/95785791" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <noscript><div><img src="https://mc.yandex.ru/watch/96028102" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
     <!-- /Yandex.Metrika counter -->
 
     {% include 'header.njk' %}
     {{ content | safe }}
     {% include 'footer.njk' %}
     
-    <script src="/scripts/logo.js"></script>
 </body>
 </html>
