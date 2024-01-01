@@ -97,17 +97,19 @@
     padding: 0;
     display: inline-block;
     align-self: flex-start;
+    margin: -15px 0;
 }
 
 @media (min-width: 900px) {
     .articles__time{
         grid-column: 1;
         font-size: 16px;
+        margin: 0;
     }
 }
 
 .articles__image {
-    border-radius: 30px;
+    border-radius: 45px;
     width: 100%;
 }
 
