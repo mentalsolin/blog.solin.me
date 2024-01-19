@@ -50,7 +50,7 @@ const clean = () => {
     return del([
         'dist/styles/blocks',
         'dist/styles/**/*.css',
-        '!dist/styles/{styles, print}.css'
+        '!dist/styles/{index, print}.css'
     ])
 }
 

@@ -14,6 +14,13 @@
     line-height: 60px;
 }
 
+@media (min-width: 810px) {
+    .article__heading--title {
+        font-size: 80px;
+        line-height: 90px;
+    }
+}
+
 .article__heading--time {
     color: var(--secondary);
     text-align: center;
@@ -22,9 +29,54 @@
     line-height: 24px;
 }
 
+@media (min-width: 810px) {
+    .article__heading--time {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
 .article__heading--img {
     border-radius: 45px;
     width: 100%;
+}
+
+@media (min-width: 810px) {
+    .article__heading--img {
+        border-radius: 80px;
+    }
+}
+
+.article__heading--edit {
+    position: relative;
+    display: flex;
+}
+
+.article__heading--edit-icon {
+    height: 24px;
+}
+
+.article__heading--edit-text {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: var(--primary);
+    margin-left: 15px;
+    text-decoration: underline;
+}
+
+@media (min-width: 810px) {
+    .article__heading--edit-text {
+        font-size: 18px;
+    }
+}
+
+.article__heading--edit-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
 
 
@@ -32,6 +84,12 @@
 
 .content {
 
+}
+
+@media (min-width: 810px) {
+    .content {
+        font-size: 20px;
+    }
 }
 
 .content h2 {
@@ -128,7 +186,7 @@
 }
 
 .content figure img {
-    width: 100%;
+    width: max-content;
     max-width: 100%;
 }
 
@@ -144,8 +202,15 @@
 
 .content p img {
     margin-top: 30px;
-    width: 100%;
+    width: max-content;
     max-width: 100%;
+    border-radius: 45px;
+}
+
+@media (min-width: 810px) {
+    .content p img {
+        border-radius: 60px;
+    }
 }
 
 
@@ -273,20 +338,42 @@
 
 
 
-/* Notice */
+/* Share */
 
-.notice {
+.share {
     text-align: center;
     margin-top: 60px;
     margin-bottom: 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
 }
 
-.notice__link {
+.share__logo {
+    height: 24px;
+    margin-right: 15px;
+}
+
+.share__text {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+@media (min-width: 810px) {
+    .share__text {
+        font-size: 18px;
+    }
+}
+
+.share__link {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
     color: var(--primary);
     font-size: 16px;
     text-decoration: none;
-}
-
-.notice__link:hover {
-    text-decoration: underline;
+    cursor: pointer;
 }

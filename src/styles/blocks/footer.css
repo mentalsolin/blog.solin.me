@@ -9,7 +9,7 @@
     background-color: var(--bg-secondary);
 }
 
-@media (min-width: 900px) {
+@media (min-width: 810px) {
     .footer__container {
         padding: 60px 30px 60px 30px;
     }
@@ -29,7 +29,7 @@
     font-size: 14px;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 810px) {
     .about {
         font-size: 16px;
     }
@@ -38,6 +38,12 @@
 .about__desc {
     color: var(--secondary);
     margin: 0;
+}
+
+@media (min-width: 810px) {
+    .about__desc {
+        font-size: 16px;
+    }
 }
 
 .links {
@@ -58,7 +64,7 @@
     margin-right: 0;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 810px) {
     .links__item {
         font-size: 16px;
     }
@@ -68,7 +74,7 @@
     color: var(--secondary);
 }
 
-@media (min-width: 900px) {
+@media (min-width: 810px) {
     .links__item--link {
         font-size: 16px;
     }
@@ -85,7 +91,7 @@
     fill: var(--primary);
 }
 
-@media (min-width: 900px) {
+@media (min-width: 810px) {
     .solin-logo {
         margin-bottom: 0;
     }
@@ -109,7 +115,7 @@
     margin-right: 30px;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 810px) {
     .solin-link {
         font-size: 16px;
     }
