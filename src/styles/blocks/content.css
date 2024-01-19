@@ -4,7 +4,6 @@
     flex-direction: column;
     justify-content: center;
     align-self: center;
-    row-gap: 60px;
 }
 
 .article__heading {
