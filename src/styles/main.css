@@ -1,0 +1,31 @@
+.page {
+    font-family: 'Inter', sans-serif;
+    line-height: 30px;
+    color: var(--primary);
+    background-color: var(--bg-primary);
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+.page__body {
+    margin: 0;
+}
+
+
+.container {
+    padding: 0 30px;
+    width: 1000px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+h1, h2, h3, p {
+    margin: 0;
+}
+
+svg path {
+    fill: var(--primary);
+}

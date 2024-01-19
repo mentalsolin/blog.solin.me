@@ -2,38 +2,26 @@
 layout: page.njk
 ---
 
-<main class="main">
-    <div class="article__container container">
-        <div class="container__inner">
-            <div class="article__heading">
-                <h1 class="article__heading--title">{{ title }}</h1>
-                <time class="article__heading--date" datetime="{{ date.toISOString() }}">{{ date | ruDate }}</time>
-                <p class="article__heading--preview">{{ preview }}</p>
-                <p class="tags">
-                    {% for tag in tags | prettyTags %}
-                        <span class="tags__item">
-                            {{ tag }}
-                        </span>
-                    {% endfor %}
-			    </p>
-                <img class="article__heading--image" src="images/preview.jpg" alt="{{title}}">
-                <a class="article__heading--link" href="https://github.com/mentalsolin/blog.solin.me/blob/main/src{{page.url}}index.md">Редактировать статью на GitHub</a>
+<main class="article container">
+    <div class="article__heading">
+        <h1 class="article__heading--title">{{ title }}</h1>
+        <time class="article__heading--time" datetime="{{ date.toISOString() }}">{{ date | ruDate }}</time>
+        <img class="article__heading--img" src="images/preview.jpg" alt="{{title}}">
+        <div class="article__heading--edit">
+            <div class="article__heading--edit-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13.9394 5L18.9994 10.06L9.06138 20C8.78453 20.277 8.44018 20.4769 8.06238 20.58L2.94638 21.975C2.81887 22.0096 2.68448 22.0099 2.55682 21.9759C2.42916 21.9418 2.31275 21.8747 2.21938 21.7812C2.12601 21.6877 2.05899 21.5713 2.0251 21.4436C1.9912 21.3159 1.99165 21.1815 2.02638 21.054L3.42138 15.938C3.52448 15.5602 3.7244 15.2159 4.00138 14.939L13.9374 5H13.9394ZM21.0294 2.97C21.7004 3.641 22.0773 4.55107 22.0773 5.5C22.0773 6.44893 21.7004 7.359 21.0294 8.03L20.0594 9L14.9994 3.94L15.9694 2.97C16.6404 2.29901 17.5504 1.92206 18.4994 1.92206C19.4483 1.92206 20.3584 2.29901 21.0294 2.97Z" fill="#212121"/>
+                </svg>
             </div>
-            <div class="ad">
-                <div class="ad__logo">
-                    <img class="ad__logo--img" src="/images/logos/lp.png" alt="Let's Play Logo">
-                    <p class="ad__logo--title">Let's Play</p>
-                    <p class="ad__logo--subtitle">Discord-сервер</p>
-                </div>
-                <p class="ad__desc">Играем в любимые игры, веселимся и делимся новостями из жизни!</p>
-                <a class="ad__link" href="{{ links.advertisements.letsplay }}"></a>
-            </div>
-            <div class="content">
-                {{ content | safe }}
-            </div>
-            <p class="notice">
-                <a class="notice__link" href="/index.html">Все статьи</a>
-            </p>
+            <p class="article__heading--edit-text">Редактировать на GitHub</p>
+            <a class="article__heading--edit-link" href="https://github.com/mentalsolin/blog.solin.me/blob/main/src{{page.url}}index.md"></a>
         </div>
     </div>
+    {% include 'ads/letsplay.njk' %}
+    <div class="content">
+        {{ content | safe }}
+    </div>
+    <p class="notice">
+        <a class="notice__link" href="/index.html">Все статьи</a>
+    </p>
 </main>

@@ -1,0 +1,23 @@
+@media (prefers-color-scheme: light) {
+    :root {
+        --primary: #212121;
+        --secondary: #585858;
+    
+        --bg-primary: #fff;
+        --bg-secondary: #F9F9F9;
+    
+        --bg-header-blur: #ffffff99;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --primary: #fff;
+        --secondary: #c7c7c7;
+    
+        --bg-primary: #000000;
+        --bg-secondary: #161616;
+    
+        --bg-header-blur: #00000099;
+    }
+}

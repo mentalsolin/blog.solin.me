@@ -4,18 +4,14 @@ layout: page.njk
 permalink: index.html
 ---
 
-<main class="main">
-    <div class="articles__container container">
-        <div class="articles__container--all container">
-            {%- for article in collections.article | reverse -%}
-                <article class="articles articles__grid--all">
-                    <h3 class="articles__title articles__title--all">{{ article.data.title }}</h3>
-                    <p class="articles__preview articles__preview--all">{{ article.data.preview }}</p>
-                    <time class="articles__time articles__time--all" datetime="{{ article.date.toISOString() }}">{{ article.date | ruDate }}</time>
-                    <img class="articles__image articles__image--all" src="{{ article.url }}images/preview.jpg" alt="{{ article.data.title }}">
-                    <a class="articles__link articles__link--all" href="{{ article.url }}"></a>
-                </article>
-            {%- endfor -%}
-        </div>
-    </div>
+<main class="articles container">
+    {%- for article in collections.article | reverse -%}
+        <article class="article-card">
+            <img class="article-card__img" src="{{ article.url }}images/preview.jpg" alt="{{ article.data.title }}">
+            <h2 class="article-card__title">{{ article.data.title }}</h2>
+            <p class="article-card__desc">{{ article.data.preview }}</p>
+            <time class="article-card__time" datetime="{{ article.date.toISOString() }}">{{ article.date | ruDate }}</time>
+            <a class="article-card__link" href="{{ article.url }}"></a>
+        </article>
+    {%- endfor -%}
 </main>

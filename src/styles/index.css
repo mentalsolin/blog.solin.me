@@ -1,0 +1,10 @@
+@import url('./main.css');
+@import url('./colors.css');
+
+/* Blocks */
+@import url('./blocks/header.css');
+@import url('./blocks/articles.css');
+@import url('./blocks/content.css');
+@import url('./blocks/footer.css');
+
+@import url('./blocks/ads.css');
