@@ -5,6 +5,7 @@ tags:
     - networking
     - dns
 preview: 'Узнайте, как создать свой безопасный DNS с использованием протокола DoH для защиты личных данных и повышения безопасности.'
+img_credits: 'https://unsplash.com/photos/black-and-silver-computer-ram-stick-EJe6LqEjHpA'
 ---
 
 ## Примечание

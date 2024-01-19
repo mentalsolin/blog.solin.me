@@ -5,6 +5,7 @@ tags:
     - minecraft
     - cit
 preview: 'Как задать свою текстуру и звук предмету при переименовании. CIT.'
+img_credits: 'mentalsolin'
 ---
 
 ## Примечание

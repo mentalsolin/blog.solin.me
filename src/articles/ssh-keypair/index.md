@@ -4,7 +4,8 @@ date: 2023-12-28
 tags:
     - networking
     - ssh
-preview: 'Если у вы используете пароль для подключения по SSH, создайте вместо этого свой SSH-ключ'
+preview: 'Если у вы используете пароль для подключения по SSH, создайте вместо этого свой SSH-ключ.'
+img_credits: 'https://unsplash.com/photos/three-silver-keys-y5N2HDwagVw'
 ---
 
 ## Примечание

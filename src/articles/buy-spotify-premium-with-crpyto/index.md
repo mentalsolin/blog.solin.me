@@ -5,6 +5,7 @@ tags:
     - finance
     - cryptocurrency
 preview: 'Как купить гифт-карту Spotify Premium, за криптовалюту, и ее активация.'
+img_credits: 'https://unsplash.com/photos/iphone-6-on-macbook-pro-GIm5OV5rY0w'
 ---
 
 ## Дисклеймер

@@ -5,6 +5,7 @@ tags:
     - windows
     - customization
 preview: 'Если вы несчастливый обладатель 11-той винды, то этот гайд поможет вам стать немного счастливее и приукрасить уже и так красивую систему.'
+img_credits: 'https://unsplash.com/photos/person-using-windows-11-computer-beside-white-ceramic-mug-on-white-table-me4HT8AX4Ls'
 ---
 
 ## Обои рабочего стола

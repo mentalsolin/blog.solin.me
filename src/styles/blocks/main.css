@@ -36,3 +36,8 @@ h1, h2, h3, p {
 svg path {
     fill: var(--primary);
 }
+
+.shrt {
+    max-width: 800px;
+    margin: 0 auto;
+}

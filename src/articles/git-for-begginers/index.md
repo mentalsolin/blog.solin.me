@@ -5,6 +5,7 @@ tags:
     - git
     - developing
 preview: 'Если вы новичок в программировании, вам следует изучить Git, для удобной совместной разработки программ. В этой статье я расскажу как легко использовать Git.'
+img_credits: 'https://unsplash.com/photos/a-book-and-a-small-figurine-on-a-desk-KPAQpJYzH0Y'
 ---
 
 ## Примечание
