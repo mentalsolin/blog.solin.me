@@ -57,6 +57,7 @@
 .article__heading--edit {
     position: relative;
     display: flex;
+    margin: 30px 0;
 }
 
 @media (min-width: 1080px) {
@@ -90,7 +91,6 @@
     left: 0;
     right: 0;
     bottom: 0;
-    margin: 30px 0;
 }
 
 
