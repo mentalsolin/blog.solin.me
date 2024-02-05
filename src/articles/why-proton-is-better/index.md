@@ -4,7 +4,7 @@ date: 2024-02-05
 tags:
     - security
 preview: 'Если вы живете в стране с неблагоприятной интернетной средой, вам стоит обезопасить себя.'
-img_credits: 'https://unsplash.com/photos/three-silver-keys-y5N2HDwagVw'
+img_credits: 'https://unsplash.com/photos/envelope-paper-lot-uGcDWKN91Fs'
 ---
 
 ## Дисклеймер
