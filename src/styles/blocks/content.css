@@ -57,7 +57,8 @@
 .article__heading--edit {
     position: relative;
     display: flex;
-    margin: 30px 0;
+    margin-top: 0px;
+    margin-bottom: 60px;
 }
 
 @media (min-width: 1080px) {
