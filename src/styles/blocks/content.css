@@ -378,21 +378,21 @@
     text-align: center;
     margin-top: 60px;
     margin-bottom: 0;
-    position: relative;
     display: flex;
     justify-content: center;
 }
 
 .share__container {
+    position: relative;
     display: flex;
     padding: 15px;
     cursor: pointer;
     transition: 0.2s;
 }
 
-.share__container:hover {
+/* .share__container:hover {
     transform: scale(1.05);
-}
+} */
 
 .share__logo {
     height: 24px;
@@ -420,5 +420,4 @@
     color: var(--primary);
     font-size: 16px;
     text-decoration: none;
-    cursor: pointer;
 }
