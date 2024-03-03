@@ -8,6 +8,10 @@ preview: 'Если вы несчастливый обладатель 11-той 
 img_credits: 'https://unsplash.com/photos/person-using-windows-11-computer-beside-white-ceramic-mug-on-white-table-me4HT8AX4Ls'
 ---
 
+## Заметка
+
+Статья была обновлена 3.3.24 (д.м.гг)
+
 ## Обои рабочего стола
 
 Обои являются главной частью любого рабочего стола. Некоторые любят живые обои, а кто-то и просто статичные картинки.
@@ -24,6 +28,12 @@ img_credits: 'https://unsplash.com/photos/person-using-windows-11-computer-besid
 
 **WinDynamicDesktop**. Он также открыт и позволяет плавно менять обои в зависимости от времени. После установки программы можно выбрать темы по умолчанию или же установить [другие](https://windd.info/themes/).
 Скачать программу можно с [GitHub](https://github.com/t1m0thyj/WinDynamicDesktop) или из [Microsoft Store](https://www.microsoft.com/store/apps/9nm8n7dq3z5f?cid=storebadge&ocid=badge).
+
+## Смена темы на темную или светлую
+
+Вы можете настроить темную или светлую тему в зависимости от времени суток как в настройках Windows: Система -> Экран -> Ночной режим, либо использовать программу AutoDarkMode для более расширенных возможностей.
+
+AutoDarkMode: Эта программа может автоматически переключать вашу тему на темную или светлую. Она имеет открытый исходный код и доступна для загрузки как с [GitHub](https://github.com/AutoDarkMode/Windows-Auto-Night-Mode/releases), так и из [Microsoft Store](https://apps.microsoft.com/detail/xp8jk4hzbvf435).
 
 ## Виджеты
 
