@@ -281,6 +281,7 @@
 }
 
 .content pre {
+    border-radius: 25px;
     position: relative;
     display: grid;
     background-color: var(--bg-secondary);
@@ -290,6 +291,26 @@
     scroll-behavior: smooth;
 }
 
+.content pre button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    padding: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    background-color: var(--bg-header-blur);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    white-space: nowrap;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .content pre code {
     line-height: 1.6em;
     display: block;
@@ -297,16 +318,6 @@
     overflow-x: auto;
     scrollbar-width: thin;
     user-select: all;
-}
-
-.content pre::after {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    width: 76px;
-    content: '';
-    pointer-events: none;
 }
 
 .content pre code:focus {
