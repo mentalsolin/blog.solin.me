@@ -30,7 +30,7 @@ ssh-keygen
 
 Если вы ничего не меняли, вывод должен быть примерно такой:
 
-```
+```preview
 Generating public/private rsa key pair.
 Enter file in which to save the key (/home/solin/.ssh/id_rsa):
 Enter passphrase (empty for no passphrase):

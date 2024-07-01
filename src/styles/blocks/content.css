@@ -317,7 +317,6 @@
     padding: 16px 0;
     overflow-x: auto;
     scrollbar-width: thin;
-    user-select: all;
 }
 
 .content pre code:focus {

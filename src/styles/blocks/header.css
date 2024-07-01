@@ -7,8 +7,9 @@
     top: 0;
     left: 0;
     right: 0;
-    backdrop-filter: blur(20px);
     z-index: 1000;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
 }
 
 .logo {
